@@ -85,7 +85,7 @@ action('appendCommitListSuccess', 'commitList');
 action('appendCommitListFailure', 'error');
 
 async function realAppendCommitList(until) {
-  return (await fetchWrapper(`${API_ENTRY_POINT}/repos/${REPO_NAME}/commits?until=${encodeURIComponent(until)}`)).json();
+  return (await fetchWrapper(`${API_ENTRY_POINT}/repos/${REPO_NAME}/commits?sha=${encodeURIComponent(REPO_BRANCH)}&until=${encodeURIComponent(until)}`)).json();
 }
 
 export function appendCommitList() {

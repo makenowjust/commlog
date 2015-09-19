@@ -1,5 +1,5 @@
 import fetch from 'isomorphic-fetch';
-import { API_ENTRY_POINT, REPO_NAME, OAUTH_TOKEN } from '../config';
+import { API_ENTRY_POINT, REPO_NAME, REPO_BRANCH, OAUTH_TOKEN } from '../config';
 
 export let types = {};
 let actions = {};

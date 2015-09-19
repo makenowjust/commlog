@@ -21,7 +21,6 @@
     "browserify": "^11.1.0",
     "gh-pages": "^0.4.0",
     "redux-thunk": "^1.0.0",
-    "run-scripts": "^0.2.2",
     "uglify-js": "^2.4.24",
     "watchify": "^3.4.0"
   },
@@ -34,9 +33,9 @@
     "url": "git+https://github.com/makenowjust/commlog.git"
   },
   "scripts": {
+    "deploy": "npm run deploy:build && npm run deploy:upload",
     "deploy:build": "env NODE_ENV=production browserify -t [ babelify --optional es7.functionBind --optional es7.decorators --optional es7.asyncFunctions ] -e src/index.js | uglifyjs -c > public/js/app.js",
     "deploy:upload": "gh-pages -d public",
-    "deploy": "run-scripts deploy:build deploy:upload",
     "watch": "watchify -v -d -t [ babelify --optional es7.functionBind --optional es7.decorators --optional es7.asyncFunctions ] -e src/index.js -o public/js/app.js"
   }
 }

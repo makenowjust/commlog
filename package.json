@@ -19,6 +19,7 @@
     "babel": "^5.8.23",
     "babelify": "^6.3.0",
     "browserify": "^11.1.0",
+    "gh-pages": "^0.4.0",
     "redux-thunk": "^1.0.0",
     "watchify": "^3.4.0"
   },
@@ -32,6 +33,7 @@
   },
   "scripts": {
     "build": "browserify -t [ babelify --optional es7.functionBind --optional es7.decorators --optional es7.asyncFunctions ] -e src/index.js -o public/js/app.js",
+    "deploy": "gh-pages -d public",
     "watch": "watchify -v -d -t [ babelify --optional es7.functionBind --optional es7.decorators --optional es7.asyncFunctions ] -e src/index.js -o public/js/app.js"
   }
 }

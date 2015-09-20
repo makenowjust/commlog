@@ -26,7 +26,6 @@ export default class CommitListPage extends React.Component {
   }
 
   render() {
-    console.log(this.props);
     const {
       fetch,
       append,

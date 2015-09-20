@@ -7,6 +7,7 @@
     "url": "https://github.com/makenowjust/commlog/issues"
   },
   "dependencies": {
+    "history": "^1.9.1",
     "isomorphic-fetch": "^2.1.1",
     "mdast-react-component": "^1.0.1",
     "radium": "^0.14.1",

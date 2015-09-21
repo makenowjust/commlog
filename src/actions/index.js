@@ -19,9 +19,16 @@ function fetchWrapper(url) {
   return fetch(url, {
     method: 'get',
     headers: {
-      'authorization': 'token ' + OAUTH_TOKEN,
+      'authorization': `token ${OAUTH_TOKEN}`,
     },
   });
+}
+
+async function handleResponse(res) {
+  if (res.status >= 400) {
+    throw new Error(`Error in requesting GitHub API (${res.status}): ${(await res.json()).message}`);
+  }
+  return res.json();
 }
 
 action('fetchCommitRequest', 'sha');
@@ -29,11 +36,11 @@ action('fetchCommitSuccess', 'sha', 'commit');
 action('fetchCommitFailure', 'sha', 'error');
 
 function shouldFetchCommit(state, sha) {
-  return !(sha in state.commitCache);
+  return !(state && sha in state.commitCache);
 }
 
 async function realFetchCommit(sha) {
-  return (await fetchWrapper(`${API_ENTRY_POINT}/repos/${REPO_NAME}/commits/${sha}`)).json();
+  return handleResponse(await fetchWrapper(`${API_ENTRY_POINT}/repos/${REPO_NAME}/commits/${sha}`));
 }
 
 export function fetchCommit(sha) {
@@ -45,7 +52,7 @@ export function fetchCommit(sha) {
         commit = await realFetchCommit(sha);
       } catch (error) {
         dispatch(actions.fetchCommitFailure(sha, error));
-        return;
+        throw error;
       }
       dispatch(actions.fetchCommitSuccess(sha, commit));
     }
@@ -57,11 +64,11 @@ action('fetchCommitListSuccess', 'commitList');
 action('fetchCommitListFailure', 'error');
 
 function shouldFetchCommitList(state) {
-  return !(state.commitList && state.commitList.length >= 1);
+  return !(state && state.commitList && state.commitList.length >= 0);
 }
 
 async function realFetchCommitList() {
-  return (await fetchWrapper(`${API_ENTRY_POINT}/repos/${REPO_NAME}/commits?sha=${encodeURIComponent(REPO_BRANCH)}`)).json();
+  return handleResponse(await fetchWrapper(`${API_ENTRY_POINT}/repos/${REPO_NAME}/commits?sha=${encodeURIComponent(REPO_BRANCH)}`));
 }
 
 export function fetchCommitList() {
@@ -73,7 +80,7 @@ export function fetchCommitList() {
         commitList = await realFetchCommitList();
       } catch (error) {
         dispatch(actions.fetchCommitListFailure(error));
-        return;
+        throw error;
       }
       dispatch(actions.fetchCommitListSuccess(commitList));
     }
@@ -85,20 +92,21 @@ action('appendCommitListSuccess', 'commitList');
 action('appendCommitListFailure', 'error');
 
 async function realAppendCommitList(until) {
-  return (await fetchWrapper(`${API_ENTRY_POINT}/repos/${REPO_NAME}/commits?sha=${encodeURIComponent(REPO_BRANCH)}&until=${encodeURIComponent(until)}`)).json();
+  return handleResponse(await fetchWrapper(
+    `${API_ENTRY_POINT}/repos/${REPO_NAME}/commits?sha=${encodeURIComponent(REPO_BRANCH)}&until=${encodeURIComponent(until)}`));
 }
 
 export function appendCommitList() {
   return async (dispatch, getState) => {
     dispatch(actions.appendCommitListRequest());
-    let { commitList } = getState();
-    let lastCommit = commitList[commitList.length - 1];
+    const { commitList = [] } = getState() || {};
+    const lastCommit = commitList[commitList.length - 1];
     let newCommitList;
     try {
       newCommitList = await realAppendCommitList(lastCommit.commit.author.date);
     } catch (error) {
       dispatch(actions.appendCommitListFailure(error));
-      return;
+      throw error;
     }
     dispatch(actions.appendCommitListSuccess(newCommitList.slice(1)));
   };

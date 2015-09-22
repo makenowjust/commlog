@@ -1,6 +1,6 @@
 import React from 'react';
 import Radium from 'radium';
-import { Link } from 'react-router';
+import Link from './link';
 
 @Radium
 export default class App extends React.Component {
@@ -32,5 +32,7 @@ const style = {
     height: '50%',
     padding: '2em 0',
     marginTop: '0',
+  link: {
+    textDecoration: 'none',
   },
 };

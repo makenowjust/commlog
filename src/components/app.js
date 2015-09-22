@@ -10,7 +10,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div style={[style.body]}>
+      <div>
         <h1 style={[style.h1]}><Link to='/' style={[style.link]}>commlog</Link></h1>
         {this.props.children}
       </div>
@@ -19,19 +19,15 @@ export default class App extends React.Component {
 }
 
 const style = {
-  body: {
-    maxWidth: '800px',
-    background: '',
-    margin: '0 auto',
-    padding: '0',
-  },
   h1: {
     fontSize: '3em',
     textAlign: 'center',
     width: '100%',
     height: '50%',
-    padding: '2em 0',
+    padding: '2em 0 1em 0',
     marginTop: '0',
+    border: 'none',
+  },
   link: {
     textDecoration: 'none',
   },

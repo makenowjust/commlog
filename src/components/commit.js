@@ -27,15 +27,17 @@ export default class Commit extends React.Component {
 
 
     return (
-      <section style={[style.container]}>
-        <Mdast>{message}</Mdast>
-        <div style={[style.info]}>
-          <a style={[style.rightPad]} href={comitterUrl}>
-            {comitterName}
-            <img style={[style.icon]} src={comitterIconUrl} />
-          </a>
-          <span style={[style.rightPad]}>{date}</span>
-          <Link to={`/commit/${sha}`}>#</Link>
+      <section style={[style.section]}>
+        <div style={[style.container]}>
+          <Mdast>{message}</Mdast>
+          <div style={[style.info]}>
+            <a style={[style.rightPad]} href={comitterUrl}>
+              {comitterName}
+              <img style={[style.icon]} src={comitterIconUrl} />
+            </a>
+            <span style={[style.rightPad]}>{date}</span>
+            <Link to={`/commit/${sha}`}>#</Link>
+          </div>
         </div>
       </section>
     );
@@ -43,9 +45,15 @@ export default class Commit extends React.Component {
 }
 
 const style = {
+  section: {
+    display: 'block',
+    width: '100%',
+    borderBottom: '1px solid #ddd',
+    padding: '2em',
+  },
   container: {
-    borderBottom: '1px solid #4a4a4a',
-    padding: '1em',
+    maxWidth: '800px',
+    margin: '0 auto',
   },
   icon: {
     width: '1em',
@@ -57,5 +65,6 @@ const style = {
   info: {
     width: '100%',
     textAlign: 'right',
+    margin: '1em 0',
   },
 };

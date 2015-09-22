@@ -65,5 +65,6 @@ const style = {
   info: {
     width: '100%',
     textAlign: 'right',
+    margin: '1em 0',
   },
 };

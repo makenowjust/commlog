@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import { fetchCommitList, appendCommitList } from '../actions';
 import Commit from '../components/commit';
+import Loading from '../components/loading';
 
 function mapStateToProp({fetchCommitList, append, commitList}) {
   return {
@@ -34,44 +35,46 @@ export default class CommitListPage extends React.Component {
 
     if (fetch.status === 'init' || fetch.status === 'request') {
       return (
-        <div style={[style.request]}>
+        <Loading>
           Loading...
-        </div>
+        </Loading>
       );
     }
 
     if (fetch.status === 'failure') {
       return (
-        <div style={[style.request]}>
+        <Loading>
           Failure to load a commit list. Please <a href='javascript:location.reload()'>reload</a>.
-        </div>
+        </Loading>
       );
     }
 
     const commitListElement = commitList.map((commit) => (
-      <Commit key={commit.sha} commit={commit} />
+      <Commit key={commit.sha} commit={commit} style={{display: 'table-row'}} />
     ));
     let appendElement;
     switch (append.status) {
     case 'success':
-      appendElement = <section style={[style.append, style.appendButton]} onClick={::this.appendCommitList}>
-        More load...
+      appendElement = <section style={{display: 'table-row'}} onClick={::this.appendCommitList}>
+        <div style={[style.appendButton]}>
+          More load...
+        </div>
       </section>;
       break;
     case 'failure':
-      appendElement = <section style={[style.append, style.request]}>
+      appendElement = <Loading style={{display: 'table-row'}}>
         Failure to load a commit list. Please <a href='javascript:location.reload()'>reload</a>.
-      </section>
+      </Loading>;
       break;
     case 'request':
-      appendElement = <section style={[style.append, style.request]}>
-        Loading...
-      </section>
+      appendElement = <Loading style={{display: 'table-row'}}>
+          Loading...
+      </Loading>;
       break;
     }
 
     return (
-      <div>
+      <div style={{display: 'table', width: '100%'}}>
         {commitListElement}
         {!append.finish && appendElement}
       </div>
@@ -85,21 +88,16 @@ export default class CommitListPage extends React.Component {
 }
 
 const style = {
-  request: {
-    background: 'url(img/box.gif) no-repeat center',
-    height: '10em',
-    textAlign: 'center',
-    width: '100%',
-  },
-  append: {
-    padding: '2em 0',
-    textAlign: 'center',
-  },
   appendButton: {
     cursor: 'pointer',
+    display: 'table-cell',
+    height: '13em',
+    textAlign: 'center',
     transition: 'color ease 0.3s 0s',
     ':hover': {
       color: '#57a3e8',
     },
+    verticalAlign: 'middle',
+    width: '100%',
   },
 };

@@ -1,8 +1,9 @@
 import React from 'react';
 import Radium from 'radium';
 import { connect } from 'react-redux';
-import Commit from '../components/commit';
 import { fetchCommit } from '../actions';
+import Commit from '../components/commit';
+import Loading from '../components/loading';
 
 function mapStateToProp({fetchCommit, commitCache}) {
   return {
@@ -40,16 +41,16 @@ export default class CommitPage extends React.Component {
     if (!(sha in commitCache)) {
       if (fetch.status === 'init' || fetch.status === 'request') {
         return (
-          <div style={[style.request]}>
+          <Loading>
             Loading...
-          </div>
+          </Loading>
         );
       }
 
       return (
-        <div style={[style.request]}>
+        <Loading>
           Failure to load a commit list. Please <a href='javascript:location.reload()'>reload</a>.
-        </div>
+        </Loading>
       );
     }
 
@@ -60,12 +61,3 @@ export default class CommitPage extends React.Component {
     );
   }
 }
-
-const style = {
-  request: {
-    background: 'url(img/box.gif) no-repeat center',
-    height: '10em',
-    textAlign: 'center',
-    width: '100%',
-  },
-};

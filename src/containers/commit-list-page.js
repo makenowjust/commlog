@@ -50,31 +50,31 @@ export default class CommitListPage extends React.Component {
     }
 
     const commitListElement = commitList.map((commit) => (
-      <Commit key={commit.sha} commit={commit} style={{display: 'table-row'}} />
+      <Commit key={commit.sha} commit={commit} />
     ));
     let appendElement;
     switch (append.status) {
     case 'success':
-      appendElement = <section style={{display: 'table-row'}} onClick={::this.appendCommitList}>
-        <div style={[style.appendButton]}>
+      appendElement = <section onClick={::this.appendCommitList} style={[style.appendButton]}>
+        <p>
           More load...
-        </div>
+        </p>
       </section>;
       break;
     case 'failure':
-      appendElement = <Loading style={{display: 'table-row'}}>
+      appendElement = <Loading>
         Failure to load a commit list. Please <a href='javascript:location.reload()'>reload</a>.
       </Loading>;
       break;
     case 'request':
-      appendElement = <Loading style={{display: 'table-row'}}>
+      appendElement = <Loading>
           Loading...
       </Loading>;
       break;
     }
 
     return (
-      <div style={{display: 'table', width: '100%'}}>
+      <div>
         {commitListElement}
         {!append.finish && appendElement}
       </div>
@@ -90,7 +90,9 @@ export default class CommitListPage extends React.Component {
 const style = {
   appendButton: {
     cursor: 'pointer',
-    display: 'table-cell',
+    display: 'box',
+    boxPack: 'center',
+    boxAlign: 'center',
     height: '13em',
     textAlign: 'center',
     transition: 'color ease 0.3s 0s',

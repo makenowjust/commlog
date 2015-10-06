@@ -30,6 +30,7 @@ describe('fetchCommit', () => {
       expect(dispatch.calls[0].arguments[0].payload.sha).toBe(DUMMY_SHA);
       expect(dispatch.calls[1].arguments[0].type).toBe(FETCH_COMMIT_SUCCESS);
       expect(dispatch.calls[1].arguments[0].payload.sha).toBe(DUMMY_SHA);
+      expect(dispatch.calls[1].arguments[0].payload.commit).toEqual(commit);
     });
   });
 

@@ -64,7 +64,7 @@ action('fetchCommitListSuccess', 'commitList');
 action('fetchCommitListFailure', 'error');
 
 function shouldFetchCommitList(state) {
-  return !(state && state.commitList && state.commitList.length >= 0);
+  return !(state && state.commitList);
 }
 
 async function realFetchCommitList() {

@@ -1,8 +1,11 @@
 language: node_js
 node_js:
 - '4.1'
-env:
-  global:
-    - secure: BKLDebGYX5wjW/2pIFKtR1XQniBPWSQ0H84bQL/e5MUpG5X1qXIT+Wa0AJjpa34vmZPgjizVbXdfonQxGbeXjohIW1u5aVsV1L3zioJiI37JRDAhkkqV6ohvwJPzEAKSm4yXoyH1q0qOrJRVaL9WjEsnzUGeeH3c0cnQBs9HS6OufuPJfAnA22wwROC4amhMoPLg/m52OkCsx2bTPGr5C+2pI3GMxACj+Eh9i+Xpv3m1kaZUj8V9rD7iiQPNmuyC5mr6UuTJH3/AS72D8y29tCWq8MovvoIpRT0WhqyLNBrb+2F574wkmlvXlP5bpx2jymn0txm41jDPy8uS9ozuO4o7QcM05JJ5KQkv9TW9lk7+SqRtZ7kx4jmVQWmJaaHiwHkUSAjXDq3xo7XTNScqbrYURGnvzh9Y0X4alDwrfF5NyVMn3cw56ChgKtF1q9jyxJshd4JBckllEFy4w/qZXamcNEQDFwjCxf10FVqgHuaQ6fkTtJ9geCJlYqGXgTSOJcnV5innl4aV9BKHapWQv1UnLkPOeQqy6YTe+ZaMqLPkK6USvLbQX/WLsA17pIcwkzeYQZUZJOAHpYtRfodLbULC9oRc6yRfQfbN32Ujd9XzS2FXG/BzMwx4uxgTBy5FdQe+ZKAk33Qv+FWEjV0p0hFbNjDC9kWb6mkFQVhSWW4=
 after_success:
-  - '[ "$TRAVIS_BRANCH" == "master" ] && [ "$GH_TOKEN" ] && npm run deploy'
+  - '[ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] &&[ "$GH_TOKEN" ] && npm run deploy'
+branches:
+  only:
+    - master
+cache:
+  directories:
+    - node_modules

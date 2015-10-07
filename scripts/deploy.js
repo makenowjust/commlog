@@ -3,7 +3,9 @@ import path from 'path';
 import ghpages from 'gh-pages';
 
 const GH_TOKEN = process.env.GH_TOKEN;
-const rev = exec('git rev-parse --short HEAD').output;
+const COMMIT = process.env.TRAVIS_COMMIT_RANGE || process.env.TRAVIS_COMMIT;
+echo(`${COMMIT}`);
+echo(`${process.env.TRAVIS_COMMIT_RANGE} : ${process.env.TRAVIS_COMMIT}`);
 
 ghpages.publish(path.join(__dirname, '..' , 'public'), {
   repo: `https://${GH_TOKEN}@github.com/MakeNowJust/commlog`,
@@ -11,8 +13,8 @@ ghpages.publish(path.join(__dirname, '..' , 'public'), {
     name: 'TSUYUSATO Kitsune',
     email: 'make.just.on@gmail.com',
   },
-  message: `[ci skip] update gh-pages at ${rev}`,
-  logger: echo,
+  message: `[ci skip] update gh-pages in ${COMMIT}`,
+  silent: true,
 }, () => {
-  echo(`done updating gh-pages at ${rev}`);
+  echo(`done updating gh-pages in ${COMMIT}`);
 });

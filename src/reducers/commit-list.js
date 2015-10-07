@@ -4,7 +4,7 @@ const {
   APPEND_COMMIT_LIST_SUCCESS,
 } = types;
 
-const initState = [];
+const initState = null;
 
 export default function commitList(state = initState, {type, payload}) {
   switch (type) {

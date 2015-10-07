@@ -9,8 +9,8 @@ const {
 } = types;
 
 describe('commitList', () => {
-  it('should be empty array initially', () => {
-    expect(commitList(undefined, {})).toEqual([]);
+  it('should be null initially', () => {
+    expect(commitList(undefined, {})).toBe(null);
   });
 
   it('should return commits by fetching commit list', () => {

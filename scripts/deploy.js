@@ -12,7 +12,7 @@ ghpages.publish(path.join(__dirname, '..' , 'public'), {
     email: 'make.just.on@gmail.com',
   },
   message: `[ci skip] update gh-pages at ${rev}`,
-  logger: echo,
+  silent: true,
 }, () => {
   echo(`done updating gh-pages at ${rev}`);
 });

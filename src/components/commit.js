@@ -1,30 +1,46 @@
-import React from 'react';
-import Radium from 'radium';
-import { Link } from 'react-router';
-import Mdast from 'mdast-react-component';
+import React from 'react'
+import Radium from 'radium'
+import { Link } from 'react-router'
+import Mdast from 'mdast-react-component'
 
 @Radium
 export default class Commit extends React.Component {
-  constructor(props) {
-    super(props);
+  static propTypes = {
+    commit: React.PropTypes.shape({
+      sha: React.PropTypes.string.isRequired,
+      commit: React.PropTypes.shape({
+        author: React.PropTypes.shape({
+          date: React.PropTypes.string.isRequired
+        }).isRequired,
+        message: React.PropTypes.string.isRequired
+      }).isRequired,
+      committer: React.PropTypes.shape({
+        avatar_url: React.PropTypes.string.isRequired,
+        html_url: React.PropTypes.string.isRequired,
+        login: React.PropTypes.string.isRequired
+      }).isRequired
+    }).isRequired
   }
 
-  render() {
+  constructor (props) {
+    super(props)
+  }
+
+  render () {
     const {
       sha,
       commit: {
         author: {
-          date,
+          date
         },
-        message,
+        message
       },
       committer: {
         avatar_url: comitterIconUrl,
         html_url: comitterUrl,
-        login: comitterName,
-      },
-    } = this.props.commit;
-
+        login: comitterName
+      }
+    } = this.props.commit
 
     return (
       <section style={[style.section]}>
@@ -40,7 +56,7 @@ export default class Commit extends React.Component {
           </div>
         </div>
       </section>
-    );
+    )
   }
 }
 
@@ -49,22 +65,22 @@ const style = {
     display: 'block',
     width: '100%',
     borderBottom: '1px solid #ddd',
-    padding: '2em',
+    padding: '2em'
   },
   container: {
     maxWidth: '800px',
-    margin: '0 auto',
+    margin: '0 auto'
   },
   icon: {
     width: '1em',
-    height: '1em',
+    height: '1em'
   },
   rightPad: {
-    paddingRight: '1em',
+    paddingRight: '1em'
   },
   info: {
     width: '100%',
     textAlign: 'right',
-    margin: '1em 0',
-  },
-};
+    margin: '1em 0'
+  }
+}

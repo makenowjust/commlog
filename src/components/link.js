@@ -1,4 +1,4 @@
-import Radium from 'radium';
-import { Link } from 'react-router';
+import Radium from 'radium'
+import { Link } from 'react-router'
 
-export default Radium(Link);
+export default Radium(Link)

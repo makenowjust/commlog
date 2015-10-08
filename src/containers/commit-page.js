@@ -1,42 +1,52 @@
-import React from 'react';
-import Radium from 'radium';
-import { connect } from 'react-redux';
-import { fetchCommit } from '../actions';
-import Commit from '../components/commit';
-import Loading from '../components/loading';
+import React from 'react'
+import Radium from 'radium'
+import { connect } from 'react-redux'
+import { fetchCommit } from '../actions'
+import Commit from '../components/commit'
+import Loading from '../components/loading'
 
-function mapStateToProp({fetchCommit, commitCache}) {
+function mapStateToProp ({fetchCommit, commitCache}) {
   return {
     fetch: fetchCommit,
-    commitCache,
-  };
+    commitCache
+  }
 }
 
 @connect(mapStateToProp)
 @Radium
 export default class CommitPage extends React.Component {
-  constructor(props) {
-    super(props);
+  static propTypes = {
+    params: React.PropTypes.shape({
+      sha: React.PropTypes.string.isRequired
+    }).isRequired,
+    dispatch: React.PropTypes.func.isRequired,
+    // TODO: Fix `fetch` and `commitCache` types
+    fetch: React.PropTypes.object.isRequired,
+    commitCache: React.PropTypes.object.isRequired
   }
 
-  componentDidMount() {
+  constructor (props) {
+    super(props)
+  }
+
+  componentDidMount () {
     const {
       params: {
-        sha,
+        sha
       },
-      dispatch,
-    } = this.props;
-    dispatch(fetchCommit(sha));
+      dispatch
+    } = this.props
+    dispatch(fetchCommit(sha))
   }
 
-  render() {
+  render () {
     const {
       params: {
-        sha,
+        sha
       },
       fetch,
-      commitCache,
-    } = this.props;
+      commitCache
+    } = this.props
 
     if (!(sha in commitCache)) {
       if (fetch.status === 'init' || fetch.status === 'request') {
@@ -44,20 +54,20 @@ export default class CommitPage extends React.Component {
           <Loading>
             Loading...
           </Loading>
-        );
+        )
       }
 
       return (
         <Loading>
           Failure to load a commit list. Please <a href='javascript:location.reload()'>reload</a>.
         </Loading>
-      );
+      )
     }
 
-    const commit = commitCache[sha];
+    const commit = commitCache[sha]
 
     return (
       <Commit commit={commit} />
-    );
+    )
   }
 }

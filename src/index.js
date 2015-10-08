@@ -1,16 +1,16 @@
-import 'babel/polyfill';
+import 'babel/polyfill'
 
-import React from 'react';
+import React from 'react'
 import {
   Router,
   Route, IndexRoute
-} from 'react-router';
-import { Provider } from 'react-redux';
-import App from './components/app';
-import CommitListPage from './containers/commit-list-page';
-import CommitPage from './containers/commit-page';
-import store from './store';
-import history from './history';
+} from 'react-router'
+import { Provider } from 'react-redux'
+import App from './components/app'
+import CommitListPage from './containers/commit-list-page'
+import CommitPage from './containers/commit-page'
+import store from './store'
+import history from './history'
 
 React.render(
   <Provider store={store}>
@@ -23,4 +23,4 @@ React.render(
       </Router>
     )}
   </Provider>,
-  document.body);
+  document.body)

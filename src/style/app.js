@@ -1,1 +1,1 @@
-require('sanitize.css');
+require('sanitize.css')

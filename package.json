@@ -48,7 +48,7 @@
   },
   "homepage": "https://github.com/makenowjust/commlog#readme",
   "license": "MIT",
-  "main": "index.js",
+  "main": "src/index.js",
   "private": true,
   "repository": {
     "type": "git",

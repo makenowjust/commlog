@@ -1,5 +1,7 @@
 import 'babel/polyfill'
 
+import 'sanitize.css'
+
 import React from 'react'
 import {
   Router,

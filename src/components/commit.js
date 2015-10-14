@@ -1,7 +1,7 @@
 import React from 'react'
 import Radium from 'radium'
 import { Link } from 'react-router'
-import Mdast from 'mdast-react-component'
+import Markdown from './markdown'
 
 @Radium
 export default class Commit extends React.Component {
@@ -45,7 +45,7 @@ export default class Commit extends React.Component {
     return (
       <section style={[style.section]}>
         <div style={[style.container]}>
-          <Mdast>{message}</Mdast>
+          <Markdown>{message}</Markdown>
           <div style={[style.info]}>
             <a style={[style.rightPad]} href={comitterUrl}>
               {comitterName}

@@ -24,4 +24,4 @@ render(
       </Route>
     </Router>
   </Provider>,
-  document.body)
+  document.getElementsByTagName('main')[0])

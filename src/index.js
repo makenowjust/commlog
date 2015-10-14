@@ -3,6 +3,7 @@ import 'babel/polyfill'
 import 'sanitize.css'
 
 import React from 'react'
+import { render } from 'react-dom'
 import {
   Router,
   Route, IndexRoute
@@ -14,15 +15,13 @@ import CommitPage from './containers/commit-page'
 import store from './store'
 import history from './history'
 
-React.render(
+render(
   <Provider store={store}>
-    {() => (
-      <Router history={history}>
-        <Route path='/' component={App}>
-          <IndexRoute component={CommitListPage} />
-          <Route path='commit/:sha' component={CommitPage} />
-        </Route>
-      </Router>
-    )}
+    <Router history={history}>
+      <Route path='/' component={App}>
+        <IndexRoute component={CommitListPage} />
+        <Route path='commit/:sha' component={CommitPage} />
+      </Route>
+    </Router>
   </Provider>,
   document.body)

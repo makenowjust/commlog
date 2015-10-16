@@ -1,26 +1,18 @@
 import React from 'react'
-import Radium from 'radium'
 
-@Radium
-export default class Loading extends React.Component {
-  static propTypes = {
-    children: React.PropTypes.node
-  }
-
-  constructor (props) {
-    super(props)
-  }
-
-  render () {
-    return (
-      <div style={[style.loading]}>
-        <div>
-          {this.props.children}
-        </div>
-        <img src='img/box.gif' style={[style.box]} />
+export default function Loading (props) {
+  return (
+    <div style={style.loading}>
+      <div>
+        {props.children}
       </div>
-    )
-  }
+      <img src='img/box.gif' style={style.box} />
+    </div>
+  )
+}
+
+Loading.propTypes = {
+  children: React.PropTypes.node
 }
 
 const style = {

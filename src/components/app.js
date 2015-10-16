@@ -1,25 +1,17 @@
 import React from 'react'
-import Radium from 'radium'
 import Link from './link'
 
-@Radium
-export default class App extends React.Component {
-  static propTypes = {
-    children: React.PropTypes.node
-  }
+export default function App (props) {
+  return (
+    <div>
+      <h1 style={style.h1}><Link to='/' style={style.link}>commlog</Link></h1>
+      {props.children}
+    </div>
+  )
+}
 
-  constructor (props) {
-    super(props)
-  }
-
-  render () {
-    return (
-      <div>
-        <h1 style={[style.h1]}><Link to='/' style={[style.link]}>commlog</Link></h1>
-        {this.props.children}
-      </div>
-    )
-  }
+App.propTypes = {
+  children: React.PropTypes.node
 }
 
 const style = {

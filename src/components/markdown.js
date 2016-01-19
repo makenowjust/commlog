@@ -1,9 +1,9 @@
 import React from 'react'
-import mdast from 'mdast'
-import mdastRender from 'mdast-react'
+import remark from 'remark'
+import remarkRender from 'remark-react'
 
 export default function Markdown (props) {
-  return mdast().use(mdastRender).process(props.children)
+  return remark().use(remarkRender).process(props.children)
 }
 
 Markdown.propTypes = {

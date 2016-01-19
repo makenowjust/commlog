@@ -101,6 +101,7 @@ const style = {
     boxPack: 'center',
     boxAlign: 'center',
     height: '13em',
+    lineHeight: '13em',
     textAlign: 'center',
     transition: 'color ease 0.3s 0s',
     ':hover': {

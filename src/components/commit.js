@@ -57,7 +57,7 @@ const style = {
     display: 'block',
     width: '100%',
     borderBottom: '1px solid #ddd',
-    padding: '2em'
+    padding: '2em 0'
   },
   container: {
     maxWidth: '800px',

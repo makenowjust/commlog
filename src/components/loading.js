@@ -19,7 +19,6 @@ const style = {
   loading: {
     padding: '1em 0',
     textAlign: 'center',
-    width: '100%',
     height: '14em'
   },
   box: {

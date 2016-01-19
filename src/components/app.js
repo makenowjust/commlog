@@ -18,7 +18,6 @@ const style = {
   h1: {
     fontSize: '3em',
     textAlign: 'center',
-    width: '100%',
     height: '50%',
     padding: '2em 0 1em 0',
     marginTop: '0',

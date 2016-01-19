@@ -69,6 +69,7 @@ pre > code {
   padding: 0;
   background: transparent;
   color: #fff;
+  word-wrap: break-word;
 }
 
 ul, ol {

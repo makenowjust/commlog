@@ -54,8 +54,6 @@ Commit.propTypes = {
 
 const style = {
   section: {
-    display: 'block',
-    width: '100%',
     borderBottom: '1px solid #ddd',
     padding: '2em 0'
   },
@@ -71,7 +69,6 @@ const style = {
     paddingRight: '1em'
   },
   info: {
-    width: '100%',
     textAlign: 'right',
     margin: '1em 0'
   }

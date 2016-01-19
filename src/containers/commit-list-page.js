@@ -108,6 +108,5 @@ const style = {
       color: '#57a3e8'
     },
     verticalAlign: 'middle',
-    width: '100%'
   }
 }

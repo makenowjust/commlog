@@ -61,6 +61,7 @@ h4, h5, h6 {
 pre {
   background: #4a4a4a;
   padding: 0.5em 1em;
+  overflow: auto;
 }
 
 pre > code {
@@ -68,7 +69,6 @@ pre > code {
   padding: 0;
   background: transparent;
   color: #fff;
-  word-wrap: break-word;
 }
 
 ul, ol {

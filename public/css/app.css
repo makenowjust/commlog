@@ -1,0 +1,83 @@
+html {
+  color: #4a4a4a;
+  font-size: 14px;
+  font-family: "Raleway", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3",  "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+/* For Markdown */
+
+/* inline */
+
+a {
+  color: #4a4a4a;
+  transition: color ease 0.3s 0s;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #57a3e8;
+}
+
+code {
+  margin: 0 4px;
+  padding: 2px 4px;
+  background: #f7f7f7;
+  font-family: "Anonymous Pro", "Osaka−等幅", "Osaka-mono", monospace;
+}
+
+p > code:first-child {
+  margin-left: 0;
+}
+
+/* block */
+
+pre, ul, ol, blockquote, h1, h2, h3, h4, h5, h6 {
+  margin: 1rem 0;
+}
+
+p {
+  padding: 1rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4, h5, h6 {
+  font-size: 1.1em;
+}
+
+pre {
+  background: #4a4a4a;
+  padding: 0.5em 1em;
+  overflow: auto;
+}
+
+pre > code {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: #fff;
+}
+
+ul, ol {
+  padding-left: 3em;
+}
+
+blockquote {
+  border-left: 0.3em solid #ddd;
+  padding-left: 0.5em;
+  margin: 1em  2em;
+}

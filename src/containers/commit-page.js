@@ -15,6 +15,16 @@ function mapStateToProp ({fetchCommit, commitCache}) {
 @connect(mapStateToProp)
 @Radium
 export default class CommitPage extends React.Component {
+  static propTypes = {
+    params: React.PropTypes.shape({
+      sha: React.PropTypes.string.isRequired
+    }).isRequired,
+    dispatch: React.PropTypes.func.isRequired,
+    // TODO: Fix `fetch` and `commitCache` types
+    fetch: React.PropTypes.object.isRequired,
+    commitCache: React.PropTypes.object.isRequired
+  }
+
   constructor (props) {
     super(props)
   }
@@ -60,14 +70,4 @@ export default class CommitPage extends React.Component {
       <Commit commit={commit} />
     )
   }
-}
-
-CommitPage.propTypes = {
-  params: React.PropTypes.shape({
-    sha: React.PropTypes.string.isRequired
-  }).isRequired,
-  dispatch: React.PropTypes.func.isRequired,
-  // TODO: Fix `fetch` and `commitCache` types
-  fetch: React.PropTypes.object.isRequired,
-  commitCache: React.PropTypes.object.isRequired
 }

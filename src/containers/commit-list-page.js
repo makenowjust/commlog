@@ -16,6 +16,14 @@ function mapStateToProp ({fetchCommitList, append, commitList}) {
 @connect(mapStateToProp)
 @Radium
 export default class CommitListPage extends React.Component {
+  static propTypes = {
+    dispatch: React.PropTypes.func.isRequired,
+    // TODO: Fix `fetch`, `append` and `commitList` types
+    fetch: React.PropTypes.object.isRequired,
+    append: React.PropTypes.object.isRequired,
+    commitList: React.PropTypes.arrayOf(React.PropTypes.object)
+  }
+
   constructor (props) {
     super(props)
   }
@@ -84,14 +92,6 @@ export default class CommitListPage extends React.Component {
     let { dispatch } = this.props
     dispatch(appendCommitList())
   }
-}
-
-CommitListPage.propTypes = {
-  dispatch: React.PropTypes.func.isRequired,
-  // TODO: Fix `fetch`, `append` and `commitList` types
-  fetch: React.PropTypes.object.isRequired,
-  append: React.PropTypes.object.isRequired,
-  commitList: React.PropTypes.arrayOf(React.PropTypes.object)
 }
 
 const style = {

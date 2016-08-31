@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- '4.1'
+- '6.5'
 after_success:
   - '[ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] &&[ "$GH_TOKEN" ] && npm run deploy'
 branches:

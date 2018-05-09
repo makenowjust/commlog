@@ -6,5 +6,8 @@
   "repository": "git@github.com:MakeNowJust/commlog.git",
   "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "nuxt": "npm:nuxt-edge"
+  }
 }

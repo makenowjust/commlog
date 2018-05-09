@@ -1,3 +1,6 @@
 export default {
-  mode: 'spa'
+  mode: 'spa',
+  css: [
+    'modern-normalize',
+  ],
 };

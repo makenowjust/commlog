@@ -1,12 +1,12 @@
 {
-  "name": "commlog",
-  "version": "1.0.0",
-  "description": "Commit Log as a Blog",
-  "main": "index.js",
-  "repository": "git@github.com:MakeNowJust/commlog.git",
-  "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
-  "license": "MIT",
   "private": true,
+  "name": "commlog",
+  "description": "Commit Log as a Blog",
+  "license": "MIT",
+  "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
+  "repository": "git@github.com:MakeNowJust/commlog.git",
+  "version": "1.0.0",
+  "main": "index.js",
   "dependencies": {
     "nuxt": "npm:nuxt-edge"
   }

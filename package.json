@@ -1,0 +1,10 @@
+{
+  "name": "commlog",
+  "version": "1.0.0",
+  "description": "Commit Log as a Blog",
+  "main": "index.js",
+  "repository": "git@github.com:MakeNowJust/commlog.git",
+  "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
+  "license": "MIT",
+  "private": true
+}

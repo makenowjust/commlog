@@ -13,5 +13,9 @@
   "dependencies": {
     "modern-normalize": "^0.4.0",
     "nuxt": "npm:nuxt-edge"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1"
   }
 }

@@ -9,13 +9,18 @@
   </div>
 </template>
 
-<style module>
-.header > h1 {
-  font-size: 2.5rem;
-  font-weight: normal;
-  margin: 7rem 0 7rem 0;
-  line-height: 3rem;
+<style module lang="scss">
+.header {
   width: 100%;
-  text-align: center;
+  padding: 7rem 0;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 3rem;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
 }
 </style>

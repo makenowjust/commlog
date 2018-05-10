@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style module>
+<style module lang="scss">
 .wrap {
   max-width: 800px;
   margin: 0 auto;

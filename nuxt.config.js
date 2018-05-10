@@ -2,7 +2,7 @@ export default {
   mode: 'spa',
   css: [
     'modern-normalize',
-    '@/assets/css/main.css',
+    '@/assets/scss/main.scss',
   ],
   head: {
     link: [

@@ -1,14 +1,12 @@
 <template>
-  <div>
-    <header :class="$style.header">
-      <h1>commlog</h1>
-    </header>
+  <div :class="$style.wrap">
+    <h1>index.vue</h1>
   </div>
 </template>
 
 <style module>
-.header {
-  text-align: center;
-  margin: 2em 0;
+.wrap {
+  max-width: 800px;
+  margin: 0 auto;
 }
 </style>

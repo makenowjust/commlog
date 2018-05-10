@@ -1,12 +1,13 @@
 <template>
-  <div :class="$style.wrap">
-    <h1>index.vue</h1>
+  <div>
+    <commit />
   </div>
 </template>
 
-<style module lang="scss">
-.wrap {
-  max-width: 800px;
-  margin: 0 auto;
-}
-</style>
+<script>
+import Commit from '~/components/Commit.vue';
+
+export default {
+  components: {Commit},
+};
+</script>

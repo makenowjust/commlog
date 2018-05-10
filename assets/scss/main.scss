@@ -1,11 +1,7 @@
+@import 'variables';
+
 body {
-  font-family:
-    Raleway,
-    游ゴシック, "Yu Gothic", 游ゴシック体, YuGothic,
-    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
-    "Meiryo UI", メイリオ, Meiryo,
-    "ＭＳ Ｐゴシック", "MS PGothic",
-    sans-serif;
-  color: #4a4a4a;
-  background-color: #ffffff;
+  font-family: $sans-serif;
+  color: $black;
+  background-color: $white;
 }

@@ -8,7 +8,7 @@ export default {
     link: [
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Raleway',
+        href: 'https://fonts.googleapis.com/css?family=Nova+Mono|Raleway',
       },
     ],
   },

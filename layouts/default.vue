@@ -12,7 +12,7 @@
 <style module lang="scss">
 .header {
   width: 100%;
-  padding: 7rem 0;
+  padding: 6rem 0;
 
   > h1 {
     font-size: 2.5rem;

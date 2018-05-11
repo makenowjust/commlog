@@ -1,7 +1,16 @@
+@import "variables";
+
 // Block level elements:
 h1, h2, h3, h4, h5, h6,
-p, blockquote, table, pre, ul, ol {
+hr, p, blockquote, table, pre, ul, ol {
   margin: 2rem 0;
+}
+
+li {
+  > h1, > h2, > h3, > h4, > h5, > h6,
+  > hr, > p, > blockquote, > table, > pre, > ul, > ol {
+    margin: 1rem 0;
+  }
 }
 
 // h[1-6]:
@@ -10,33 +19,97 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.35rem;
-}
-
-h4 {
   font-size: 1.3rem;
 }
 
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1.2rem;
+h4, h5, h6 {
+  font-size: 1.1rem;
 }
 
 // code:
 code {
-  background-color: $dark-gray;
+  background-color: $black;
   color: $white;
   font-family: $monospace;
   padding: 0 0.25em;
+}
+
+a code {
+  transition: color ease 0.3s 0s;
+  text-decoration: underline;
+}
+
+a:hover code {
+  color: $light-blue;
+}
+
+// pre:
+pre {
+  width: 100%;
+  background-color: $black;
+  color: $white;
+  padding: 0.5rem;
+  font-family: $monospace;
+  overflow-x: auto;
+
+  > code {
+    padding: 0;
+  }
+}
+
+// ul, ol
+ul, ol {
+  padding-left: 2rem;
+}
+
+// table:
+table {
+  border-collapse: collapse;
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
+
+  tr:hover {
+    background-color: $light-gray;
+  }
+
+  th {
+    font-weight: normal;
+    color: $white;
+    background-color: $black;
+  }
+
+  th, td {
+    padding: 0.25rem;
+    border: 0.0625rem solid $dark-gray;
+  }
+}
+
+// hr:
+hr {
+  padding: 0;
+  border: none;
+  border-bottom: 0.0625rem solid $light-gray;
+}
+
+// blockquote:
+blockquote {
+  border-left: 0.25rem solid $black;
+  padding: 0.5rem 0 0.5rem 1rem;
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
 }

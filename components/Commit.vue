@@ -1,74 +1,18 @@
 <template>
   <article :class="$style.wrap">
-    <section :class="$style.body">
-      <vue-markdown source="
-# ローディングアニメーション作った
+    <commit-body
+      source="
+# bat
 
-## それな
+https://github.com/sharkdp/bat
 
-### わかる
+`cat`のクローンと言っているが少し違う気がする。
 
-> *Everyone needs a fantasy.*
->
-> *どんな人もファンタジーを必要としている。*
->
-> -- Andy Worhol
+シンタックスハイライトしてくれたり、自動で出力をlessに流してくれたりする感じ。
 
-- - -
-
-* * *
-
-<https://codepen.io/MakeNowJust/pen/YLYbgw>
-
-四角形がスクロールするだけのやつ。それっぽくなった気がする。
-
-![icon](https://avatars3.githubusercontent.com/u/6679325?v=4)
-
-[`console.log`メソッド](http://localhost:8080/console.log)は画面に出力するメソッドだ。
-
-あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ ああああああああああああ
-
-|    タイトル    |   主人公  |
-|:------------:|:---------:|
-| [Chaos; Head](https://steins-gate.com/) | タク(拓海) |
-| Steins; Gate | オカリン   |
-| Chaos; Child | タク(拓留) |
-
-HELLO **HELLO**
-
-~~hello~~ ++hello++
-
-- Chaos; Headは伝説
-
-  + こずぴぃかわいい
-
-  | foo | bar |
-  |-----|-----|
-  | baz | baz |
-
-- Steins; Gateは伝記
-  + まゆしぃ
-  + クリスティーナ
-- ロボノは‥‥
-
-```javascript
-for (const word of words`hello world`) {
-  console.log(`word: ${word}');
-}
-
-// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-```
-
-hello [^foo]
-
-[^foo]: hello world
-
-| 12345 | 6789 | fizz | buzz | foo | bar | foobar | 12345 | 6789 | fizz | buzz | foo | bar | foobar | 12345 | 6789 | fizz | buzz | foo | bar | foobar | 12345 | 6789 | fizz | buzz | foo | bar | foobar |
-|-------|------|------|------|-----|-----|--------|-------|------|------|------|-----|-----|--------|-------|------|------|------|-----|-----|--------|-------|------|------|------|-----|-----|--------|
-| 12345 | 6789 | fizz | buzz | foo | bar | foobar | 12345 | 6789 | fizz | buzz | foo | bar | foobar | 12345 | 6789 | fizz | buzz | foo | bar | foobar | 12345 | 6789 | fizz | buzz | foo | bar | foobar |
+Rustで書かれてる。
 "
-        />
-    </section>
+      />
     <section :class="$style.foot"><!-- This comment is not needed really, however it is for code styling.
       --><a :class="$style.author" href="https://github.com/MakeNowJust">MakeNowJust<img src="https://avatars3.githubusercontent.com/u/6679325?v=4" /></a><!--
       --><time datetime="2018-05-09T01:33:29Z">2018/05/09 01:33:29</time><!--
@@ -82,13 +26,6 @@ hello [^foo]
 
 .wrap {
   border-bottom: 0.0625rem solid $light-gray;
-}
-
-.body {
-  margin: 0 auto;
-  max-width: $max-width;
-
-  @import "~@/assets/scss/markdown";
 }
 
 .foot {
@@ -122,9 +59,9 @@ hello [^foo]
 </style>
 
 <script>
-import VueMarkdown from 'vue-markdown';
+import CommitBody from '~/components/CommitBody.vue';
 
 export default {
-  components: {VueMarkdown},
+  components: {CommitBody},
 };
 </script>

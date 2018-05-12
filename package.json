@@ -13,7 +13,11 @@
   },
   "dependencies": {
     "modern-normalize": "^0.4.0",
-    "nuxt": "npm:nuxt-edge"
+    "nuxt": "npm:nuxt-edge",
+    "rehype-react": "^3.0.2",
+    "remark-parse": "^5.0.0",
+    "remark-rehype": "^3.0.0",
+    "unified": "^7.0.0"
   },
   "devDependencies": {
     "node-sass": "^4.9.0",

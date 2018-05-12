@@ -1,9 +1,73 @@
 <template>
   <article :class="$style.wrap">
     <section :class="$style.body">
-      <h1>ローディングアニメーション作った</h1>
-      <p><a href="https://codepen.io/MakeNowJust/pen/YLYbgw">https://codepen.io/MakeNowJust/pen/YLYbgw</a></p>
-      <p>四角形がスクロールするだけのやつ。それっぽくなった気がする。</p>
+      <vue-markdown source="
+# ローディングアニメーション作った
+
+## それな
+
+### わかる
+
+> *Everyone needs a fantasy.*
+>
+> *どんな人もファンタジーを必要としている。*
+>
+> -- Andy Worhol
+
+- - -
+
+* * *
+
+<https://codepen.io/MakeNowJust/pen/YLYbgw>
+
+四角形がスクロールするだけのやつ。それっぽくなった気がする。
+
+![icon](https://avatars3.githubusercontent.com/u/6679325?v=4)
+
+[`console.log`メソッド](http://localhost:8080/console.log)は画面に出力するメソッドだ。
+
+あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ ああああああああああああ
+
+|    タイトル    |   主人公  |
+|:------------:|:---------:|
+| [Chaos; Head](https://steins-gate.com/) | タク(拓海) |
+| Steins; Gate | オカリン   |
+| Chaos; Child | タク(拓留) |
+
+HELLO **HELLO**
+
+~~hello~~ ++hello++
+
+- Chaos; Headは伝説
+
+  + こずぴぃかわいい
+
+  | foo | bar |
+  |-----|-----|
+  | baz | baz |
+
+- Steins; Gateは伝記
+  + まゆしぃ
+  + クリスティーナ
+- ロボノは‥‥
+
+```javascript
+for (const word of words`hello world`) {
+  console.log(`word: ${word}');
+}
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+hello [^foo]
+
+[^foo]: hello world
+
+| 12345 | 6789 | fizz | buzz | foo | bar | foobar | 12345 | 6789 | fizz | buzz | foo | bar | foobar | 12345 | 6789 | fizz | buzz | foo | bar | foobar | 12345 | 6789 | fizz | buzz | foo | bar | foobar |
+|-------|------|------|------|-----|-----|--------|-------|------|------|------|-----|-----|--------|-------|------|------|------|-----|-----|--------|-------|------|------|------|-----|-----|--------|
+| 12345 | 6789 | fizz | buzz | foo | bar | foobar | 12345 | 6789 | fizz | buzz | foo | bar | foobar | 12345 | 6789 | fizz | buzz | foo | bar | foobar | 12345 | 6789 | fizz | buzz | foo | bar | foobar |
+"
+        />
     </section>
     <section :class="$style.foot"><!-- This comment is not needed really, however it is for code styling.
       --><a :class="$style.author" href="https://github.com/MakeNowJust">MakeNowJust<img src="https://avatars3.githubusercontent.com/u/6679325?v=4" /></a><!--
@@ -56,3 +120,11 @@
   }
 }
 </style>
+
+<script>
+import VueMarkdown from 'vue-markdown';
+
+export default {
+  components: {VueMarkdown},
+};
+</script>

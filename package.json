@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "modern-normalize": "^0.4.0",
-    "nuxt": "npm:nuxt-edge"
+    "nuxt": "npm:nuxt-edge",
+    "vue-markdown": "^2.2.4"
   },
   "devDependencies": {
     "node-sass": "^4.9.0",

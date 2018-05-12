@@ -1,16 +1,17 @@
 @import "variables";
 
+$block-level:
+  h1, h2, h3, h4, h5, h6,
+  hr, p, blockquote, table, pre, ul, ol;
+
 // Block level elements:
-h1, h2, h3, h4, h5, h6,
-hr, p, blockquote, table, pre, ul, ol {
-  margin: 2rem 0;
+#{$block-level} {
+  margin: 2rem auto;
+  max-width: $max-width;
 }
 
-li {
-  > h1, > h2, > h3, > h4, > h5, > h6,
-  > hr, > p, > blockquote, > table, > pre, > ul, > ol {
-    margin: 1rem 0;
-  }
+#{selector-nest("li >", $block-level)} {
+  margin: 1rem 0;
 }
 
 // h[1-6]:
@@ -54,13 +55,17 @@ a:hover code {
 // pre:
 pre {
   width: 100%;
+  max-width: none;
   background-color: $black;
   color: $white;
   padding: 0.5rem;
   font-family: $monospace;
-  overflow-x: auto;
 
   > code {
+    display: block;
+    max-width: $max-width;
+    overflow-x: auto;
+    margin: 0 auto;
     padding: 0;
   }
 }
@@ -73,7 +78,6 @@ ul, ol {
 // table:
 table {
   border-collapse: collapse;
-  max-width: 100%;
   overflow-x: auto;
   display: block;
 
@@ -112,4 +116,9 @@ blockquote {
   > :last-child {
     margin-bottom: 0;
   }
+}
+
+// a:
+a {
+  text-decoration: underline;
 }

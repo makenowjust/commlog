@@ -39,7 +39,7 @@ import Loading from '~/components/Loading.vue';
 export default {
   components: {Commit, Loading},
   async fetch({store}) {
-    await store.dispatch('pages/index/load');
+    store.dispatch('pages/index/load');
   },
   computed: {
     ...mapGetters('pages/index', ['hasNext', 'commits']),

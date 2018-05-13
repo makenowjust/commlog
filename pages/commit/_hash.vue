@@ -15,7 +15,7 @@ import Loading from '~/components/Loading';
 export default {
   components: {Commit, Loading},
   async fetch({params: {hash}, store}) {
-    await store.dispatch('pages/commit/load', {hash});
+    store.dispatch('pages/commit/load', {hash});
   },
   computed: {
     ...mapGetters('pages/commit', ['commit']),

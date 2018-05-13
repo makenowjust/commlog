@@ -52,16 +52,13 @@ export default {
       loadError: null,
     };
   },
-  async fetch({store}) {
-    await store.dispatch('commits/fetch');
+  async fetch({store, route}) {
+    const {search} = route.query;
+    await store.dispatch('commits/fetch', {query: search});
   },
   computed: {
-    ...mapGetters({
-      hasNext: 'commits/hasNext',
-    }),
-    ...mapState({
-      hashes: state => state.commits.hashes,
-    }),
+    ...mapGetters('commits', ['hasNext']),
+    ...mapState('commits', ['hashes']),
   },
   methods: {
     async loadMore() {
@@ -75,5 +72,6 @@ export default {
       }
     }
   },
+  watchQuery: ['search'],
 };
 </script>

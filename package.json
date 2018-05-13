@@ -9,7 +9,8 @@
   "main": "index.js",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt"
+    "dev": "nuxt",
+    "test": "true"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",

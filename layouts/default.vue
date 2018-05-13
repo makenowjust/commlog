@@ -59,15 +59,15 @@ export default {
   components: {Icon},
   data() {
     return {
-      query: this.$route.query.search || '',
+      query: this.$route.query.q || '',
     };
   },
   methods: {
     search() {
       this.$router.push({
-        name: 'index',
+        name: 'search',
         query: {
-          search: this.query.trim(),
+          q: this.query.trim(),
         },
       });
     },

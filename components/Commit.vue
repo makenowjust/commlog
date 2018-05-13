@@ -1,22 +1,10 @@
 <template>
   <article :class="$style.wrap">
-    <commit-body
-      source="
-# bat
-
-https://github.com/sharkdp/bat
-
-`cat`のクローンと言っているが少し違う気がする。
-
-シンタックスハイライトしてくれたり、自動で出力をlessに流してくれたりする感じ。
-
-Rustで書かれてる。
-"
-      />
+    <commit-body :source="commit.message" />
     <section :class="$style.foot"><!-- This comment is not needed really, however it is for code styling.
-      --><a :class="$style.author" href="https://github.com/MakeNowJust">MakeNowJust<img src="https://avatars3.githubusercontent.com/u/6679325?v=4" /></a><!--
-      --><time datetime="2018-05-09T01:33:29Z">2018/05/09 01:33:29</time><!--
-      --><nuxt-link :class="$style.hash" to="/commit/5ff985097ea9a10a6d2944ce283a62373379cbdd">#5ff98</nuxt-link>
+      --><a :class="$style.author" :href="`https://github.com/${commit.author.name}`">{{commit.author.name}}<img :src="commit.author.icon" /></a><!--
+      --><time :datetime="commit.date.toISOString()">{{commit.date.toLocaleString()}}</time><!--
+      --><nuxt-link :class="$style.hash" :to="`/commit/${commit.hash}`">#{{commit.hash.slice(0, 7)}}</nuxt-link>
     </section>
   </article>
 </template>
@@ -74,5 +62,11 @@ import CommitBody from '~/components/CommitBody.vue';
 
 export default {
   components: {CommitBody},
+  props: ['hash'],
+  computed: {
+    commit() {
+      return this.$store.state.commits.cache[this.hash];
+    }
+  }
 };
 </script>

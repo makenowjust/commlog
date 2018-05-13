@@ -5,7 +5,10 @@
     <template v-if="next">
       <section v-if="loading" :class="$style.loading">
         <pre v-if="loadError">{{loadError.stack}}</pre>
-        <p v-else>Loading...</p>
+        <template v-else>
+          <p>Loading...</p>
+          <loading />
+        </template>
       </section>
       <section v-else :class="$style.loadMore" @click="loadMore">
         <p>Load more...</p>
@@ -21,10 +24,7 @@
   max-width: $max-width;
   padding: 5rem 0;
   margin: 0 auto;
-
-  > p {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 .loadMore {
@@ -42,6 +42,7 @@
 import * as parseLinkHeader from 'parse-link-header';
 
 import Commit from '~/components/Commit.vue';
+import Loading from '~/components/Loading.vue';
 
 const fetchCommits = async (
   {$axios, $store},
@@ -75,7 +76,7 @@ const fetchCommits = async (
 };
 
 export default {
-  components: {Commit},
+  components: {Commit, Loading},
   data() {
     return {
       loading: false,

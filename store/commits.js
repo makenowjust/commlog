@@ -1,5 +1,9 @@
 import * as parseLinkHeader from 'parse-link-header';
 
+const API_BASE = 'https://api.github.com';
+const REPO = 'MakeNowJust/commlog';
+const BRANCH = 'commlog';
+
 const convertCommit = raw => ({
   hash: raw.sha,
   message: raw.commit.message,
@@ -14,7 +18,7 @@ const convertCommit = raw => ({
 
 export const state = () => ({
   hashes: [],
-  next: 'https://api.github.com/repos/MakeNowJust/commlog/commits?sha=commlog&page=1',
+  next: `${API_BASE}/repos/${REPO}/commits?sha=${BRANCH}&page=1`,
   cache: {},
 });
 
@@ -44,11 +48,16 @@ export const getters = {
 };
 
 export const actions = {
-  async fetch({commit, state}) {
+  async fetch({state, dispatch}) {
+    if (state.hashes.length === 0) {
+      await dispatch('fetchNext');
+    }
+  },
+  async fetchNext({commit, state}) {
     const result = await this.$axios.get(state.next);
 
-    const rawCommits = result.data;
-    const commits = rawCommits.map(convertCommit);
+    const raws = result.data;
+    const commits = raws.map(convertCommit);
     commit('putCommits', {commits});
 
     const hashes = commits.map(({hash}) => hash);
@@ -57,5 +66,13 @@ export const actions = {
     const link = parseLinkHeader(result.headers.link);
     const next = link.next && link.next.url;
     commit('setNext', {next});
+  },
+  async fetchCommit({commit, state}, {hash}) {
+    if (state.cache[hash]) {
+      return;
+    }
+
+    const raw = await this.$axios.$get(`${API_BASE}/repos/${REPO}/commits/${hash}`);
+    commit('putCommit', {commit: convertCommit(raw)});
   },
 };

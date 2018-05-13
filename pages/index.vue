@@ -67,7 +67,7 @@ export default {
     async loadMore() {
       try {
         this.loading = true;
-        await this.$store.dispatch('commits/fetch');
+        await this.$store.dispatch('commits/fetchNext');
       } catch (err) {
         this.loadError = err;
       } finally {

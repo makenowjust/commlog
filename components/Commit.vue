@@ -34,6 +34,16 @@ Rustで書かれてる。
   max-width: $max-width;
   text-align: right;
 
+  a {
+    text-decoration: underline;
+    color: $black;
+    transition: color ease 0.3s 0s;
+
+    &:hover {
+      color: $light-blue;
+    }
+  }
+
   > :not(:last-child) {
     margin-right: 1em;
   }

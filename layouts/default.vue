@@ -10,6 +10,8 @@
 </template>
 
 <style module lang="scss">
+@import "~@/assets/scss/variables";
+
 .header {
   width: 100%;
   padding: 6rem 0;
@@ -24,6 +26,12 @@
 
     > a {
       text-decoration: none;
+      color: $black;
+      transition: color ease 0.3s 0s;
+
+      &:hover {
+        color: $light-blue;
+      }
     }
   }
 }

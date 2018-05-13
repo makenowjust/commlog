@@ -36,6 +36,17 @@ h4, h5, h6 {
   font-size: 1.1rem;
 }
 
+// a:
+a {
+  text-decoration: underline;
+  color: $black;
+  transition: color ease 0.3s 0s;
+
+  &:hover {
+    color: $light-blue;
+  }
+}
+
 // code:
 code {
   background-color: $black;
@@ -117,9 +128,4 @@ blockquote {
   > :last-child {
     margin-bottom: 0;
   }
-}
-
-// a:
-a {
-  text-decoration: underline;
 }

@@ -12,4 +12,10 @@ export default {
       },
     ],
   },
+  modules: [
+    '@nuxtjs/axios',
+  ],
+  plugins: [
+    '~/plugins/axios',
+  ],
 };

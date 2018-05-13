@@ -16,12 +16,21 @@ import * as unified from 'unified';
 
 export default {
   props: ['source'],
-  render(createElement) {
+  render(h) {
+    const createElement = (tagName, props, children) => {
+      const {class: classes, ...attrs} = props || {};
+      return h(tagName, {
+        class: classes,
+        attrs,
+      }, children);
+    };
+
     const processor = unified()
       .use(markdown)
       .use(remark2rehype)
       .use(rehype2react, {createElement});
     const {contents} = processor.processSync(this.source);
+
     return createElement('section', {class: this.$style.wrap}, [contents]);
   },
 };

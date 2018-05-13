@@ -1,18 +1,25 @@
 <template>
   <div>
-    <commit :hash="hash" />
+    <loading :loading="loading" :error="error">
+      <commit v-bind="commit" />
+    </loading>
   </div>
 </template>
 
 <script>
+import {mapActions, mapGetters, mapState} from 'vuex';
+
 import Commit from '~/components/Commit';
+import Loading from '~/components/Loading';
 
 export default {
-  components: {Commit},
-  async asyncData({route, store}) {
-    const {hash} = route.params;
-    await store.dispatch('commits/fetchCommit', {hash});
-    return {hash};
+  components: {Commit, Loading},
+  async fetch({params: {hash}, store}) {
+    store.dispatch('pages/commit/load', {hash});
+  },
+  computed: {
+    ...mapGetters('pages/commit', ['commit']),
+    ...mapState('pages/commit', ['loading', 'error']),
   },
 }
 </script>

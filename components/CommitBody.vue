@@ -18,9 +18,9 @@ export default {
   props: ['source'],
   render(h) {
     const createElement = (tagName, props, children) => {
-      const {class: classes, ...attrs} = props || {};
+      const {class: className, ...attrs} = props || {};
       return h(tagName, {
-        class: classes,
+        class: className,
         attrs,
       }, children);
     };

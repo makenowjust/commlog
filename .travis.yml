@@ -8,7 +8,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   keep_history: true
-  github-token: $GH_TOKEN
+  github-token: $GITHUB_TOKEN
   local-dir: dist
   name: TSUYUSATO Kitsune
   email: make.just.on+ci@gmail.com

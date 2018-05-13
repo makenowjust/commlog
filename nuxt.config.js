@@ -18,4 +18,10 @@ export default {
   plugins: [
     '~/plugins/axios',
   ],
+  router: {
+    base: '/commlog/',
+  },
+  generate: {
+    fallback: true,
+  },
 };

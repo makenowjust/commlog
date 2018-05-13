@@ -15,15 +15,16 @@ import Commits from '~/components/Commits.vue';
 
 export default {
   components: {Commits},
-  async fetch({store}) {
-    store.dispatch('pages/index/load');
+  async fetch({store, query: {q}}) {
+    store.dispatch('pages/search/load', {query: q});
   },
   computed: {
-    ...mapGetters('pages/index', ['hasNext', 'commits']),
-    ...mapState('pages/index', ['loading', 'error']),
+    ...mapGetters('pages/search', ['hasNext', 'commits']),
+    ...mapState('pages/search', ['loading', 'error']),
   },
   methods: {
-    ...mapActions('pages/index', ['loadMore']),
+    ...mapActions('pages/search', ['loadMore']),
   },
+  watchQuery: ['q'],
 };
 </script>

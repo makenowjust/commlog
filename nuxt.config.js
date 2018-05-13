@@ -28,4 +28,7 @@ export default {
   generate: {
     fallback: true,
   },
+  loading: {
+    color: '#4a4a4a',
+  },
 };

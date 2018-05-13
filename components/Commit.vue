@@ -22,6 +22,7 @@
 .foot {
   font-size: 0.875rem;
   margin: 0 auto 1rem auto;
+  padding: 0 0.5rem;
   max-width: $max-width;
   text-align: right;
 

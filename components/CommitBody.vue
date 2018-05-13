@@ -3,6 +3,8 @@
 
 .wrap {
   font-size: 0.875rem;
+  word-wrap : break-word;
+  overflow-wrap : break-word;
 
   @import "~@/assets/scss/markdown";
 }

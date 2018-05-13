@@ -74,7 +74,7 @@ export default {
   },
   watch: {
     $route() {
-      this.query = this.$route.query.search;
+      this.query = this.$route.query.q;
     },
   }
 };

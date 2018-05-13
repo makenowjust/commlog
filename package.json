@@ -6,7 +6,6 @@
   "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
   "repository": "git@github.com:MakeNowJust/commlog.git",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt",

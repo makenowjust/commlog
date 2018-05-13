@@ -1,10 +1,13 @@
 <template>
   <article :class="$style.wrap">
-    <commit-body :source="commit.message" />
-    <section :class="$style.foot"><!-- This comment is not needed really, however it is for code styling.
-      --><a :class="$style.author" :href="`https://github.com/${commit.author.name}`">{{commit.author.name}}<img :src="commit.author.icon" /></a><!--
-      --><time :datetime="commit.date.toISOString()">{{commit.date.toLocaleString()}}</time><!--
-      --><nuxt-link :class="$style.hash" :to="`/commit/${commit.hash}`">#{{commit.hash.slice(0, 7)}}</nuxt-link>
+    <commit-body :source="message" />
+    <section :class="$style.foot"><!--
+      --><a v-if="author.github" :class="$style.author" :href="`https://github.com/${author.name}`"><!--
+        -->{{author.name}}<img :src="author.icon" /><!--
+      --></a><!--
+      --><span v-else :class="$style.author">{{author.name}}</span><!--
+      --><time :datetime="date.toISOString()">{{date.toLocaleString()}}</time><!--
+      --><nuxt-link :class="$style.hash" :to="`/commit/${hash}`">#{{hash.slice(0, 7)}}</nuxt-link>
     </section>
   </article>
 </template>
@@ -66,7 +69,16 @@ export default {
   computed: {
     commit() {
       return this.$store.state.commits.cache[this.hash];
-    }
+    },
+    message() {
+      return this.commit.message;
+    },
+    author() {
+      return this.commit.author;
+    },
+    date() {
+      return this.commit.date;
+    },
   }
 };
 </script>

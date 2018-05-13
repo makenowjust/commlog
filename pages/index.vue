@@ -54,6 +54,7 @@ const fetchCommits = async (
     hash: raw.sha,
     message: raw.commit.message,
     author: {
+      github: !!(raw.author && raw.author.login),
       name: raw.author && raw.author.login || raw.commit.author.name,
       email: raw.commit.author.email,
       icon: raw.author && raw.author.avatar_url,

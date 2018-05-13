@@ -19,7 +19,9 @@
     "rehype-react": "^3.0.2",
     "remark-parse": "^5.0.0",
     "remark-rehype": "^3.0.0",
-    "unified": "^7.0.0"
+    "unified": "^7.0.0",
+    "universal-url": "^1.0.0",
+    "vue-awesome": "^3.0.0"
   },
   "devDependencies": {
     "node-sass": "^4.9.0",

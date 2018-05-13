@@ -1,18 +1,13 @@
 <template>
   <div>
-    <commit v-for="hash in hashes" :key="hash" :hash="hash" />
+    <commit v-for="commit in commits" :key="commit.hash" v-bind="commit" />
 
     <template v-if="hasNext">
-      <section v-if="loading" :class="$style.loading">
-        <pre v-if="loadError">{{loadError.stack}}</pre>
-        <template v-else>
-          <p>Loading...</p>
-          <loading />
-        </template>
-      </section>
-      <section v-else :class="$style.loadMore" @click="loadMore">
-        <p>Load more...</p>
-      </section>
+      <loading :loading="loading" :error="error">
+        <section :class="$style.loadMore" @click="loadMore">
+          <p>Load more...</p>
+        </section>
+      </loading>
     </template>
   </div>
 </template>
@@ -20,14 +15,11 @@
 <style module lang="scss">
 @import "~@/assets/scss/variables";
 
-.loading, .loadMore {
+.loadMore {
   max-width: $max-width;
   padding: 5rem 0;
   margin: 0 auto;
   text-align: center;
-}
-
-.loadMore {
   cursor: pointer;
   color: $black;
   transition: color ease 0.3s 0s;
@@ -39,39 +31,22 @@
 </style>
 
 <script>
-import {mapGetters, mapState} from 'vuex';
+import {mapActions, mapGetters, mapState} from 'vuex';
 
 import Commit from '~/components/Commit.vue';
 import Loading from '~/components/Loading.vue';
 
 export default {
   components: {Commit, Loading},
-  data() {
-    return {
-      loading: false,
-      loadError: null,
-    };
-  },
-  async fetch({store, route}) {
-    const {search} = route.query;
-    await store.dispatch('commits/fetch', {query: search});
+  async fetch({store}) {
+    await store.dispatch('pages/index/load');
   },
   computed: {
-    ...mapGetters('commits', ['hasNext']),
-    ...mapState('commits', ['hashes']),
+    ...mapGetters('pages/index', ['hasNext', 'commits']),
+    ...mapState('pages/index', ['loading', 'error']),
   },
   methods: {
-    async loadMore() {
-      try {
-        this.loading = true;
-        await this.$store.dispatch('commits/fetchNext');
-      } catch (err) {
-        this.loadError = err;
-      } finally {
-        this.loading = false;
-      }
-    }
+    ...mapActions('pages/index', ['loadMore']),
   },
-  watchQuery: ['search'],
 };
 </script>

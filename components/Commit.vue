@@ -66,20 +66,6 @@ import CommitBody from '~/components/CommitBody.vue';
 
 export default {
   components: {CommitBody},
-  props: ['hash'],
-  computed: {
-    commit() {
-      return this.$store.state.commits.cache[this.hash];
-    },
-    message() {
-      return this.commit.message;
-    },
-    author() {
-      return this.commit.author;
-    },
-    date() {
-      return this.commit.date;
-    },
-  }
+  props: ['hash', 'message', 'author', 'date'],
 };
 </script>

@@ -29,6 +29,7 @@ Rustで書かれてる。
 }
 
 .foot {
+  font-size: 0.875rem;
   margin: 0 auto 1rem auto;
   max-width: $max-width;
   text-align: right;

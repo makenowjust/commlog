@@ -2,6 +2,8 @@
 @import "~@/assets/scss/variables";
 
 .wrap {
+  font-size: 0.875rem;
+
   @import "~@/assets/scss/markdown";
 }
 </style>

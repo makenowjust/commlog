@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - '10'
+
+before_deploy:
+  - yarn nuxt build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep_history: true
+  github-token: $GH_TOKEN
+  local-dir: dist
+  name: TSUYUSATO Kitsune
+  email: make.just.on+ci@gmail.com
+  on:
+    branch: master

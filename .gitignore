@@ -1,6 +1,0 @@
-node_modules/
-*.log
-
-/public/css/[^.]*
-!/public/css/app.css
-/public/js/[^.]*

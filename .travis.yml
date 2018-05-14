@@ -3,7 +3,7 @@ node_js:
   - '10'
 
 before_deploy:
-  - yarn nuxt build
+  - yarn generate
 deploy:
   provider: pages
   skip-cleanup: true

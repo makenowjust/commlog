@@ -17,13 +17,13 @@ export const mutations = {
 };
 
 export const getters = {
-  commit(state, _getters, rootState, rootGetters) {
+  commit(state, _getters, _rootState, rootGetters) {
     return rootGetters.commit(state.hash);
   },
 };
 
 export const actions = {
-  async load({getters, commit, state, rootState}, {hash}) {
+  async load({getters, commit}, {hash}) {
     if (getters.commit !== undefined) {
       return;
     }

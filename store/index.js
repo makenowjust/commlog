@@ -4,17 +4,25 @@ export const state = () => ({
 
 export const mutations = {
   putCommit(state, {commit}) {
-    state.commitCache[commit.hash] = commit;
+    state.commitCache = {
+      ...state.commitCache,
+      [commit.hash]: commit,
+    };
   },
   putCommits(state, {commits}) {
+    const cache = {};
     for (const commit of commits) {
-      state.commitCache[commit.hash] = commit;
+      cache[commit.hash] = commit;
     }
+    state.commitCache = {
+      ...state.commitCache,
+      ...cache,
+    };
   },
 };
 
 export const getters = {
   commit(state) {
-    return hash => state.commitCache[hash];
+    return hash => state.commitCache[hash] || null;
   },
 };

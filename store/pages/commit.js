@@ -23,9 +23,9 @@ export const getters = {
 };
 
 export const actions = {
-  async load({rootGetters, commit}, {hash}) {
-    commit('setHash', {hash: null});
-    if (rootGetters.commit(hash) !== undefined) {
+  async load({getters, commit}, {hash}) {
+    commit('setHash', {hash});
+    if (getters.commit !== null) {
       return;
     }
 
@@ -34,6 +34,5 @@ export const actions = {
       const raw = await this.$axios.$get(url);
       commit('putCommit', {commit: convertCommit(raw)}, {root: true});
     });
-    commit('setHash', {hash});
   },
 };

@@ -1,7 +1,7 @@
 <template>
   <div>
     <loading :loading="loading" :error="error">
-      <commit v-bind="commit" />
+      <commit v-if="commit" v-bind="commit" />
     </loading>
   </div>
 </template>

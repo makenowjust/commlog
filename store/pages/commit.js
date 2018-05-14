@@ -23,8 +23,9 @@ export const getters = {
 };
 
 export const actions = {
-  async load({getters, commit}, {hash}) {
-    if (getters.commit !== undefined) {
+  async load({rootGetters, commit}, {hash}) {
+    commit('setHash', {hash: null});
+    if (rootGetters.commit(hash) !== undefined) {
       return;
     }
 

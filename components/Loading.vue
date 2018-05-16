@@ -17,6 +17,11 @@
   padding: 5rem 0;
   margin: 0 auto;
   text-align: center;
+  overflow: auto;
+
+  pre {
+    text-align: left;
+  }
 }
 </style>
 

@@ -1,4 +1,5 @@
 export const wrap = async (commit, fn) => {
+  commit('setError', {error: null});
   commit('setLoading', {loading: true});
   try {
     const result = await fn();

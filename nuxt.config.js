@@ -31,4 +31,7 @@ export default {
   loading: {
     color: '#4a4a4a',
   },
+  loadingIndicator: {
+    color: '#4a4a4a',
+  },
 };

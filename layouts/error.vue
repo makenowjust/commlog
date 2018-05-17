@@ -18,6 +18,10 @@
   text-align: center;
   overflow: auto;
 
+  h2 {
+    font-family: $emphasize;
+  }
+
   details, pre {
     text-align: left;
   }

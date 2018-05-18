@@ -14,6 +14,7 @@
 import * as markdown from 'remark-parse';
 import * as rehype2react from 'rehype-react';
 import * as remark2rehype from 'remark-rehype';
+import * as highlight from 'rehype-highlight';
 import * as unified from 'unified';
 
 export default {
@@ -30,6 +31,7 @@ export default {
     const processor = unified()
       .use(markdown)
       .use(remark2rehype)
+      .use(highlight, {ignoreMissing: true})
       .use(rehype2react, {createElement});
     const {contents} = processor.processSync(this.source);
 

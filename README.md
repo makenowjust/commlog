@@ -6,7 +6,7 @@
 
 ## Development
 
-Clone and change directory:
+Clone repository and change directory:
 
 ```console
 $ git clone https://github.com/MakeNowJust/commlog
@@ -32,3 +32,5 @@ Start development server:
 ```console
 $ yarn dev
 ```
+
+Then, open <http://localhost:3000/commlog/>.

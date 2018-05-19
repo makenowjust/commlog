@@ -1,7 +1,7 @@
 import {URL} from 'universal-url';
 
-import {convertPage} from '~/lib/store/github';
-import * as load from '~/lib/store/load';
+import {convertPage} from '~/lib/github';
+import * as load from '~/lib/load';
 
 export const state = () => ({
   query: null,

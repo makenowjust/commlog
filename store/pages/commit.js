@@ -1,7 +1,7 @@
 import {URL} from 'universal-url';
 
-import {convertCommit} from '~/lib/store/github';
-import * as load from '~/lib/store/load';
+import {convertCommit} from '~/lib/github';
+import * as load from '~/lib/load';
 
 export const state = () => ({
   hash: null,

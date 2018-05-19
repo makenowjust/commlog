@@ -35,4 +35,9 @@ export default {
   loadingIndicator: {
     color: '#4a4a4a',
   },
+  build: {
+    extend(config) {
+      config.resolve.alias['lowlight$'] = '~/assets/js/config/lowlight';
+    }
+  }
 };

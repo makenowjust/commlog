@@ -50,3 +50,9 @@ yarn run v1.6.0
 ```
 
 Then, open <http://localhost:3000/commlog/>.
+
+## License
+
+MIT - TSUYUSATO "[MakeNowJust]" Kitsune
+
+[MakeNowJust]: https://github.com/MakeNowJust

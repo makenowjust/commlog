@@ -37,7 +37,7 @@ export default {
   },
   build: {
     extend(config) {
-      config.resolve.alias['lowlight$'] = '~/assets/js/config/lowlight';
+      config.resolve.alias['lowlight$'] = '~/lib/alias/lowlight';
     }
   }
 };

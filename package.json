@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "node-sass": "^4.9.0",
+    "prettier": "^1.12.1",
     "sass-loader": "^7.0.1"
   }
 }

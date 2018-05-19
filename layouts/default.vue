@@ -14,7 +14,7 @@
 </template>
 
 <style module lang="scss">
-@import "~@/assets/scss/variables";
+@import '~@/assets/scss/variables';
 
 .header {
   width: 100%;
@@ -76,6 +76,6 @@ export default {
     $route() {
       this.query = this.$route.query.q;
     },
-  }
+  },
 };
 </script>

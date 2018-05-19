@@ -41,11 +41,11 @@ export const actions = {
     }
 
     await load.wrap(commit, async () => {
-      const response = await this.$axios.get(state.next)
+      const response = await this.$axios.get(state.next);
       const page = convertPage(response);
 
       commit('putCommits', page, {root: true});
       commit('appendPage', page);
     });
-  }
+  },
 };

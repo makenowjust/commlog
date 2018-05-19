@@ -1,28 +1,22 @@
 export default {
   mode: 'spa',
-  css: [
-    'modern-normalize',
-    '@/assets/scss/main.scss',
-  ],
+  css: ['modern-normalize', '@/assets/scss/main.scss'],
   head: {
     title: 'commlog',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
     ],
     link: [
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Nova+Mono|Raleway|Oswald',
+        href:
+          'https://fonts.googleapis.com/css?family=Nova+Mono|Raleway|Oswald',
       },
     ],
   },
-  modules: [
-    '@nuxtjs/axios',
-  ],
-  plugins: [
-    '~/plugins/axios',
-  ],
+  modules: ['@nuxtjs/axios'],
+  plugins: ['~/plugins/axios'],
   router: {
     base: '/commlog/',
   },
@@ -38,6 +32,6 @@ export default {
   build: {
     extend(config) {
       config.resolve.alias['lowlight$'] = '~/lib/alias/lowlight';
-    }
-  }
+    },
+  },
 };

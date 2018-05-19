@@ -10,7 +10,7 @@
 </template>
 
 <style module lang="scss">
-@import "~@/assets/scss/variables";
+@import '~@/assets/scss/variables';
 
 .loading {
   max-width: $max-width;

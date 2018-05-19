@@ -1,37 +1,60 @@
-@import "variables";
+@import 'variables';
 
 :global {
-  .hljs, .hljs-subst {
+  .hljs,
+  .hljs-subst {
     color: $light-gray;
   }
 
-  .hljs-strong, .hljs-emphasis {
+  .hljs-strong,
+  .hljs-emphasis {
     color: $white;
   }
 
-  .hljs-bullet, .hljs-quote, .hljs-link, .hljs-number, .hljs-regexp, .hljs-literal {
+  .hljs-bullet,
+  .hljs-quote,
+  .hljs-link,
+  .hljs-number,
+  .hljs-regexp,
+  .hljs-literal {
     color: $light-purple;
   }
 
-  .hljs-code, .hljs-selector-class {
+  .hljs-code,
+  .hljs-selector-class {
     color: $light-blue;
   }
 
-  .hljs-keyword, .hljs-selector-tag, .hljs-section, .hljs-attribute, .hljs-name, .hljs-variable {
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-section,
+  .hljs-attribute,
+  .hljs-name,
+  .hljs-variable {
     color: $light-red;
   }
 
-  .language-console .bash, .hljs-string {
+  .language-console .bash,
+  .hljs-string {
     color: $dark-yellow;
   }
 
-  .hljs-type, .hljs-built_in, .hljs-builtin-name,
-  .hljs-symbol, .hljs-selector-id, .hljs-selector-attr,.hljs-selector-pseudo,
-  .hljs-template-tag, .hljs-template-variable, .hljs-addition {
+  .hljs-type,
+  .hljs-built_in,
+  .hljs-builtin-name,
+  .hljs-symbol,
+  .hljs-selector-id,
+  .hljs-selector-attr,
+  .hljs-selector-pseudo,
+  .hljs-template-tag,
+  .hljs-template-variable,
+  .hljs-addition {
     color: $light-green;
   }
 
-  .hljs-comment, .hljs-deletion, .hljs-meta {
+  .hljs-comment,
+  .hljs-deletion,
+  .hljs-meta {
     color: $dark-gray;
   }
 }

@@ -9,7 +9,7 @@
 </template>
 
 <style module lang="scss">
-@import "~@/assets/scss/variables";
+@import '~@/assets/scss/variables';
 
 .error {
   max-width: $max-width;
@@ -22,7 +22,8 @@
     font-family: $emphasize;
   }
 
-  details, pre {
+  details,
+  pre {
     text-align: left;
   }
 }
@@ -30,6 +31,6 @@
 
 <script>
 export default {
-  props: ['error']
+  props: ['error'],
 };
 </script>

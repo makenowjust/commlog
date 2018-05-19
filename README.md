@@ -18,10 +18,9 @@ Checkout `master` branch:
 
 ```console
 $ echo '*' > .gitignore
-$ git worktree add master master
-Branch 'master' set up to track remote branch 'master' from 'origin'.
-Preparing master (identifier master)
-$ cd master
+$ git worktree add dev master
+Preparing dev (identifier dev)
+$ cd dev
 ```
 
 Install dependencies:

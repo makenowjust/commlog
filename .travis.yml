@@ -11,6 +11,6 @@ deploy:
   github-token: $GITHUB_TOKEN
   local-dir: dist
   name: TSUYUSATO Kitsune
-  email: make.just.on+ci@gmail.com
+  email: make.just.on@gmail.com
   on:
     branch: master

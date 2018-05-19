@@ -1,12 +1,12 @@
 <style module lang="scss">
-@import "~@/assets/scss/variables";
+@import '~@/assets/scss/variables';
 
 .wrap {
   font-size: 0.875rem;
-  word-wrap : break-word;
-  overflow-wrap : break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 
-  @import "~@/assets/scss/markdown";
+  @import '~@/assets/scss/markdown';
 }
 </style>
 
@@ -22,10 +22,14 @@ export default {
   render(h) {
     const createElement = (tagName, props, children) => {
       const {className, ...attrs} = props || {};
-      return h(tagName, {
-        class: className,
-        attrs,
-      }, children);
+      return h(
+        tagName,
+        {
+          class: className,
+          attrs,
+        },
+        children,
+      );
     };
 
     const processor = unified()

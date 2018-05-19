@@ -29,7 +29,9 @@ export const actions = {
       return;
     }
 
-    const url = new URL(`https://api.github.com/repos/MakeNowJust/commlog/commits/${hash}`);
+    const url = new URL(
+      `https://api.github.com/repos/MakeNowJust/commlog/commits/${hash}`,
+    );
     await load.wrap(commit, async () => {
       const raw = await this.$axios.$get(url);
       commit('putCommit', {commit: convertCommit(raw)}, {root: true});

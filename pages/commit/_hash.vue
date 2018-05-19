@@ -21,5 +21,5 @@ export default {
     ...mapGetters('pages/commit', ['commit']),
     ...mapState('pages/commit', ['loading', 'error']),
   },
-}
+};
 </script>

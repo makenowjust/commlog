@@ -9,7 +9,6 @@
   "scripts": {
     "generate": "nuxt generate",
     "dev": "nuxt",
-    "test": "true",
     "format":
       "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --write",
     "lint":

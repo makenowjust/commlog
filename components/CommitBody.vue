@@ -31,7 +31,7 @@ export default {
     const processor = unified()
       .use(markdown)
       .use(remark2rehype)
-      .use(highlight, {ignoreMissing: true})
+      .use(highlight, {ignoreMissing: true, subset: false})
       .use(rehype2react, {createElement});
     const {contents} = processor.processSync(this.source);
 

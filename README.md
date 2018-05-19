@@ -55,4 +55,4 @@ Then, open <http://localhost:3000/commlog/>.
 
 MIT - TSUYUSATO "[MakeNowJust]" Kitsune
 
-[MakeNowJust]: https://github.com/MakeNowJust
+[makenowjust]: https://github.com/MakeNowJust

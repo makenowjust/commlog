@@ -9,7 +9,11 @@
   "scripts": {
     "generate": "nuxt generate",
     "dev": "nuxt",
-    "test": "true"
+    "test": "true",
+    "format":
+      "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --write",
+    "lint":
+      "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --list-different"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",

@@ -1,19 +1,18 @@
 import {URL} from 'universal-url';
 
 import {convertCommit} from '~/lib/github';
-import * as load from '~/lib/load';
+import * as loader from '~/lib/loader';
 
 export const state = () => ({
   hash: null,
-  loading: false,
-  error: null,
+  ...loader.state,
 });
 
 export const mutations = {
   setHash(state, {hash}) {
     state.hash = hash;
   },
-  ...load.mutations,
+  ...loader.mutations,
 };
 
 export const getters = {
@@ -32,7 +31,7 @@ export const actions = {
     const url = new URL(
       `https://api.github.com/repos/MakeNowJust/commlog/commits/${hash}`,
     );
-    await load.wrap(commit, async () => {
+    await loader.load(commit, async () => {
       const raw = await this.$axios.$get(url);
       commit('putCommit', {commit: convertCommit(raw)}, {root: true});
     });

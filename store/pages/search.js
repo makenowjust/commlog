@@ -1,14 +1,13 @@
 import {URL} from 'universal-url';
 
 import {convertPage} from '~/lib/github';
-import * as load from '~/lib/load';
+import * as loader from '~/lib/loader';
 
 export const state = () => ({
   query: null,
   next: null,
   hashes: [],
-  loading: false,
-  error: null,
+  ...loader.state,
 });
 
 export const mutations = {
@@ -30,7 +29,7 @@ export const mutations = {
     state.hashes = state.hashes.concat(hashes);
     state.next = next;
   },
-  ...load.mutations,
+  ...loader.mutations,
 };
 
 export const getters = {
@@ -56,7 +55,7 @@ export const actions = {
       return;
     }
 
-    await load.wrap(commit, async () => {
+    await loader.load(commit, async () => {
       const response = await this.$axios.get(state.next);
       const page = convertPage(response);
 

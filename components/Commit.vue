@@ -1,6 +1,6 @@
 <template>
   <article :class="$style.wrap">
-    <commit-body :source="message" />
+    <commit-body :tree="tree" />
     <section :class="$style.foot"><!--
       --><a v-if="author.github" :class="$style.author" :href="`https://github.com/${author.name}`"><!--
         -->{{author.name}}<img :src="author.icon" /><!--
@@ -66,6 +66,6 @@ import CommitBody from '~/components/CommitBody.vue';
 
 export default {
   components: {CommitBody},
-  props: ['hash', 'message', 'author', 'date'],
+  props: ['hash', 'tree', 'author', 'date'],
 };
 </script>

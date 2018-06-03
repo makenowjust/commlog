@@ -3627,6 +3627,10 @@ mdast-util-to-hast@^3.0.0:
     unist-util-visit "^1.1.0"
     xtend "^4.0.1"
 
+mdast-util-to-string@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/mdast-util-to-string/-/mdast-util-to-string-1.0.4.tgz#5c455c878c9355f0c1e7f3e8b719cf583691acfb"
+
 mdurl@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
@@ -5240,13 +5244,6 @@ rehype-highlight@^2.1.0:
     lowlight "^1.2.0"
     unist-util-visit "^1.1.0"
 
-rehype-react@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/rehype-react/-/rehype-react-3.0.2.tgz#5aa35f6e07ca1a47f3c9aa9ab4361b1cba05a590"
-  dependencies:
-    has "^1.0.1"
-    hast-to-hyperscript "^4.0.0"
-
 relateurl@0.2.x:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
@@ -6204,7 +6201,7 @@ unist-util-generated@^1.1.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/unist-util-generated/-/unist-util-generated-1.1.2.tgz#8b993f9239d8e560be6ee6e91c3f7b7208e5ce25"
 
-unist-util-is@^2.0.0, unist-util-is@^2.1.1:
+unist-util-is@^2.0.0, unist-util-is@^2.1.1, unist-util-is@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/unist-util-is/-/unist-util-is-2.1.2.tgz#1193fa8f2bfbbb82150633f3a8d2eb9a1c1d55db"
 

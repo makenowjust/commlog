@@ -2,7 +2,7 @@
 
 > Commit Log as a Blog
 
-[![Build Status](https://travis-ci.org/MakeNowJust/commlog.svg?branch=master)](https://travis-ci.org/MakeNowJust/commlog)
+[![Build Status][travis-badge]](https://travis-ci.org/MakeNowJust/commlog)
 
 ## Development
 
@@ -56,3 +56,5 @@ Then, open <http://localhost:3000/commlog/>.
 MIT - TSUYUSATO "[MakeNowJust]" Kitsune
 
 [makenowjust]: https://github.com/MakeNowJust
+
+[travis-badge]: https://img.shields.io/travis/MakeNowJust/commlog/master.svg?style=for-the-badge&logo=travis

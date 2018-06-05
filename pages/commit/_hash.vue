@@ -17,6 +17,17 @@ export default {
   async fetch({params: {hash}, store}) {
     store.dispatch('pages/commit/load', {hash});
   },
+  head() {
+    let title = 'commlog commit';
+    if (this.loading || this.error) {
+      title = `loading... | ${title}`;
+    } else {
+      const hash = this.commit.hash.slice(0, 7);
+      title = `#${hash} ${this.commit.title} | ${title}`;
+    }
+
+    return {title};
+  },
   computed: {
     ...mapGetters('pages/commit', ['commit']),
     ...mapState('pages/commit', ['loading', 'error']),

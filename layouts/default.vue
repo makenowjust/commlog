@@ -3,7 +3,7 @@
     <header :class="$style.header">
       <h1><nuxt-link to="/">commlog</nuxt-link></h1>
       <section :class="$style.search">
-        <icon name="search" />
+        <div :class="$style.icon"><icon name="search" /></div>
         <input placeholder="Search commits" v-model="query" @keyup.enter="search" />
       </section>
     </header>
@@ -45,8 +45,27 @@
   margin: 0 auto;
   text-align: center;
 
+  > .icon {
+    display: inline-block;
+    left: 0;
+    right: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+
   > input {
+    padding: 0.5rem 0.5rem 0.5rem 1.75rem;
+    margin-left: -2rem;
+    border: none;
     width: 15rem;
+    background: transparent;
+
+    &:focus {
+      outline: $light-blue auto 0.2rem;
+    }
   }
 }
 </style>

@@ -8,7 +8,7 @@ import delay from 'delay';
 
 import config from '../../nuxt.config';
 
-const onFull = test => process.env.TEST_MODE !== 'full' ? test.skip : test;
+const onFull = test => (process.env.TEST_MODE !== 'full' ? test.skip : test);
 
 // Set up:
 

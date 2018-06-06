@@ -8,9 +8,11 @@
   "version": "2.0.0",
   "scripts": {
     "dev": "nuxt",
-    "format": "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --write",
+    "format":
+      "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --write",
     "generate": "nuxt generate",
-    "lint": "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --list-different",
+    "lint":
+      "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --list-different",
     "test": "ava",
     "test-full": "cross-env TEST_MODE=full ava --concurrency 1 --serial"
   },
@@ -44,16 +46,10 @@
     "sass-loader": "^7.0.1"
   },
   "ava": {
-    "require": [
-      "@babel/register"
-    ]
+    "require": ["@babel/register"]
   },
   "babel": {
-    "presets": [
-      "@ava/stage-4"
-    ],
-    "plugins": [
-      "@babel/proposal-object-rest-spread"
-    ]
+    "presets": ["@ava/stage-4"],
+    "plugins": ["@babel/proposal-object-rest-spread"]
   }
 }

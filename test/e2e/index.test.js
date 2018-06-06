@@ -8,6 +8,8 @@ import delay from 'delay';
 
 import config from '../../nuxt.config';
 
+const onFull = test => process.env.TEST_MODE !== 'full' ? test.skip : test;
+
 // Set up:
 
 // Global instances to close after tests.
@@ -15,7 +17,7 @@ let nuxt = null;
 let browser = null;
 let page = null;
 
-test.before(async () => {
+onFull(test.before)(async () => {
   const rootDir = path.resolve(__dirname, '../..');
   nuxt = new Nuxt({
     ...config,
@@ -30,11 +32,11 @@ test.before(async () => {
   page = await browser.newPage();
 });
 
-test.beforeEach(async () => {
+onFull(test.beforeEach)(async () => {
   await page.goto('about:blank');
 });
 
-test.after(async () => {
+onFull(test.after)(async () => {
   await page.close();
   await browser.close();
   await nuxt.close();
@@ -71,7 +73,7 @@ const onChangeTitle = title =>
 
 // Test:
 
-test('open top page', async t => {
+onFull(test)('open top page', async t => {
   let title = await page.evaluate(() => document.title);
 
   // Open top page:
@@ -117,7 +119,7 @@ test('open top page', async t => {
   t.is(articles, 60);
 });
 
-test('open single commit page', async t => {
+onFull(test)('open single commit page', async t => {
   let title = await page.evaluate(() => document.title);
 
   // Open single commit page:
@@ -138,7 +140,7 @@ test('open single commit page', async t => {
   t.is(articles, 30);
 });
 
-test('open search page', async t => {
+onFull(test)('open search page', async t => {
   let title = await page.evaluate(() => document.title);
 
   await page.goto('http://localhost:4000/commlog/');

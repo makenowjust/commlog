@@ -8,12 +8,11 @@
   "version": "2.0.0",
   "scripts": {
     "dev": "nuxt",
-    "format":
-      "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --write",
+    "format": "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --write",
     "generate": "nuxt generate",
-    "lint":
-      "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --list-different",
-    "test": "ava --concurrency 1 --serial"
+    "lint": "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --list-different",
+    "test": "ava",
+    "test-full": "cross-env TEST_MODE=full ava --concurrency 1 --serial"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
@@ -37,6 +36,7 @@
     "@babel/register": "^7.0.0-beta.49",
     "ava": "^1.0.0-beta.5.1",
     "axios-mock-adapter": "^1.15.0",
+    "cross-env": "^5.1.6",
     "delay": "^3.0.0",
     "node-sass": "^4.9.0",
     "prettier": "^1.12.1",
@@ -44,10 +44,16 @@
     "sass-loader": "^7.0.1"
   },
   "ava": {
-    "require": ["@babel/register"]
+    "require": [
+      "@babel/register"
+    ]
   },
   "babel": {
-    "presets": ["@ava/stage-4"],
-    "plugins": ["@babel/proposal-object-rest-spread"]
+    "presets": [
+      "@ava/stage-4"
+    ],
+    "plugins": [
+      "@babel/proposal-object-rest-spread"
+    ]
   }
 }

@@ -3,7 +3,7 @@ node_js:
   - '10'
 
 script:
-  - yarn test
+  - yarn test-full
   - yarn lint
 
 before_deploy:

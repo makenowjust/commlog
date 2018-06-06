@@ -20,8 +20,10 @@ export default {
   },
   head() {
     let title = 'commlog search';
-    if (this.loading || this.error) {
+    if (this.loading) {
       title = `loading... | ${title}`;
+    } else if (this.error) {
+      title = `error | ${title}`;
     } else {
       title = `${this.$route.query.q} | ${title}`;
     }

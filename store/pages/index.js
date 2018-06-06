@@ -1,10 +1,8 @@
-import {URL} from 'universal-url';
-
 import {convertPage} from '~/lib/github';
 import * as loader from '~/lib/loader';
 
 export const state = () => ({
-  next: new URL('https://api.github.com/repos/MakeNowJust/commlog/commits'),
+  next: 'https://api.github.com/repos/MakeNowJust/commlog/commits',
   hashes: [],
   ...loader.state,
 });

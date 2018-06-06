@@ -1,4 +1,4 @@
-import {URL} from 'universal-url';
+import qs from 'qs';
 
 import {convertPage} from '~/lib/github';
 import * as loader from '~/lib/loader';
@@ -19,11 +19,14 @@ export const mutations = {
     state.query = query;
     state.hashes = [];
 
-    const next = new URL('https://api.github.com/search/commits');
-    next.searchParams.append('q', `repo:MakeNowJust/commlog ${query}`);
-    next.searchParams.append('sort', 'author-date');
-    next.searchParams.append('order', 'desc');
-    state.next = next;
+    const params = {
+      q: `repo:MakeNowJust/commlog ${query}`,
+      sort: 'author-date',
+      order: 'desc',
+    };
+    state.next = `https://api.github.com/search/commits?${qs.stringify(
+      params,
+    )}`;
   },
   appendPage(state, {hashes, next}) {
     state.hashes = state.hashes.concat(hashes);

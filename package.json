@@ -7,12 +7,13 @@
   "repository": "git@github.com:MakeNowJust/commlog.git",
   "version": "2.0.0",
   "scripts": {
-    "generate": "nuxt generate",
     "dev": "nuxt",
     "format":
       "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --write",
+    "generate": "nuxt generate",
     "lint":
-      "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --list-different"
+      "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --list-different",
+    "test": "ava --concurrency 1 --serial"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
@@ -21,17 +22,32 @@
     "modern-normalize": "^0.4.0",
     "nuxt-edge": "^2.0.0-25440915.dcc92c6",
     "parse-link-header": "^1.0.1",
+    "qs": "^6.5.2",
     "rehype-highlight": "^2.1.0",
     "remark-parse": "^5.0.0",
     "remark-rehype": "^3.0.0",
     "unified": "^7.0.0",
     "unist-util-is": "^2.1.2",
-    "universal-url": "^1.0.0",
     "vue-awesome": "^3.0.0"
   },
   "devDependencies": {
+    "@ava/babel-preset-stage-4": "^1.1.0",
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.49",
+    "@babel/register": "^7.0.0-beta.49",
+    "ava": "^1.0.0-beta.5.1",
+    "axios-mock-adapter": "^1.15.0",
+    "delay": "^3.0.0",
     "node-sass": "^4.9.0",
     "prettier": "^1.12.1",
+    "puppeteer": "^1.4.0",
     "sass-loader": "^7.0.1"
+  },
+  "ava": {
+    "require": ["@babel/register"]
+  },
+  "babel": {
+    "presets": ["@ava/stage-4"],
+    "plugins": ["@babel/proposal-object-rest-spread"]
   }
 }

@@ -2,9 +2,9 @@ import test from 'ava';
 
 import {convertCommit, convertPage} from '../../lib/github';
 
-import COMMIT from './fixtures/commit.json';
-import COMMITS from './fixtures/commits.json';
-import SEARCH from './fixtures/search.json';
+import COMMIT from '../fixtures/commit.json';
+import COMMITS from '../fixtures/commits1.json';
+import SEARCH from '../fixtures/search.json';
 
 test('convert commit', t => {
   const commit = convertCommit(COMMIT);
@@ -35,7 +35,7 @@ test('convert commits result to page', t => {
   t.is(hashes.length, 30);
   t.deepEqual(
     next,
-    new URL('https://api.github.com/repositories/42772934/commits?page=2'),
+    'https://api.github.com/repositories/42772934/commits?page=2',
   );
 });
 

@@ -19,8 +19,10 @@ export default {
   },
   head() {
     let title = 'commlog commit';
-    if (this.loading || this.error) {
+    if (this.loading) {
       title = `loading... | ${title}`;
+    } else if (this.error) {
+      title = `error | ${title}`;
     } else {
       const hash = this.commit.hash.slice(0, 7);
       title = `#${hash} ${this.commit.title} | ${title}`;

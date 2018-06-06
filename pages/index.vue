@@ -20,8 +20,10 @@ export default {
   },
   head() {
     let title = 'commlog top';
-    if (this.loading || this.error) {
+    if (this.loading) {
       title = `loading... | ${title}`;
+    } else if (this.error) {
+      title = `error | ${title}`;
     }
 
     return {title};

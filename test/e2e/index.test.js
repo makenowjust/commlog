@@ -21,7 +21,7 @@ onFull(test.before)(async () => {
   const rootDir = path.resolve(__dirname, '../..');
   nuxt = new Nuxt({
     ...config,
-    plugins: config.plugins.concat(path.join(__dirname, '../_mock.js')),
+    plugins: config.plugins.concat(path.join(__dirname, '../_axios-mock.js')),
     dev: false,
     rootDir,
   });

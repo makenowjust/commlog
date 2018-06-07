@@ -24,9 +24,7 @@ export const mutations = {
       sort: 'author-date',
       order: 'desc',
     };
-    state.next = `https://api.github.com/search/commits?${qs.stringify(
-      params,
-    )}`;
+    state.next = `https://api.github.com/search/commits?${qs.stringify(params)}`;
   },
   appendPage(state, {hashes, next}) {
     state.hashes = state.hashes.concat(hashes);

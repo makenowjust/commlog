@@ -70,17 +70,11 @@ const wait = async (expr, cond) => {
 };
 
 const onChangeTitle = title =>
-  wait(
-    () => document.title,
-    s => s !== 'commlog' && s !== title && !s.startsWith('loading... |'),
-  );
+  wait(() => document.title, s => s !== 'commlog' && s !== title && !s.startsWith('loading... |'));
 
 const getCommitCount = () =>
   page.evaluate(
-    () =>
-      document.querySelectorAll(
-        '[data-test="commit-list"] > [data-test^="commit-"]',
-      ).length,
+    () => document.querySelectorAll('[data-test="commit-list"] > [data-test^="commit-"]').length,
   );
 
 // Test:
@@ -98,10 +92,7 @@ onFull(test)('open top page', async t => {
 
   // Click "load more":
   await page.click('[data-test="load-more"]');
-  await wait(
-    () => !!document.querySelector('[data-test="loading"]'),
-    loading => !loading,
-  );
+  await wait(() => !!document.querySelector('[data-test="loading"]'), loading => !loading);
 
   articles = await getCommitCount();
   t.is(articles, 60);
@@ -128,9 +119,7 @@ onFull(test)('open single commit page', async t => {
   let title = await page.evaluate(() => document.title);
 
   // Open single commit page:
-  await page.goto(
-    'http://localhost:4000/commlog/commit/048ebceb14ff5367ad8ff9a8a64f920b5a3f9c6d',
-  );
+  await page.goto('http://localhost:4000/commlog/commit/048ebceb14ff5367ad8ff9a8a64f920b5a3f9c6d');
   title = await onChangeTitle(title);
   t.is(title, '#048ebce WindowsのインストールUSBを焼く場合 | commlog commit');
 
@@ -163,8 +152,6 @@ onFull(test)('open search page', async t => {
   const articles = await getCommitCount();
   t.is(articles, 1);
 
-  const hasNext = await page.evaluate(
-    () => !!document.querySelector('[data-test="load-more"]'),
-  );
+  const hasNext = await page.evaluate(() => !!document.querySelector('[data-test="load-more"]'));
   t.is(hasNext, false);
 });

@@ -33,10 +33,7 @@ test('convert commits result to page', t => {
   const {commits, hashes, next} = convertPage(COMMITS);
   t.is(commits.length, 30);
   t.is(hashes.length, 30);
-  t.deepEqual(
-    next,
-    'https://api.github.com/repositories/42772934/commits?page=2',
-  );
+  t.deepEqual(next, 'https://api.github.com/repositories/42772934/commits?page=2');
 });
 
 test('convert search result to page', t => {

@@ -1,7 +1,6 @@
 {
   "sha": "048ebceb14ff5367ad8ff9a8a64f920b5a3f9c6d",
-  "node_id":
-    "MDY6Q29tbWl0NDI3NzI5MzQ6MDQ4ZWJjZWIxNGZmNTM2N2FkOGZmOWE4YTY0ZjkyMGI1YTNmOWM2ZA==",
+  "node_id": "MDY6Q29tbWl0NDI3NzI5MzQ6MDQ4ZWJjZWIxNGZmNTM2N2FkOGZmOWE4YTY0ZjkyMGI1YTNmOWM2ZA==",
   "commit": {
     "author": {
       "name": "TSUYUSATO Kitsune",
@@ -45,18 +44,14 @@
     "url": "https://api.github.com/users/MakeNowJust",
     "html_url": "https://github.com/MakeNowJust",
     "followers_url": "https://api.github.com/users/MakeNowJust/followers",
-    "following_url":
-      "https://api.github.com/users/MakeNowJust/following{/other_user}",
+    "following_url": "https://api.github.com/users/MakeNowJust/following{/other_user}",
     "gists_url": "https://api.github.com/users/MakeNowJust/gists{/gist_id}",
-    "starred_url":
-      "https://api.github.com/users/MakeNowJust/starred{/owner}{/repo}",
-    "subscriptions_url":
-      "https://api.github.com/users/MakeNowJust/subscriptions",
+    "starred_url": "https://api.github.com/users/MakeNowJust/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MakeNowJust/subscriptions",
     "organizations_url": "https://api.github.com/users/MakeNowJust/orgs",
     "repos_url": "https://api.github.com/users/MakeNowJust/repos",
     "events_url": "https://api.github.com/users/MakeNowJust/events{/privacy}",
-    "received_events_url":
-      "https://api.github.com/users/MakeNowJust/received_events",
+    "received_events_url": "https://api.github.com/users/MakeNowJust/received_events",
     "type": "User",
     "site_admin": false
   },
@@ -69,18 +64,14 @@
     "url": "https://api.github.com/users/MakeNowJust",
     "html_url": "https://github.com/MakeNowJust",
     "followers_url": "https://api.github.com/users/MakeNowJust/followers",
-    "following_url":
-      "https://api.github.com/users/MakeNowJust/following{/other_user}",
+    "following_url": "https://api.github.com/users/MakeNowJust/following{/other_user}",
     "gists_url": "https://api.github.com/users/MakeNowJust/gists{/gist_id}",
-    "starred_url":
-      "https://api.github.com/users/MakeNowJust/starred{/owner}{/repo}",
-    "subscriptions_url":
-      "https://api.github.com/users/MakeNowJust/subscriptions",
+    "starred_url": "https://api.github.com/users/MakeNowJust/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MakeNowJust/subscriptions",
     "organizations_url": "https://api.github.com/users/MakeNowJust/orgs",
     "repos_url": "https://api.github.com/users/MakeNowJust/repos",
     "events_url": "https://api.github.com/users/MakeNowJust/events{/privacy}",
-    "received_events_url":
-      "https://api.github.com/users/MakeNowJust/received_events",
+    "received_events_url": "https://api.github.com/users/MakeNowJust/received_events",
     "type": "User",
     "site_admin": false
   },

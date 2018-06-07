@@ -1,5 +1,5 @@
 <template>
-  <section v-if="loading" :class="$style.loading">
+  <section v-if="loading" :class="$style.loading" v-test="'loading'">
     <pre v-if="error">{{error.stack}}</pre>
     <template v-else>
       <p>Loading...</p>

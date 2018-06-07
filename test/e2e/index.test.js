@@ -75,6 +75,14 @@ const onChangeTitle = title =>
     s => s !== 'commlog' && s !== title && !s.startsWith('loading... |'),
   );
 
+const getCommitCount = () =>
+  page.evaluate(
+    () =>
+      document.querySelectorAll(
+        '[data-test="commit-list"] > [data-test^="commit-"]',
+      ).length,
+  );
+
 // Test:
 
 onFull(test)('open top page', async t => {
@@ -85,41 +93,34 @@ onFull(test)('open top page', async t => {
   title = await onChangeTitle(title);
   t.is(title, 'commlog top');
 
-  let articles = await page.evaluate(
-    () => document.querySelectorAll('main > div > article').length,
-  );
+  let articles = await getCommitCount();
   t.is(articles, 30);
 
   // Click "load more":
-  await page.click('main > div > div > section');
+  await page.click('[data-test="load-more"]');
   await wait(
-    () => !document.querySelector('main > div > div > section'),
-    loading => loading,
+    () => !!document.querySelector('[data-test="loading"]'),
+    loading => !loading,
   );
 
-  articles = await page.evaluate(
-    () => document.querySelectorAll('main > div > article').length,
-  );
+  articles = await getCommitCount();
   t.is(articles, 60);
 
   // Go to first article:
-  await page.click(
-    'main > div > article:first-child > section:last-child > a:last-child',
-  );
+  await page.click('[data-test="commit-048ebce"] [data-test="commit-link"]');
   title = await onChangeTitle(title);
   t.is(title, '#048ebce WindowsのインストールUSBを焼く場合 | commlog commit');
 
   // Back to top page:
-  await page.click('header > h1 > a');
+  await page.click('[data-test="top-link"]');
   title = await wait(
     () => document.title,
     s => s !== 'commlog' && s !== title && !s.startsWith('loading... |'),
   );
   t.is(title, 'commlog top');
 
-  articles = await page.evaluate(
-    () => document.querySelectorAll('main > div > article').length,
-  );
+  // Keep loaded cmmits:
+  articles = await getCommitCount();
   t.is(articles, 60);
 });
 
@@ -134,36 +135,36 @@ onFull(test)('open single commit page', async t => {
   t.is(title, '#048ebce WindowsのインストールUSBを焼く場合 | commlog commit');
 
   // Back to top page:
-  await page.click('header > h1 > a');
+  await page.click('[data-test="top-link"]');
   title = await onChangeTitle(title);
   t.is(title, 'commlog top');
 
-  const articles = await page.evaluate(
-    () => document.querySelectorAll('main > div > article').length,
-  );
+  const articles = await getCommitCount();
   t.is(articles, 30);
 });
 
 onFull(test)('open search page', async t => {
   let title = await page.evaluate(() => document.title);
 
+  // Open top page:
   await page.goto('http://localhost:4000/commlog/');
   title = await onChangeTitle(title);
   t.is(title, 'commlog top');
 
-  await page.focus('header > section > input');
+  // Seacrh 'hello':
+  await page.focus('[data-test="search"]');
   await page.keyboard.type('hello');
   await page.keyboard.press('Enter');
+
   title = await onChangeTitle(title);
   t.is(title, 'hello | commlog search');
 
-  const articles = await page.evaluate(
-    () => document.querySelectorAll('main > div > article').length,
-  );
+  // Found 1 commit:
+  const articles = await getCommitCount();
   t.is(articles, 1);
 
   const hasNext = await page.evaluate(
-    () => !!document.querySelector('main > div > div > section'),
+    () => !!document.querySelector('[data-test="load-more"]'),
   );
   t.is(hasNext, false);
 });

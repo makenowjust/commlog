@@ -1,5 +1,5 @@
 <template>
-  <article :class="$style.wrap">
+  <article :class="$style.wrap" v-test="`commit-${hash.slice(0, 7)}`">
     <commit-body :tree="tree" />
     <section :class="$style.foot"><!--
       --><a v-if="author.github" :class="$style.author" :href="`https://github.com/${author.name}`"><!--
@@ -7,7 +7,7 @@
       --></a><!--
       --><span v-else :class="$style.author">{{author.name}}</span><!--
       --><time :datetime="date.toISOString()">{{date.toLocaleString()}}</time><!--
-      --><nuxt-link :class="$style.hash" :to="`/commit/${hash}`">#{{hash.slice(0, 7)}}</nuxt-link>
+      --><nuxt-link :class="$style.hash" :to="`/commit/${hash}`" v-test="'commit-link'">#{{hash.slice(0, 7)}}</nuxt-link>
     </section>
   </article>
 </template>

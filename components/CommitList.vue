@@ -1,10 +1,14 @@
 <template>
-  <div>
-    <commit v-for="commit in commits" :key="commit.hash" v-bind="commit" />
+  <div v-test="'commit-list'">
+    <commit
+      v-for="commit in commits"
+      :key="commit.hash"
+      v-bind="commit"
+      />
 
     <template v-if="hasNext || loading">
       <loading :loading="loading" :error="error">
-        <section :class="$style.loadMore" @click="loadMore">
+        <section :class="$style.loadMore" @click="loadMore" v-test="'load-more'">
           <p>Load more...</p>
         </section>
       </loading>

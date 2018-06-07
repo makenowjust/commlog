@@ -1,10 +1,10 @@
 <template>
   <div>
     <header :class="$style.header">
-      <h1><nuxt-link to="/">commlog</nuxt-link></h1>
+      <h1><nuxt-link to="/" v-test="'top-link'">commlog</nuxt-link></h1>
       <section :class="$style.search">
         <div :class="$style.icon"><icon name="search" /></div>
-        <input placeholder="Search commits" v-model="query" @keyup.enter="search" />
+        <input placeholder="Search commits" v-model="query" @keyup.enter="search" v-test="'search'" />
       </section>
     </header>
     <main>

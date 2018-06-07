@@ -73,9 +73,7 @@ const onChangeTitle = title =>
   wait(() => document.title, s => s !== 'commlog' && s !== title && !s.startsWith('loading... |'));
 
 const getCommitCount = () =>
-  page.evaluate(
-    () => document.querySelectorAll('[data-test~="commit"]').length,
-  );
+  page.evaluate(() => document.querySelectorAll('[data-test~="commit"]').length);
 
 // Test:
 

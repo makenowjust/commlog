@@ -30,7 +30,15 @@ export default {
     };
 
     const elements = toH(h, this.tree);
-    return h('section', {class: this.$style.wrap}, [elements]);
+    return createElement('section', {
+      class: this.$style.wrap,
+      directives: [
+        {
+          name: 'test',
+          value: 'commit-body',
+        },
+      ],
+    }, [elements]);
   },
 };
 </script>

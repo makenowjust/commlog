@@ -1,5 +1,5 @@
 <template>
-  <article :class="$style.wrap" v-test="`commit-${hash.slice(0, 7)}`">
+  <article :class="$style.wrap" v-test="`commit commit-${hash.slice(0, 7)}`">
     <commit-body :tree="tree" />
     <section :class="$style.foot"><!--
       --><a v-if="author.github" :class="$style.author" :href="`https://github.com/${author.name}`"><!--

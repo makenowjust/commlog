@@ -74,7 +74,7 @@ const onChangeTitle = title =>
 
 const getCommitCount = () =>
   page.evaluate(
-    () => document.querySelectorAll('[data-test="commit-list"] > [data-test^="commit-"]').length,
+    () => document.querySelectorAll('[data-test~="commit"]').length,
   );
 
 // Test:
@@ -98,9 +98,14 @@ onFull(test)('open top page', async t => {
   t.is(articles, 60);
 
   // Go to first article:
-  await page.click('[data-test="commit-048ebce"] [data-test="commit-link"]');
+  await page.click('[data-test~="commit-048ebce"] [data-test="commit-link"]');
   title = await onChangeTitle(title);
   t.is(title, '#048ebce WindowsのインストールUSBを焼く場合 | commlog commit');
+
+  const h1 = await page.evaluate(
+    () => document.querySelector('[data-test~="commit"] [data-test="commit-body"] h1').textContent,
+  );
+  t.is(h1, 'WindowsのインストールUSBを焼く場合');
 
   // Back to top page:
   await page.click('[data-test="top-link"]');
@@ -119,6 +124,11 @@ onFull(test)('open single commit page', async t => {
   await page.goto('http://localhost:4000/commlog/commit/048ebceb14ff5367ad8ff9a8a64f920b5a3f9c6d');
   title = await onChangeTitle(title);
   t.is(title, '#048ebce WindowsのインストールUSBを焼く場合 | commlog commit');
+
+  const h1 = await page.evaluate(
+    () => document.querySelector('[data-test~="commit"] [data-test="commit-body"] h1').textContent,
+  );
+  t.is(h1, 'WindowsのインストールUSBを焼く場合');
 
   // Back to top page:
   await page.click('[data-test="top-link"]');

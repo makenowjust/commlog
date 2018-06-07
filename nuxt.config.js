@@ -16,7 +16,7 @@ export default {
     ],
   },
   modules: ['@nuxtjs/axios'],
-  plugins: ['~/plugins/axios'],
+  plugins: ['~/plugins/axios', '~/plugins/test-directive'],
   router: {
     base: '/commlog/',
   },

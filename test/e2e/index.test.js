@@ -104,10 +104,7 @@ onFull(test)('open top page', async t => {
 
   // Back to top page:
   await page.click('[data-test="top-link"]');
-  title = await wait(
-    () => document.title,
-    s => s !== 'commlog' && s !== title && !s.startsWith('loading... |'),
-  );
+  title = await onChangeTitle(title);
   t.is(title, 'commlog top');
 
   // Keep loaded cmmits:

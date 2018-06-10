@@ -9,6 +9,10 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Nova+Mono|Raleway|Oswald',
       },
+      {
+        rel: 'icon',
+        href: '/commlog/favicon.png',
+      },
     ],
   },
   modules: ['@nuxtjs/axios'],

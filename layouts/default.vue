@@ -83,11 +83,16 @@ export default {
   },
   methods: {
     search() {
+      const q = this.query.trim();
+
+      // Prevent for searching because empty query causes an error.
+      if (q === '') {
+        //return;
+      }
+
       this.$router.push({
         name: 'search',
-        query: {
-          q: this.query.trim(),
-        },
+        query: {q},
       });
     },
   },

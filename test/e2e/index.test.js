@@ -151,6 +151,14 @@ test.serial('open search page', async t => {
   title = await onChangeTitle(title);
   t.is(title, 'commlog top');
 
+  // Can't search without query:
+  await page.focus('[data-test="search"]');
+  await page.keyboard.press('Enter');
+  // TODO: It is unsafe... How is proper way to check "can't search without query"?
+  await delay(500);
+  const url = await page.evaluate(() => location.href);
+  t.is(url, 'http://localhost:4000/commlog/');
+
   // Seacrh 'hello':
   await page.focus('[data-test="search"]');
   await page.keyboard.type('hello');

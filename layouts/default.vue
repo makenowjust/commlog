@@ -29,8 +29,12 @@
     text-align: center;
 
     .logo {
-      max-width: 100%;
+      width: 330px;
       height: auto;
+
+      @media screen and (max-width: $max-width) {
+        width: 165px;
+      }
     }
 
     > a {

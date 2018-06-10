@@ -8,8 +8,6 @@ import delay from 'delay';
 
 import config from '../../nuxt.config';
 
-const onFull = test => (process.env.TEST_MODE !== 'full' ? test.skip : test);
-
 // Set up:
 
 // Global instances to close after tests.
@@ -17,7 +15,7 @@ let nuxt = null;
 let browser = null;
 let page = null;
 
-onFull(test.before)(async () => {
+test.before(async () => {
   const rootDir = path.resolve(__dirname, '../..');
   const plugins = config.plugins
     .filter(plugin => plugin !== '~/plugins/test-directive')
@@ -36,11 +34,11 @@ onFull(test.before)(async () => {
   page = await browser.newPage();
 });
 
-onFull(test.beforeEach)(async () => {
+test.beforeEach(async () => {
   await page.goto('about:blank');
 });
 
-onFull(test.after)(async () => {
+test.after(async () => {
   await page.close();
   await browser.close();
   await nuxt.close();
@@ -77,7 +75,7 @@ const getCommitCount = () =>
 
 // Test:
 
-onFull(test)('open top page', async t => {
+test.serial('open top page', async t => {
   let title = await page.evaluate(() => document.title);
 
   // Open top page:
@@ -115,7 +113,7 @@ onFull(test)('open top page', async t => {
   t.is(articles, 60);
 });
 
-onFull(test)('open single commit page', async t => {
+test.serial('open single commit page', async t => {
   let title = await page.evaluate(() => document.title);
 
   // Open single commit page:
@@ -145,7 +143,7 @@ onFull(test)('open single commit page', async t => {
   t.is(articles, 30);
 });
 
-onFull(test)('open search page', async t => {
+test.serial('open search page', async t => {
   let title = await page.evaluate(() => document.title);
 
   // Open top page:

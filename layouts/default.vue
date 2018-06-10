@@ -1,7 +1,7 @@
 <template>
   <div>
     <header :class="$style.header">
-      <h1><nuxt-link to="/" v-test="'top-link'">commlog</nuxt-link></h1>
+      <h1><nuxt-link to="/" v-test="'top-link'"><img :class="$style.logo" src="~/assets/img/logo.png" /></nuxt-link></h1>
       <section :class="$style.search">
         <div :class="$style.icon"><icon name="search" /></div>
         <input placeholder="Search commits" v-model="query" @keyup.enter="search" v-test="'search'" />
@@ -27,6 +27,11 @@
     margin: 0 0 5rem 0;
     width: 100%;
     text-align: center;
+
+    .logo {
+      max-width: 100%;
+      height: auto;
+    }
 
     > a {
       text-decoration: none;

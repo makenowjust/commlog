@@ -1,6 +1,4 @@
-# commlog
-
-> Commit Log as a Blog
+<img src="./assets/img/logo.png" align="center">
 
 [![Build Status][travis-badge]](https://travis-ci.org/MakeNowJust/commlog)
 

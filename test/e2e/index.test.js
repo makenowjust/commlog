@@ -128,6 +128,14 @@ onFull(test)('open single commit page', async t => {
   );
   t.is(h1, 'WindowsのインストールUSBを焼く場合');
 
+  const external = await page.evaluate(
+    () => document.querySelector('[data-test~="commit"] [data-test="commit-external-link"]').href,
+  );
+  t.is(
+    external,
+    'https://github.com/MakeNowJust/commlog/commit/048ebceb14ff5367ad8ff9a8a64f920b5a3f9c6d',
+  );
+
   // Back to top page:
   await page.click('[data-test="top-link"]');
   title = await onChangeTitle(title);

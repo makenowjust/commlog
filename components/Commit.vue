@@ -7,7 +7,8 @@
       --></a><!--
       --><span v-else :class="$style.author">{{author.name}}</span><!--
       --><time :datetime="date.toISOString()">{{date.toLocaleString()}}</time><!--
-      --><nuxt-link :class="$style.hash" :to="`/commit/${hash}`" v-test="'commit-link'">#{{hash.slice(0, 7)}}</nuxt-link>
+      --><nuxt-link :class="$style.hash" :to="`/commit/${hash}`" v-test="'commit-link'">#{{hash.slice(0, 7)}}</nuxt-link><!--
+      --><a :href="`https://github.com/MakeNowJust/commlog/commit/${hash}`" v-test="'commit-external-link'"><icon name="external-link-alt" /></a>
     </section>
   </article>
 </template>
@@ -62,10 +63,13 @@
 </style>
 
 <script>
+import 'vue-awesome/icons/external-link-alt';
+import Icon from 'vue-awesome/components/Icon';
+
 import CommitBody from '~/components/CommitBody.vue';
 
 export default {
-  components: {CommitBody},
+  components: {CommitBody, Icon},
   props: ['hash', 'tree', 'author', 'date'],
 };
 </script>

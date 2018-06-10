@@ -87,7 +87,7 @@ export default {
 
       // Prevent for searching because empty query causes an error.
       if (q === '') {
-        //return;
+        return;
       }
 
       this.$router.push({

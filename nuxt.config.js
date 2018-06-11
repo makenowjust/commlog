@@ -15,7 +15,7 @@ export default {
       },
     ],
   },
-  modules: ['@nuxtjs/axios'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/sentry'],
   plugins: ['~/plugins/axios', '~/plugins/test-directive'],
   router: {
     base: '/commlog/',
@@ -34,4 +34,7 @@ export default {
       config.resolve.alias['lowlight$'] = '~/lib/lowlight';
     },
   },
+  sentry: {
+    dsn: 'https://cd350f3bc93247049a7c1d3bfea4ccbc@sentry.io/1207111',
+  }
 };

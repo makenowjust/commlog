@@ -21,7 +21,7 @@
 }
 
 .foot {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   margin: 0 auto 1rem auto;
   padding: 0 0.5rem;
   max-width: $max-width;

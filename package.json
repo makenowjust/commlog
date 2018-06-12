@@ -43,10 +43,16 @@
     "sass-loader": "^7.0.1"
   },
   "ava": {
-    "require": ["@babel/register"]
+    "require": [
+      "@babel/register"
+    ]
   },
   "babel": {
-    "presets": ["@ava/stage-4"],
-    "plugins": ["@babel/proposal-object-rest-spread"]
+    "presets": [
+      "@ava/stage-4"
+    ],
+    "plugins": [
+      "@babel/proposal-object-rest-spread"
+    ]
   }
 }

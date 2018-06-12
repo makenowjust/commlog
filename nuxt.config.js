@@ -15,7 +15,7 @@ export default {
       },
     ],
   },
-  modules: ['@nuxtjs/axios', '@nuxtjs/sentry'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/sentry', '@nuxtjs/google-analytics'],
   plugins: ['~/plugins/axios', '~/plugins/test-directive'],
   router: {
     base: '/commlog/',
@@ -36,5 +36,8 @@ export default {
   },
   sentry: {
     dsn: 'https://cd350f3bc93247049a7c1d3bfea4ccbc@sentry.io/1207111',
+  },
+  'google-analytics': {
+    id: 'UA-49200696-6',
   },
 };

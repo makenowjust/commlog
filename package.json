@@ -37,6 +37,7 @@
     "@babel/register": "^7.0.0-beta.49",
     "ava": "^1.0.0-beta.5.1",
     "axios-mock-adapter": "^1.15.0",
+    "codecov": "^3.0.2",
     "cross-env": "^5.1.6",
     "deepmerge": "^2.1.1",
     "delay": "^3.0.0",

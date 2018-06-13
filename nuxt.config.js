@@ -1,4 +1,8 @@
-export default {
+import merge from 'deepmerge';
+
+const NODE_ENV = process.env.NODE_ENV || 'development';
+
+const config = {
   mode: 'spa',
   css: ['modern-normalize', '@/assets/scss/main.scss'],
   head: {
@@ -15,8 +19,8 @@ export default {
       },
     ],
   },
-  modules: ['@nuxtjs/axios', '@nuxtjs/sentry', '@nuxtjs/google-analytics'],
-  plugins: ['~/plugins/axios', '~/plugins/test-directive'],
+  modules: ['@nuxtjs/axios'],
+  plugins: ['~/plugins/axios'],
   loading: {
     color: '#4a4a4a',
   },
@@ -28,10 +32,25 @@ export default {
       config.resolve.alias['lowlight$'] = '~/lib/lowlight';
     },
   },
-  sentry: {
-    dsn: 'https://cd350f3bc93247049a7c1d3bfea4ccbc@sentry.io/1207111',
+};
+
+const envs = {
+  development: {
+    plugins: ['~/plugins/test-directive', '~/test/_axios-mock'],
   },
-  'google-analytics': {
-    id: 'UA-49200696-6',
+  test: {
+    plugins: ['~/test/_test-directive', '~/test/_axios-mock'],
+  },
+  production: {
+    modules: ['@nuxtjs/sentry', '@nuxtjs/google-analytics'],
+    plugins: ['~/plugins/test-directive'],
+    sentry: {
+      dsn: 'https://cd350f3bc93247049a7c1d3bfea4ccbc@sentry.io/1207111',
+    },
+    'google-analytics': {
+      id: 'UA-49200696-6',
+    },
   },
 };
+
+export default merge(config, envs[NODE_ENV]);

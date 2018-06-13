@@ -79,7 +79,7 @@ test.serial('open top page', async t => {
   let title = await page.evaluate(() => document.title);
 
   // Open top page:
-  await page.goto('http://localhost:4000/commlog/');
+  await page.goto('http://localhost:4000/');
   title = await onChangeTitle(title);
   t.is(title, 'commlog top');
 
@@ -117,7 +117,7 @@ test.serial('open single commit page', async t => {
   let title = await page.evaluate(() => document.title);
 
   // Open single commit page:
-  await page.goto('http://localhost:4000/commlog/commit/048ebceb14ff5367ad8ff9a8a64f920b5a3f9c6d');
+  await page.goto('http://localhost:4000/commit/048ebceb14ff5367ad8ff9a8a64f920b5a3f9c6d');
   title = await onChangeTitle(title);
   t.is(title, '#048ebce WindowsのインストールUSBを焼く場合 | commlog commit');
 
@@ -147,7 +147,7 @@ test.serial('open search page', async t => {
   let title = await page.evaluate(() => document.title);
 
   // Open top page:
-  await page.goto('http://localhost:4000/commlog/');
+  await page.goto('http://localhost:4000/');
   title = await onChangeTitle(title);
   t.is(title, 'commlog top');
 
@@ -157,7 +157,7 @@ test.serial('open search page', async t => {
   // TODO: It is unsafe... How is proper way to check "can't search without query"?
   await delay(500);
   const url = await page.evaluate(() => location.href);
-  t.is(url, 'http://localhost:4000/commlog/');
+  t.is(url, 'http://localhost:4000/');
 
   // Seacrh 'hello':
   await page.focus('[data-test="search"]');

@@ -1,8 +1,6 @@
 <template>
   <div>
-    <loading
-      :loading="loading"
-      :error="error">
+    <loading :loading="loading" :error="error">
       <commit v-bind="commit" />
     </loading>
   </div>

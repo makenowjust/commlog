@@ -7,13 +7,8 @@
     />
 
     <template v-if="hasNext || loading">
-      <loading
-        :loading="loading"
-        :error="error">
-        <section
-          v-test="'load-more'"
-          :class="$style['load-more']"
-          @click="loadMore">
+      <loading :loading="loading" :error="error">
+        <section v-test="'load-more'" :class="$style['load-more']" @click="loadMore">
           <p>Load more...</p>
         </section>
       </loading>

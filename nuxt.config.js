@@ -17,9 +17,6 @@ export default {
   },
   modules: ['@nuxtjs/axios', '@nuxtjs/sentry', '@nuxtjs/google-analytics'],
   plugins: ['~/plugins/axios', '~/plugins/test-directive'],
-  generate: {
-    fallback: true,
-  },
   loading: {
     color: '#4a4a4a',
   },

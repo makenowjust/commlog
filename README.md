@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://makenowjust.github.io/commlog"><img src="./assets/img/logo-with-icon.png"></a></h1>
+<h1 align="center"><a href="https://commlog.quine.codes/"><img src="./assets/img/logo-with-icon.png"></a></h1>
 
 [![Build Status][travis-badge]](https://travis-ci.org/MakeNowJust/commlog)
 

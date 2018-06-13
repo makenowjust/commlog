@@ -13,6 +13,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   keep_history: true
+  target-branch: release
   github-token: "$GITHUB_TOKEN"
   local-dir: dist
   name: TSUYUSATO Kitsune

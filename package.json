@@ -11,7 +11,7 @@
     "format": "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --write",
     "generate": "cross-env NODE_ENV=production nuxt generate",
     "lint": "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --list-different",
-    "test": "ava"
+    "test": "nyc ava"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
@@ -57,6 +57,16 @@
     ],
     "plugins": [
       "@babel/proposal-object-rest-spread"
+    ]
+  },
+  "nyc": {
+    "include": [
+      "{lib,store}/**/*.js"
+    ],
+    "reporter": [
+      "html",
+      "lcov",
+      "text"
     ]
   }
 }

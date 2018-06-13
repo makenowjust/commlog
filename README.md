@@ -7,7 +7,6 @@
 
 </h1>
 
-
 ## Development
 
 Clone repository and change directory:

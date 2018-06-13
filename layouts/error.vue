@@ -12,11 +12,11 @@
 @import '~@/assets/scss/variables';
 
 .error {
+  overflow: auto;
   max-width: $max-width;
   padding: 5rem 0;
   margin: 0 auto;
   text-align: center;
-  overflow: auto;
 
   h2 {
     font-family: $emphasize;

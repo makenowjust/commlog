@@ -1,5 +1,6 @@
-@import 'variables';
+@import 'variables'; // stylelint-disable-line scss/partial-no-import
 
+// stylelint-disable-next-line selector-pseudo-class-no-unknown
 :global {
   .hljs,
   .hljs-subst {
@@ -39,8 +40,9 @@
     color: $dark-yellow;
   }
 
-  .hljs-type,
+  // stylelint-disable-next-line selector-class-pattern
   .hljs-built_in,
+  .hljs-type,
   .hljs-builtin-name,
   .hljs-symbol,
   .hljs-selector-id,

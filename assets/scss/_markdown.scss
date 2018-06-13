@@ -1,12 +1,12 @@
-@import 'variables';
+@import 'variables'; // stylelint-disable-line scss/partial-no-import
 
 $block-level: h1, h2, h3, h4, h5, h6, hr, p, blockquote, table, pre, ul, ol;
 
 // Block level elements:
 #{$block-level} {
-  margin: 2rem auto;
-  padding: 0 0.5rem;
   max-width: $max-width;
+  padding: 0 0.5rem;
+  margin: 2rem auto;
 }
 
 #{selector-nest("li >", $block-level)} {
@@ -20,8 +20,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
   font-family: $emphasize;
+  font-weight: normal;
 }
 
 h1 {
@@ -49,8 +49,8 @@ p {
 
 // a:
 a {
-  text-decoration: underline;
   color: $black;
+  text-decoration: underline;
   transition: color ease 0.3s 0s;
 
   &:hover {
@@ -64,40 +64,40 @@ img {
   max-width: 100%;
 }
 
-// code:
+// pre, code:
 code {
-  background-color: $black;
-  color: $white;
-  font-family: $monospace;
   padding: 0 0.25em;
+  color: $white;
+  background-color: $black;
+  font-family: $monospace;
 }
 
-a code {
-  transition: color ease 0.3s 0s;
-  text-decoration: underline;
-}
-
-a:hover code {
-  color: $light-blue;
-}
-
-// pre:
 pre {
   width: 100%;
   max-width: none;
-  background-color: $black;
   color: $white;
+  background-color: $black;
   font-family: $monospace;
 
   > code {
     display: block;
     max-width: $max-width;
-    overflow-x: auto;
-    margin: 0 auto;
     padding: 0.75rem 0;
+    margin: 0 auto;
+    overflow-x: auto;
   }
 
-  @import '~@/assets/scss/highlight';
+  // stylelint-disable-next-line at-rule-empty-line-before, scss/partial-no-import
+  @import 'highlight';
+}
+
+a code {
+  text-decoration: underline;
+  transition: color ease 0.3s 0s;
+}
+
+a:hover code {
+  color: $light-blue;
 }
 
 // ul, ol
@@ -108,24 +108,24 @@ ol {
 
 // table:
 table {
+  display: block;
   border-collapse: collapse;
   overflow-x: auto;
-  display: block;
 
   tr:hover {
     background-color: $light-gray;
   }
 
   th {
-    font-weight: normal;
     color: $white;
     background-color: $black;
+    font-weight: normal;
   }
 
   th,
   td {
     padding: 0.25rem;
-    border: 0.0625rem solid $dark-gray;
+    border: 0.063rem solid $dark-gray;
   }
 }
 
@@ -133,13 +133,13 @@ table {
 hr {
   padding: 0;
   border: none;
-  border-bottom: 0.0625rem solid $light-gray;
+  border-bottom: 0.063rem solid $light-gray;
 }
 
 // blockquote:
 blockquote {
-  border-left: 0.25rem solid $black;
   padding: 0.5rem 0 0.5rem 1rem;
+  border-left: 0.25rem solid $black;
 
   > :first-child {
     margin-top: 0;

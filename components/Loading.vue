@@ -13,11 +13,11 @@
 @import '~@/assets/scss/variables';
 
 .loading {
+  overflow: auto;
   max-width: $max-width;
   padding: 5rem 0;
   margin: 0 auto;
   text-align: center;
-  overflow: auto;
 
   pre {
     text-align: left;

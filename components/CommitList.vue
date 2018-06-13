@@ -8,7 +8,7 @@
 
     <template v-if="hasNext || loading">
       <loading :loading="loading" :error="error">
-        <section :class="$style.loadMore" @click="loadMore" v-test="'load-more'">
+        <section :class="$style['load-more']" @click="loadMore" v-test="'load-more'">
           <p>Load more...</p>
         </section>
       </loading>
@@ -19,14 +19,14 @@
 <style module lang="scss">
 @import '~@/assets/scss/variables';
 
-.loadMore {
+.load-more {
   max-width: $max-width;
   padding: 5rem 0;
   margin: 0 auto;
-  text-align: center;
-  cursor: pointer;
   color: $black;
+  text-align: center;
   transition: color ease 0.3s 0s;
+  cursor: pointer;
 
   &:hover {
     color: $light-blue;

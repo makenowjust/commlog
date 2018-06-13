@@ -21,9 +21,9 @@
   width: 2em;
   height: 2em;
   padding: 0;
+  border: 2px solid;
   margin: 0;
   opacity: 0;
-  border: 2px solid;
   animation: load 3s ease 0s infinite normal;
 
   &:nth-child(2) {
@@ -41,12 +41,12 @@
     opacity: 0;
   }
   16.66666666% {
-    opacity: 1;
     transform: translate(0);
+    opacity: 1;
   }
   50% {
-    opacity: 1;
     transform: translate(0);
+    opacity: 1;
   }
   66.66666666% {
     transform: translateX(-2em);

@@ -18,15 +18,15 @@
 
 .header {
   width: 100%;
-  padding: 6rem 0 0 0;
+  padding: 6rem 0 0;
 
   > h1 {
+    width: 100%;
+    margin: 0 0 5rem;
     font-size: 2.5rem;
     font-weight: normal;
-    line-height: 3rem;
-    margin: 0 0 5rem 0;
-    width: 100%;
     text-align: center;
+    line-height: 3rem;
 
     .logo {
       width: 330px;
@@ -38,8 +38,8 @@
     }
 
     > a {
-      text-decoration: none;
       color: $black;
+      text-decoration: none;
       transition: color ease 0.3s 0s;
 
       &:hover {
@@ -56,20 +56,20 @@
 
   > .icon {
     display: inline-block;
-    left: 0;
-    right: 0;
     width: 1.5rem;
     height: 1.5rem;
+    right: 0;
+    left: 0;
+    vertical-align: middle;
     font-size: 1.3rem;
     text-align: center;
-    vertical-align: middle;
   }
 
   > input {
-    padding: 0.5rem 0.5rem 0.5rem 1.75rem;
-    margin-left: -2rem;
-    border: none;
     width: 15rem;
+    padding: 0.5rem 0.5rem 0.5rem 1.75rem;
+    border: none;
+    margin-left: -2rem;
     background: transparent;
 
     &:focus {

@@ -19,24 +19,24 @@
 @import '~@/assets/scss/variables';
 
 .wrap {
-  border-bottom: 0.0625rem solid $light-gray;
+  border-bottom: 0.063rem solid $light-gray;
 }
 
 .foot {
-  font-size: 0;
-  margin: 0 auto 1rem auto;
-  padding: 0 0.5rem;
   max-width: $max-width;
+  padding: 0 0.5rem;
+  margin: 0 auto 1rem;
+  font-size: 0;
   text-align: right;
 
   > * {
-    font-size: 0.8rem;
     display: inline-block;
+    font-size: 0.8rem;
   }
 
   a {
-    text-decoration: underline;
     color: $black;
+    text-decoration: underline;
     transition: color ease 0.3s 0s;
 
     &:hover {
@@ -50,16 +50,16 @@
 
   > .author {
     > img {
-      height: 1em;
       width: 1em;
+      height: 1em;
     }
   }
 
   > .hash {
-    background-color: $black;
-    color: $white;
-    font-family: $monospace;
     padding: 0 0.25em;
+    color: $white;
+    background-color: $black;
+    font-family: $monospace;
     transition: color ease 0.3s 0s;
 
     &:hover {

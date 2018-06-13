@@ -11,15 +11,12 @@ export default {
       },
       {
         rel: 'icon',
-        href: '/commlog/favicon.png',
+        href: '/favicon.png',
       },
     ],
   },
   modules: ['@nuxtjs/axios', '@nuxtjs/sentry', '@nuxtjs/google-analytics'],
   plugins: ['~/plugins/axios', '~/plugins/test-directive'],
-  router: {
-    base: '/commlog/',
-  },
   generate: {
     fallback: true,
   },

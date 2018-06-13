@@ -5,3 +5,7 @@ node_modules/
 # Nuxt.js
 .nuxt/
 dist/
+
+# Istanbul
+coverage/
+.nyc_output/

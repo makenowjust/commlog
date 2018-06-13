@@ -11,7 +11,7 @@
     "format": "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --write",
     "generate": "cross-env NODE_ENV=production nuxt generate",
     "lint": "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --list-different",
-    "test": "ava"
+    "test": "nyc ava"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
@@ -37,10 +37,12 @@
     "@babel/register": "^7.0.0-beta.49",
     "ava": "^1.0.0-beta.5.1",
     "axios-mock-adapter": "^1.15.0",
+    "codecov": "^3.0.2",
     "cross-env": "^5.1.6",
     "deepmerge": "^2.1.1",
     "delay": "^3.0.0",
     "node-sass": "^4.9.0",
+    "nyc": "^12.0.2",
     "prettier": "^1.12.1",
     "puppeteer": "^1.4.0",
     "sass-loader": "^7.0.1"
@@ -56,6 +58,16 @@
     ],
     "plugins": [
       "@babel/proposal-object-rest-spread"
+    ]
+  },
+  "nyc": {
+    "include": [
+      "{lib,store}/**/*.js"
+    ],
+    "reporter": [
+      "html",
+      "lcov",
+      "text"
     ]
   }
 }

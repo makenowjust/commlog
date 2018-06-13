@@ -1,7 +1,12 @@
-<h1 align="center"><a href="https://commlog.quine.codes/"><img src="./assets/img/logo-with-icon.png"></a></h1>
+<h1 align="center">
+
+[![Commlog Logo](./assets/img/logo-with-icon.png)](https://commlog.quine.codes/)
 
 [![Build Status][travis-badge]](https://travis-ci.org/MakeNowJust/commlog)
 [![Coverage][codecov-badge]](https://codecov.io/gh/MakeNowJust/commlog/branch/master)
+
+</h1>
+
 
 ## Development
 

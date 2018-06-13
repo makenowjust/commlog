@@ -1,5 +1,5 @@
-import {convertCommit} from '~/lib/github';
-import * as loader from '~/lib/loader';
+import {convertCommit} from '../../lib/github';
+import * as loader from '../../lib/loader';
 
 export const state = () => ({
   hash: null,

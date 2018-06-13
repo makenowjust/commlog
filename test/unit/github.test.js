@@ -2,9 +2,9 @@ import test from 'ava';
 
 import {convertCommit, convertPage} from '../../lib/github';
 
-import COMMIT from '../fixtures/commit.json';
-import COMMITS from '../fixtures/commits1.json';
-import SEARCH from '../fixtures/search.json';
+import COMMIT from '../fixtures/commit';
+import COMMITS from '../fixtures/commits1';
+import SEARCH from '../fixtures/search';
 
 test('convert commit', t => {
   const commit = convertCommit(COMMIT);

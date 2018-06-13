@@ -1,9 +1,9 @@
 <template>
   <section :class="$style.error">
-    <h2>{{error.message}}</h2>
+    <h2>{{ error.message }}</h2>
     <details v-if="error.stack">
       <summary>Stack trace</summary>
-      <pre>{{error.stack}}</pre>
+      <pre>{{ error.stack }}</pre>
     </details>
   </section>
 </template>
@@ -31,6 +31,8 @@
 
 <script>
 export default {
-  props: ['error'],
+  props: {
+    error: {type: Error, required: true},
+  },
 };
 </script>

@@ -1,6 +1,9 @@
 <template>
-  <section v-if="loading" :class="$style.loading" v-test="'loading'">
-    <pre v-if="error">{{error.stack}}</pre>
+  <section
+    v-test="'loading'"
+    v-if="loading"
+    :class="$style.loading">
+    <pre v-if="error">{{ error.stack }}</pre>
     <template v-else>
       <p>Loading...</p>
       <loading-box />
@@ -10,7 +13,7 @@
 </template>
 
 <style module lang="scss">
-@import '~@/assets/scss/variables';
+@import '~../assets/scss/variables';
 
 .loading {
   overflow: auto;
@@ -26,10 +29,13 @@
 </style>
 
 <script>
-import LoadingBox from './LoadingBox';
+import LoadingBox from './LoadingBox.vue';
 
 export default {
   components: {LoadingBox},
-  props: ['loading', 'error'],
+  props: {
+    loading: {type: Boolean, required: true},
+    error: {type: Error, required: true},
+  },
 };
 </script>

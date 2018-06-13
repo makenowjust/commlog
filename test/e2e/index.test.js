@@ -1,6 +1,5 @@
-import test from 'ava';
-
 import * as path from 'path';
+import test from 'ava';
 
 import {Nuxt, Builder} from 'nuxt-edge';
 import puppeteer from 'puppeteer';
@@ -52,6 +51,7 @@ const DELAY = 1000;
 const wait = async (expr, cond) => {
   let value = null;
   let i = 0;
+  /* eslint-disable no-await-in-loop */
   for (i = 0; i < TIMEOUT; i++) {
     value = await page.evaluate(expr);
     if (cond(value)) {
@@ -59,6 +59,7 @@ const wait = async (expr, cond) => {
     }
     await delay(DELAY);
   }
+  /* eslint-enable */
 
   if (i >= TIMEOUT) {
     throw new Error('timeout');
@@ -88,7 +89,7 @@ test.serial('open top page', async t => {
 
   // Click "load more":
   await page.click('[data-test="load-more"]');
-  await wait(() => !!document.querySelector('[data-test="loading"]'), loading => !loading);
+  await wait(() => Boolean(document.querySelector('[data-test="loading"]')), loading => !loading);
 
   articles = await getCommitCount();
   t.is(articles, 60);
@@ -171,6 +172,8 @@ test.serial('open search page', async t => {
   const articles = await getCommitCount();
   t.is(articles, 1);
 
-  const hasNext = await page.evaluate(() => !!document.querySelector('[data-test="load-more"]'));
+  const hasNext = await page.evaluate(() =>
+    Boolean(document.querySelector('[data-test="load-more"]')),
+  );
   t.is(hasNext, false);
 });

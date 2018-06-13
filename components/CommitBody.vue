@@ -1,5 +1,5 @@
 <style module lang="scss">
-@import '~@/assets/scss/variables';
+@import '~../assets/scss/variables';
 
 .wrap {
   font-size: 0.875rem;
@@ -7,16 +7,17 @@
   overflow-wrap: break-word;
 
   // stylelint-disable-next-line at-rule-empty-line-before
-  @import '~@/assets/scss/markdown';
+  @import '~../assets/scss/markdown';
 }
 </style>
 
 <script>
-import markdown from '~/lib/markdown';
 import toH from 'hast-to-hyperscript';
 
 export default {
-  props: ['tree'],
+  props: {
+    tree: {type: Object, required: true},
+  },
   render(createElement) {
     const h = (tagName, props, children) => {
       const {className, ...attrs} = props || {};

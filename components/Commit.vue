@@ -1,14 +1,26 @@
 <template>
-  <article :class="$style.wrap" v-test="`commit commit-${hash.slice(0, 7)}`">
+  <article
+    v-test="`commit commit-${hash.slice(0, 7)}`"
+    :class="$style.wrap">
     <commit-body :tree="tree" />
     <section :class="$style.foot">
-      <a v-if="author.github" :class="$style.author" :href="`https://github.com/${author.name}`">
-        {{author.name}}<img :src="author.icon" />
+      <a
+        v-if="author.github"
+        :class="$style.author"
+        :href="`https://github.com/${author.name}`">
+        {{ author.name }}<img :src="author.icon" >
       </a>
-      <span v-else :class="$style.author">{{author.name}}</span>
-      <time :datetime="date.toISOString()">{{date.toLocaleString()}}</time>
-      <nuxt-link :class="$style.hash" :to="`/commit/${hash}`" v-test="'commit-link'">#{{hash.slice(0, 7)}}</nuxt-link>
-      <a :href="`https://github.com/MakeNowJust/commlog/commit/${hash}`" v-test="'commit-external-link'">
+      <span
+        v-else
+        :class="$style.author">{{ author.name }}</span>
+      <time :datetime="date.toISOString()">{{ date.toLocaleString() }}</time>
+      <nuxt-link
+        v-test="'commit-link'"
+        :class="$style.hash"
+        :to="`/commit/${hash}`">#{{ hash.slice(0, 7) }}</nuxt-link>
+      <a
+        v-test="'commit-external-link'"
+        :href="`https://github.com/MakeNowJust/commlog/commit/${hash}`">
         <icon name="external-link-alt" />
       </a>
     </section>
@@ -16,7 +28,7 @@
 </template>
 
 <style module lang="scss">
-@import '~@/assets/scss/variables';
+@import '~../assets/scss/variables';
 
 .wrap {
   border-bottom: 0.063rem solid $light-gray;
@@ -70,13 +82,19 @@
 </style>
 
 <script>
+// eslint-disable-next-line import/no-unassigned-import
 import 'vue-awesome/icons/external-link-alt';
-import Icon from 'vue-awesome/components/Icon';
+import Icon from 'vue-awesome/components/Icon.vue';
 
-import CommitBody from '~/components/CommitBody.vue';
+import CommitBody from './CommitBody.vue';
 
 export default {
   components: {CommitBody, Icon},
-  props: ['hash', 'tree', 'author', 'date'],
+  props: {
+    hash: {type: String, required: true},
+    tree: {type: Object, required: true},
+    author: {type: Object, required: true},
+    date: {type: Date, required: true},
+  },
 };
 </script>

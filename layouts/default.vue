@@ -1,10 +1,23 @@
 <template>
   <div>
     <header :class="$style.header">
-      <h1><nuxt-link to="/" v-test="'top-link'"><img :class="$style.logo" src="~/assets/img/logo.png" alt="commlog logo" /></nuxt-link></h1>
+      <h1>
+        <nuxt-link
+          v-test="'top-link'"
+          to="/">
+          <img
+            :class="$style.logo"
+            src="~/assets/img/logo.png"
+            alt="commlog logo">
+        </nuxt-link>
+      </h1>
       <section :class="$style.search">
         <div :class="$style.icon"><icon name="search" /></div>
-        <input placeholder="Search commits" v-model="query" @keyup.enter="search" v-test="'search'" />
+        <input
+          v-test="'search'"
+          v-model="query"
+          placeholder="Search commits"
+          @keyup.enter="search" >
       </section>
     </header>
     <main>
@@ -14,7 +27,7 @@
 </template>
 
 <style module lang="scss">
-@import '~@/assets/scss/variables';
+@import '~../assets/scss/variables';
 
 .header {
   width: 100%;
@@ -80,8 +93,9 @@
 </style>
 
 <script>
+// eslint-disable-next-line import/no-unassigned-import
 import 'vue-awesome/icons/search';
-import Icon from 'vue-awesome/components/Icon';
+import Icon from 'vue-awesome/components/Icon.vue';
 
 export default {
   components: {Icon},
@@ -89,6 +103,11 @@ export default {
     return {
       query: this.$route.query.q || '',
     };
+  },
+  watch: {
+    $route() {
+      this.query = this.$route.query.q;
+    },
   },
   methods: {
     search() {
@@ -103,11 +122,6 @@ export default {
         name: 'search',
         query: {q},
       });
-    },
-  },
-  watch: {
-    $route() {
-      this.query = this.$route.query.q;
     },
   },
 };

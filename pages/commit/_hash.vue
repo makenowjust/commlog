@@ -1,16 +1,18 @@
 <template>
   <div>
-    <loading :loading="loading" :error="error">
+    <loading
+      :loading="loading"
+      :error="error">
       <commit v-bind="commit" />
     </loading>
   </div>
 </template>
 
 <script>
-import {mapActions, mapGetters, mapState} from 'vuex';
+import {mapGetters, mapState} from 'vuex';
 
-import Commit from '~/components/Commit';
-import Loading from '~/components/Loading';
+import Commit from '../../components/Commit.vue';
+import Loading from '../../components/Loading.vue';
 
 export default {
   components: {Commit, Loading},

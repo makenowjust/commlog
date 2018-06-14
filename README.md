@@ -53,7 +53,7 @@ yarn run v1.6.0
  READY  Listening on http://localhost:3000
 ```
 
-Then, open <http://localhost:3000/commlog/>.
+Then, open <http://localhost:3000/>.
 
 ## License
 

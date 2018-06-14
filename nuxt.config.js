@@ -41,14 +41,14 @@ const config = {
 
 const envs = {
   development: {
-    plugins: ['~/plugins/test-directive', '~/test/_axios-mock'],
+    plugins: ['./plugins/test-directive', './test/_axios-mock'],
   },
   test: {
-    plugins: ['~/test/_test-directive', '~/test/_axios-mock'],
+    plugins: ['./test/_test-directive', './test/_axios-mock'],
   },
   production: {
     modules: ['@nuxtjs/sentry', '@nuxtjs/google-analytics'],
-    plugins: ['~/plugins/test-directive'],
+    plugins: ['./plugins/test-directive'],
     sentry: {
       dsn: 'https://cd350f3bc93247049a7c1d3bfea4ccbc@sentry.io/1207111',
     },

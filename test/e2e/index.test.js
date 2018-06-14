@@ -16,14 +16,9 @@ let page = null;
 
 test.before(async () => {
   const rootDir = path.resolve(__dirname, '../..');
-  const plugins = config.plugins
-    .filter(plugin => plugin !== '~/plugins/test-directive')
-    .concat(path.join(__dirname, '../_test-directive.js'))
-    .concat(path.join(__dirname, '../_axios-mock.js'));
   nuxt = new Nuxt({
     ...config,
     dev: false,
-    plugins,
     rootDir,
   });
   await new Builder(nuxt).build();

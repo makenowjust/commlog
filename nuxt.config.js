@@ -8,6 +8,9 @@ const config = {
   mode: 'spa',
   css: ['modern-normalize', './assets/scss/main.scss'],
   head: {
+    htmlAttrs: {
+      lang: 'ja',
+    },
     title: 'commlog',
     meta: [{charset: 'utf-8'}, {name: 'viewport', content: 'width=device-width, initial-scale=1'}],
     link: [

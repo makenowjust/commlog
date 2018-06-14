@@ -3,6 +3,6 @@
 
 import Vue from 'vue';
 
-Vue.directive('test', (el, binding) => {
+Vue.directive('test', () => {
   // Do nothing due to fake.
 });

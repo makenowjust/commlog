@@ -1,10 +1,18 @@
 <template>
   <div>
     <header :class="$style.header">
-      <h1><nuxt-link to="/" v-test="'top-link'"><img :class="$style.logo" src="~/assets/img/logo.png" alt="commlog logo" /></nuxt-link></h1>
+      <h1>
+        <nuxt-link v-test="'top-link'" to="/">
+          <img :class="$style.logo" src="~/assets/img/logo.png" alt="commlog logo"/>
+        </nuxt-link>
+      </h1>
       <section :class="$style.search">
         <div :class="$style.icon"><icon name="search" /></div>
-        <input placeholder="Search commits" v-model="query" @keyup.enter="search" v-test="'search'" />
+        <input
+          v-test="'search'"
+          v-model="query"
+          placeholder="Search commits"
+          @keyup.enter="search" />
       </section>
     </header>
     <main>
@@ -14,19 +22,19 @@
 </template>
 
 <style module lang="scss">
-@import '~@/assets/scss/variables';
+@import '~../assets/scss/variables';
 
 .header {
   width: 100%;
-  padding: 6rem 0 0 0;
+  padding: 6rem 0 0;
 
   > h1 {
+    width: 100%;
+    margin: 0 0 5rem;
     font-size: 2.5rem;
     font-weight: normal;
-    line-height: 3rem;
-    margin: 0 0 5rem 0;
-    width: 100%;
     text-align: center;
+    line-height: 3rem;
 
     .logo {
       width: 330px;
@@ -38,8 +46,8 @@
     }
 
     > a {
-      text-decoration: none;
       color: $black;
+      text-decoration: none;
       transition: color ease 0.3s 0s;
 
       &:hover {
@@ -56,20 +64,20 @@
 
   > .icon {
     display: inline-block;
-    left: 0;
-    right: 0;
     width: 1.5rem;
     height: 1.5rem;
+    right: 0;
+    left: 0;
+    vertical-align: middle;
     font-size: 1.3rem;
     text-align: center;
-    vertical-align: middle;
   }
 
   > input {
-    padding: 0.5rem 0.5rem 0.5rem 1.75rem;
-    margin-left: -2rem;
-    border: none;
     width: 15rem;
+    padding: 0.5rem 0.5rem 0.5rem 1.75rem;
+    border: none;
+    margin-left: -2rem;
     background: transparent;
 
     &:focus {
@@ -80,8 +88,9 @@
 </style>
 
 <script>
+// eslint-disable-next-line import/no-unassigned-import
 import 'vue-awesome/icons/search';
-import Icon from 'vue-awesome/components/Icon';
+import Icon from 'vue-awesome/components/Icon.vue';
 
 export default {
   components: {Icon},
@@ -89,6 +98,11 @@ export default {
     return {
       query: this.$route.query.q || '',
     };
+  },
+  watch: {
+    $route() {
+      this.query = this.$route.query.q;
+    },
   },
   methods: {
     search() {
@@ -103,11 +117,6 @@ export default {
         name: 'search',
         query: {q},
       });
-    },
-  },
-  watch: {
-    $route() {
-      this.query = this.$route.query.q;
     },
   },
 };

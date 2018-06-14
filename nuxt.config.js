@@ -1,10 +1,12 @@
+import path from 'path';
+
 import merge from 'deepmerge';
 
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
 const config = {
   mode: 'spa',
-  css: ['modern-normalize', '@/assets/scss/main.scss'],
+  css: ['modern-normalize', './assets/scss/main.scss'],
   head: {
     title: 'commlog',
     meta: [{charset: 'utf-8'}, {name: 'viewport', content: 'width=device-width, initial-scale=1'}],
@@ -20,7 +22,7 @@ const config = {
     ],
   },
   modules: ['@nuxtjs/axios'],
-  plugins: ['~/plugins/axios'],
+  plugins: ['./plugins/axios'],
   loading: {
     color: '#4a4a4a',
   },
@@ -29,7 +31,7 @@ const config = {
   },
   build: {
     extend(config) {
-      config.resolve.alias['lowlight$'] = '~/lib/lowlight';
+      config.resolve.alias.lowlight$ = path.join(__dirname, './lib/lowlight');
     },
   },
 };

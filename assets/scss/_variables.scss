@@ -1,7 +1,9 @@
 // Fonts:
+// stylelint-disable value-keyword-case
 $sans-serif: Raleway, 游ゴシック, 'Yu Gothic', 游ゴシック体, YuGothic, sans-serif;
 $monospace: 'Nova Mono', monospace;
 $emphasize: Oswald, 游ゴシック, 'Yu Gothic', 游ゴシック体, YuGothic, sans-serif;
+// stylelint-enable
 
 // Sizes:
 $max-width: 800px;
@@ -12,7 +14,7 @@ $white: #fff;
 $dark-gray: #8a8a8a;
 $light-gray: #ddd;
 $light-blue: #57a3e8;
-$light-red: #cc5555;
+$light-red: #c55;
 $light-green: #23ee3e;
 $light-purple: #d433e2;
 $dark-yellow: #d6cb2e;

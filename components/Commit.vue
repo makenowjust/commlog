@@ -1,14 +1,16 @@
 <template>
-  <article :class="$style.wrap" v-test="`commit commit-${hash.slice(0, 7)}`">
+  <article
+    v-test="`commit commit-${hash.slice(0, 7)}`"
+    :class="$style.wrap">
     <commit-body :tree="tree" />
     <section :class="$style.foot">
       <a v-if="author.github" :class="$style.author" :href="`https://github.com/${author.name}`">
-        {{author.name}}<img :src="author.icon" />
+        {{ author.name }}<img :src="author.icon"/>
       </a>
-      <span v-else :class="$style.author">{{author.name}}</span>
-      <time :datetime="date.toISOString()">{{date.toLocaleString()}}</time>
-      <nuxt-link :class="$style.hash" :to="`/commit/${hash}`" v-test="'commit-link'">#{{hash.slice(0, 7)}}</nuxt-link>
-      <a :href="`https://github.com/MakeNowJust/commlog/commit/${hash}`" v-test="'commit-external-link'">
+      <span v-else :class="$style.author">{{ author.name }}</span>
+      <time :datetime="date.toISOString()">{{ date.toLocaleString() }}</time>
+      <nuxt-link v-test="'commit-link'" :class="$style.hash" :to="`/commit/${hash}`">#{{ hash.slice(0, 7) }}</nuxt-link>
+      <a v-test="'commit-external-link'" :href="`https://github.com/MakeNowJust/commlog/commit/${hash}`">
         <icon name="external-link-alt" />
       </a>
     </section>
@@ -16,27 +18,27 @@
 </template>
 
 <style module lang="scss">
-@import '~@/assets/scss/variables';
+@import '~../assets/scss/variables';
 
 .wrap {
-  border-bottom: 0.0625rem solid $light-gray;
+  border-bottom: 0.063rem solid $light-gray;
 }
 
 .foot {
-  font-size: 0;
-  margin: 0 auto 1rem auto;
-  padding: 0 0.5rem;
   max-width: $max-width;
+  padding: 0 0.5rem;
+  margin: 0 auto 1rem;
+  font-size: 0;
   text-align: right;
 
   > * {
-    font-size: 0.8rem;
     display: inline-block;
+    font-size: 0.8rem;
   }
 
   a {
-    text-decoration: underline;
     color: $black;
+    text-decoration: underline;
     transition: color ease 0.3s 0s;
 
     &:hover {
@@ -50,16 +52,16 @@
 
   > .author {
     > img {
-      height: 1em;
       width: 1em;
+      height: 1em;
     }
   }
 
   > .hash {
-    background-color: $black;
-    color: $white;
-    font-family: $monospace;
     padding: 0 0.25em;
+    color: $white;
+    background-color: $black;
+    font-family: $monospace;
     transition: color ease 0.3s 0s;
 
     &:hover {
@@ -70,13 +72,19 @@
 </style>
 
 <script>
+// eslint-disable-next-line import/no-unassigned-import
 import 'vue-awesome/icons/external-link-alt';
-import Icon from 'vue-awesome/components/Icon';
+import Icon from 'vue-awesome/components/Icon.vue';
 
-import CommitBody from '~/components/CommitBody.vue';
+import CommitBody from './CommitBody.vue';
 
 export default {
   components: {CommitBody, Icon},
-  props: ['hash', 'tree', 'author', 'date'],
+  props: {
+    hash: {type: String, required: true},
+    tree: {type: Object, required: true},
+    author: {type: Object, required: true},
+    date: {type: Date, required: true},
+  },
 };
 </script>

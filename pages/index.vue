@@ -5,13 +5,13 @@
     :loading="loading"
     :error="error"
     @load-more="loadMore"
-    />
+  />
 </template>
 
 <script>
 import {mapActions, mapGetters, mapState} from 'vuex';
 
-import CommitList from '~/components/CommitList.vue';
+import CommitList from '../components/CommitList.vue';
 
 export default {
   components: {CommitList},

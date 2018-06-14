@@ -1,5 +1,5 @@
-import {convertPage} from '~/lib/github';
-import * as loader from '~/lib/loader';
+import {convertPage} from '../../lib/github';
+import * as loader from '../../lib/loader';
 
 export const state = () => ({
   next: 'https://api.github.com/repos/MakeNowJust/commlog/commits',
@@ -17,7 +17,7 @@ export const mutations = {
 
 export const getters = {
   hasNext(state) {
-    return state.hashes.length > 0 && !!state.next;
+    return state.hashes.length > 0 && Boolean(state.next);
   },
   commits(state, _getters, _rootState, rootGetters) {
     return state.hashes.map(hash => rootGetters.commit(hash));

@@ -1,9 +1,9 @@
 import MockAdapter from 'axios-mock-adapter';
 
-import COMMIT from './fixtures/commit.json';
-import COMMITS1 from './fixtures/commits1.json';
-import COMMITS2 from './fixtures/commits2.json';
-import SEARCH from './fixtures/search.json';
+import COMMIT from './fixtures/commit';
+import COMMITS1 from './fixtures/commits1';
+import COMMITS2 from './fixtures/commits2';
+import SEARCH from './fixtures/search';
 
 export default ({$axios}) => {
   const mock = new MockAdapter($axios);

@@ -5,7 +5,7 @@
     <commit-body :tree="tree" />
     <section :class="$style.foot">
       <a v-if="author.github" :class="$style.author" :href="`https://github.com/${author.name}`">
-        {{ author.name }}<img :src="author.icon"/>
+        {{ author.name }}<img :src="author.icon" :alt="`${author.name} icon`" />
       </a>
       <span v-else :class="$style.author">{{ author.name }}</span>
       <time :datetime="date.toISOString()">{{ date.toLocaleString() }}</time>

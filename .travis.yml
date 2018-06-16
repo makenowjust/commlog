@@ -6,7 +6,7 @@ script:
   - yarn test
   - yarn lint
 
-after_success:
+after_script:
   - yarn codecov --file=./coverage/lcov.info
 
 before_deploy:

@@ -1,13 +1,13 @@
 import test from 'ava';
 
-import * as store from '../../../store/index';
+import * as store from '../../../store';
 
 test('mutation putCommit puts a commit', t => {
   const state = store.state();
   const hash = '1234567890';
   const commit = {hash};
   store.mutations.putCommit(state, {commit});
-  t.is(state.commitCache[hash], commit)
+  t.is(state.commitCache[hash], commit);
 });
 
 test('mutation putCommits puts commits', t => {
@@ -21,11 +21,11 @@ test('mutation putCommits puts commits', t => {
 
 test('getter commit gets a commit', t => {
   const hash = '1234567890';
-  const commit = { hash };
+  const commit = {hash};
   const state = {
     ...store.state(),
     commitCache: {
-      '1234567890': commit
+      '1234567890': commit,
     },
   };
   t.is(store.getters.commit(state)(hash), commit);

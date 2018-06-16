@@ -24,9 +24,7 @@ test('getter commit gets a commit', t => {
   const commit = {hash};
   const state = {
     ...store.state(),
-    commitCache: {
-      '1234567890': commit,
-    },
+    commitCache: {[hash]: commit},
   };
   t.is(store.getters.commit(state)(hash), commit);
 });

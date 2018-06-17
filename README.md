@@ -96,7 +96,7 @@ If you want to run only a formatter/linter, you can use these sub tasks:
 
 Run linters against all source codes.
 
-This task has sub task like `yarn format`. You can read the above section with replacing from `format` to `lint`.
+This task has sub tasks like `yarn format`. You can read the above section with replacing from `format` to `lint`.
 
 ## License
 

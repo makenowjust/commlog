@@ -9,11 +9,13 @@
   "scripts": {
     "dev": "nuxt",
     "format": "npm-run-all 'format:*'",
+    "format:package": "prettier-package-json --write",
     "format:pretty": "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --write",
     "format:script": "eslint --fix --ignore-path .gitignore '**/*.{js,vue}'",
     "format:style": "stylelint --fix --ignore-path .gitignore '**/*.{scss,vue}'",
     "generate": "cross-env NODE_ENV=production nuxt generate",
     "lint": "npm-run-all -p 'lint:*'",
+    "lint:package": "prettier-package-json --list-different",
     "lint:pretty": "prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' --list-different",
     "lint:script": "eslint --ignore-path .gitignore '**/*.{js,vue}'",
     "lint:style": "stylelint --ignore-path .gitignore '**/*.{scss,vue}'",

@@ -12,7 +12,7 @@ export const state = () => ({
 
 export const mutations = {
   setQuery(state, {query}) {
-    if (state.qeury === query) {
+    if (state.query === query) {
       return;
     }
 

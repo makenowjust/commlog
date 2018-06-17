@@ -24,7 +24,7 @@ test('mutation appendPage appends hashes and sets a next URL', t => {
 });
 
 test('getter hasNext returns true if it has next URL', t => {
-  const state = {...store.state(), hashes: ['0000'], next: 'http://example.com/test'};
+  const state = {...store.state(), hashes: ['0000'], next: 'http://example.com/next'};
   t.is(store.getters.hasNext(state), true);
 });
 
@@ -34,7 +34,7 @@ test('getter hasNext returns false if it has no next URL', t => {
 });
 
 test('getter hasNext returns false if it has no hash', t => {
-  const state = {...store.state(), hashes: [], next: 'http://example.com/test'};
+  const state = {...store.state(), hashes: [], next: 'http://example.com/next'};
   t.is(store.getters.hasNext(state), false);
 });
 

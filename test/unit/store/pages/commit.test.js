@@ -51,17 +51,11 @@ test('action load sets an error', async t => {
   const hash = 'unknown_hash';
   const getters = {commit: null};
   const commit = td.function();
-  let error = null;
-  try {
-    await store.actions.load.call(scope, {commit, getters}, {hash});
-  } catch (err) {
-    error = err;
-  }
+  const error = await t.throws(store.actions.load.call(scope, {commit, getters}, {hash}));
   td.verify(commit('setHash', {hash}), {times: 1});
   td.verify(commit('setError', {error: null}), {times: 1});
   td.verify(commit('setLoading', {loading: true}), {times: 1});
   td.verify(commit('setError', {error}), {times: 1});
-  t.pass();
 });
 
 test('action load loads no commit if loaded', async t => {

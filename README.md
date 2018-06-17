@@ -82,12 +82,14 @@ Format all source codes.
 
 This task uses these formatters/linters:
 
+- `prettier-package-json --write` against `package.json`
 - `prettier --write` against all source codes
 - `eslint --fix` against `.js` and `.vue`
 - `stylelint --fix` against `.scss` and `.vue`
 
 If you want to run only a formatter/linter, you can use these sub tasks:
 
+- `yarn format:package` to run `prettier-package-json`
 - `yarn format:pretty` to run `prettier`
 - `yarn format:script` to run `eslint`
 - `yarn format:style` to run `stylelint`

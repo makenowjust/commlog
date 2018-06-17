@@ -39,11 +39,11 @@ test('action load loads a commit', async t => {
   const getters = {commit: null};
   const commit = td.function();
   await store.actions.load.call(scope, {commit, getters}, {hash});
-  td.verify(commit('setHash', {hash}));
-  td.verify(commit('setError', {error: null}));
-  td.verify(commit('setLoading', {loading: true}));
-  td.verify(commit('putCommit', {commit: convertCommit(COMMIT)}, {root: true}));
-  td.verify(commit('setLoading', {loading: false}));
+  td.verify(commit('setHash', {hash}), {times: 1});
+  td.verify(commit('setError', {error: null}), {times: 1});
+  td.verify(commit('setLoading', {loading: true}), {times: 1});
+  td.verify(commit('putCommit', {commit: convertCommit(COMMIT)}, {root: true}), {times: 1});
+  td.verify(commit('setLoading', {loading: false}), {times: 1});
   t.pass();
 });
 
@@ -57,10 +57,10 @@ test('action load sets an error', async t => {
   } catch (err) {
     error = err;
   }
-  td.verify(commit('setHash', {hash}));
-  td.verify(commit('setError', {error: null}));
-  td.verify(commit('setLoading', {loading: true}));
-  td.verify(commit('setError', {error}));
+  td.verify(commit('setHash', {hash}), {times: 1});
+  td.verify(commit('setError', {error: null}), {times: 1});
+  td.verify(commit('setLoading', {loading: true}), {times: 1});
+  td.verify(commit('setError', {error}), {times: 1});
   t.pass();
 });
 
@@ -68,7 +68,7 @@ test('action load loads no commit if loaded', async t => {
   const hash = '1234567890';
   const getters = {commit: {hash}};
   const commit = td.function();
-  await store.actions.load({commit, getters}, {hash});
-  td.verify(commit('setHash', {hash}));
+  await store.actions.load({commit, getters}, {hash}, {times: 1});
+  td.verify(commit('setHash', {hash}), {times: 1});
   t.pass();
 });

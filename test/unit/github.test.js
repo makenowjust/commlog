@@ -1,7 +1,6 @@
 import test from 'ava';
 
 import {convertCommit, convertPage} from '../../lib/github';
-
 import COMMIT from '../fixtures/commit';
 import COMMITS from '../fixtures/commits1';
 import SEARCH from '../fixtures/search';

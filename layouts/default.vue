@@ -88,7 +88,6 @@
 </style>
 
 <script>
-// eslint-disable-next-line import/no-unassigned-import
 import 'vue-awesome/icons/search';
 import Icon from 'vue-awesome/components/Icon.vue';
 

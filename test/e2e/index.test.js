@@ -1,9 +1,9 @@
 import * as path from 'path';
-import test from 'ava';
 
 import {Nuxt, Builder} from 'nuxt-edge';
-import puppeteer from 'puppeteer';
 import delay from 'delay';
+import puppeteer from 'puppeteer';
+import test from 'ava';
 
 import config from '../../nuxt.config';
 

@@ -1,13 +1,11 @@
 import test from 'ava';
+import Axios from 'axios';
 import td from 'testdouble';
 
-import Axios from 'axios';
-
-import axiosMock from '../../../../plugins/axios-mock';
-import * as store from '../../../../store/pages';
-import * as rootStore from '../../../../store';
 import {convertPage} from '../../../../lib/github';
-
+import * as rootStore from '../../../../store';
+import * as store from '../../../../store/pages';
+import axiosMock from '../../../../plugins/axios-mock';
 import COMMITS from '../../../fixtures/commits1';
 
 const $axios = Axios.create();

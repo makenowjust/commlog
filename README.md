@@ -56,50 +56,6 @@ yarn run v1.6.0
 
 Then, open <http://localhost:3000/>.
 
-### Tasks (a.k.a. `scripts`)
-
-#### `yarn dev`
-
-Start development server.
-
-#### `yarn generate`
-
-Generate static files.
-
-#### `yarn test`
-
-Run test with converage.
-
-If you want to run only unit test, you can use this command:
-
-```console
-$ yarn test './test/unit/**/*.test.js'
-```
-
-#### `yarn format`
-
-Format all source codes.
-
-This task uses these formatters/linters:
-
-- `prettier-package-json --write` against `package.json`
-- `prettier --write` against all source codes
-- `eslint --fix` against `.js` and `.vue`
-- `stylelint --fix` against `.scss` and `.vue`
-
-If you want to run only a formatter/linter, you can use these sub tasks:
-
-- `yarn format:package` to run `prettier-package-json`
-- `yarn format:pretty` to run `prettier`
-- `yarn format:script` to run `eslint`
-- `yarn format:style` to run `stylelint`
-
-#### `yarn lint`
-
-Run linters against all source codes.
-
-This task has sub tasks like `yarn format`. You can read the above section with replacing from `format` to `lint`.
-
 ## License
 
 MIT - TSUYUSATO "[MakeNowJust]" Kitsune

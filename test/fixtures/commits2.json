@@ -15,31 +15,23 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-11-20T07:50:07Z"
         },
-        "message":
-          "# [multiarch/crossbuild](https://github.com/multiarch/crossbuild)\n\n色々な環境向けビルドするためのDockerイメージ。便利かはともかく必要になるときがありそう。",
+        "message": "# [multiarch/crossbuild](https://github.com/multiarch/crossbuild)\n\n色々な環境向けビルドするためのDockerイメージ。便利かはともかく必要になるときがありそう。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/5deb155b99e9df3397d16d906e76730ab7192431",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/5deb155b99e9df3397d16d906e76730ab7192431",
         "comment_count": 0,
         "verification": {
           "verified": true,
           "reason": "valid",
-          "signature":
-            "-----BEGIN PGP SIGNATURE-----\n\niLgEABMKAB0WIQSYvJQBScK7XtBd6/SfTLagy2tr6QUCWhKJbwAKCRCfTLagy2tr\n6btXAgdqRrfR60clN1YIuDEXL5c6MUVzGVNETH4FBTDIXEam2dcpNY29Kp243XYB\nIQhfinXHcLfZaaSPlG7S8ANnlHQI5AIJAc/2utsfZgoee0+WJemE7sVXwuC7htEm\ns2p/brdvwuGOGKzgA7Uyqkzd356tc7WuofrfhjrkWHyVTjsd4Tmeiao7\n=pQcf\n-----END PGP SIGNATURE-----",
-          "payload":
-            "tree 4b825dc642cb6eb9a060e54bf8d69288fbee4904\nparent bf982510de075fedb1b31797f3c6756660e4ab31\nauthor TSUYUSATO Kitsune <make.just.on@gmail.com> 1511164207 +0900\ncommitter TSUYUSATO Kitsune <make.just.on@gmail.com> 1511164207 +0900\n\n# [multiarch/crossbuild](https://github.com/multiarch/crossbuild)\n\n色々な環境向けビルドするためのDockerイメージ。便利かはともかく必要になるときがありそう。\n"
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\niLgEABMKAB0WIQSYvJQBScK7XtBd6/SfTLagy2tr6QUCWhKJbwAKCRCfTLagy2tr\n6btXAgdqRrfR60clN1YIuDEXL5c6MUVzGVNETH4FBTDIXEam2dcpNY29Kp243XYB\nIQhfinXHcLfZaaSPlG7S8ANnlHQI5AIJAc/2utsfZgoee0+WJemE7sVXwuC7htEm\ns2p/brdvwuGOGKzgA7Uyqkzd356tc7WuofrfhjrkWHyVTjsd4Tmeiao7\n=pQcf\n-----END PGP SIGNATURE-----",
+          "payload": "tree 4b825dc642cb6eb9a060e54bf8d69288fbee4904\nparent bf982510de075fedb1b31797f3c6756660e4ab31\nauthor TSUYUSATO Kitsune <make.just.on@gmail.com> 1511164207 +0900\ncommitter TSUYUSATO Kitsune <make.just.on@gmail.com> 1511164207 +0900\n\n# [multiarch/crossbuild](https://github.com/multiarch/crossbuild)\n\n色々な環境向けビルドするためのDockerイメージ。便利かはともかく必要になるときがありそう。\n"
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/5deb155b99e9df3397d16d906e76730ab7192431",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/5deb155b99e9df3397d16d906e76730ab7192431",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/5deb155b99e9df3397d16d906e76730ab7192431/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/5deb155b99e9df3397d16d906e76730ab7192431",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/5deb155b99e9df3397d16d906e76730ab7192431",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/5deb155b99e9df3397d16d906e76730ab7192431/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -83,10 +75,8 @@
       "parents": [
         {
           "sha": "bf982510de075fedb1b31797f3c6756660e4ab31",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/bf982510de075fedb1b31797f3c6756660e4ab31",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/bf982510de075fedb1b31797f3c6756660e4ab31"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/bf982510de075fedb1b31797f3c6756660e4ab31",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/bf982510de075fedb1b31797f3c6756660e4ab31"
         }
       ]
     },
@@ -104,31 +94,23 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-11-15T06:19:20Z"
         },
-        "message":
-          "# LaTeXの`description`環境でラベルの直後に改行してほしいとき\n\nhttps://tex.stackexchange.com/questions/35481/description-list-how-to-put-the-definition-on-a-new-line\n\n色々と方法があるらしい。",
+        "message": "# LaTeXの`description`環境でラベルの直後に改行してほしいとき\n\nhttps://tex.stackexchange.com/questions/35481/description-list-how-to-put-the-definition-on-a-new-line\n\n色々と方法があるらしい。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/bf982510de075fedb1b31797f3c6756660e4ab31",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/bf982510de075fedb1b31797f3c6756660e4ab31",
         "comment_count": 0,
         "verification": {
           "verified": true,
           "reason": "valid",
-          "signature":
-            "-----BEGIN PGP SIGNATURE-----\n\niLgEABMKAB0WIQSYvJQBScK7XtBd6/SfTLagy2tr6QUCWgvckgAKCRCfTLagy2tr\n6ZBPAgi50NsaEzc9eZzN6KNf87UCHml0ENU+Y4+YhkrahEE8UKUapBbJ34G+KAAa\nPgST8ttpzo39dCMRozR8eYCHyMYfwwIJAVSSw/WWpHLmbImhSGkN4d5Hf1Qb63Cf\nyfPHd7KRHFhQEqe9e6hIdsryb51MCgZapC0GcizioCzAlBZBr48gQ/Tb\n=nS2o\n-----END PGP SIGNATURE-----",
-          "payload":
-            "tree 4b825dc642cb6eb9a060e54bf8d69288fbee4904\nparent 85bfa15e71cd1b614adf80a3be9c1fdc71d65ddb\nauthor TSUYUSATO Kitsune <make.just.on@gmail.com> 1510726760 +0900\ncommitter TSUYUSATO Kitsune <make.just.on@gmail.com> 1510726760 +0900\n\n# LaTeXの`description`環境でラベルの直後に改行してほしいとき\n\nhttps://tex.stackexchange.com/questions/35481/description-list-how-to-put-the-definition-on-a-new-line\n\n色々と方法があるらしい。\n"
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\niLgEABMKAB0WIQSYvJQBScK7XtBd6/SfTLagy2tr6QUCWgvckgAKCRCfTLagy2tr\n6ZBPAgi50NsaEzc9eZzN6KNf87UCHml0ENU+Y4+YhkrahEE8UKUapBbJ34G+KAAa\nPgST8ttpzo39dCMRozR8eYCHyMYfwwIJAVSSw/WWpHLmbImhSGkN4d5Hf1Qb63Cf\nyfPHd7KRHFhQEqe9e6hIdsryb51MCgZapC0GcizioCzAlBZBr48gQ/Tb\n=nS2o\n-----END PGP SIGNATURE-----",
+          "payload": "tree 4b825dc642cb6eb9a060e54bf8d69288fbee4904\nparent 85bfa15e71cd1b614adf80a3be9c1fdc71d65ddb\nauthor TSUYUSATO Kitsune <make.just.on@gmail.com> 1510726760 +0900\ncommitter TSUYUSATO Kitsune <make.just.on@gmail.com> 1510726760 +0900\n\n# LaTeXの`description`環境でラベルの直後に改行してほしいとき\n\nhttps://tex.stackexchange.com/questions/35481/description-list-how-to-put-the-definition-on-a-new-line\n\n色々と方法があるらしい。\n"
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/bf982510de075fedb1b31797f3c6756660e4ab31",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/bf982510de075fedb1b31797f3c6756660e4ab31",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/bf982510de075fedb1b31797f3c6756660e4ab31/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/bf982510de075fedb1b31797f3c6756660e4ab31",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/bf982510de075fedb1b31797f3c6756660e4ab31",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/bf982510de075fedb1b31797f3c6756660e4ab31/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -172,10 +154,8 @@
       "parents": [
         {
           "sha": "85bfa15e71cd1b614adf80a3be9c1fdc71d65ddb",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/85bfa15e71cd1b614adf80a3be9c1fdc71d65ddb",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/85bfa15e71cd1b614adf80a3be9c1fdc71d65ddb"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/85bfa15e71cd1b614adf80a3be9c1fdc71d65ddb",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/85bfa15e71cd1b614adf80a3be9c1fdc71d65ddb"
         }
       ]
     },
@@ -193,31 +173,23 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-10-30T10:27:46Z"
         },
-        "message":
-          "# [Try It Online](https://tio.run)\n\nオンラインインタプリタ。なんか色々あってすごい。",
+        "message": "# [Try It Online](https://tio.run)\n\nオンラインインタプリタ。なんか色々あってすごい。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/85bfa15e71cd1b614adf80a3be9c1fdc71d65ddb",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/85bfa15e71cd1b614adf80a3be9c1fdc71d65ddb",
         "comment_count": 0,
         "verification": {
           "verified": true,
           "reason": "valid",
-          "signature":
-            "-----BEGIN PGP SIGNATURE-----\n\niLgEABMKAB0WIQSYvJQBScK7XtBd6/SfTLagy2tr6QUCWfb+uwAKCRCfTLagy2tr\n6cHWAgkBAOcPBblB9iLSu+c2C1xwVgh3e8FO2Dqek+UJZFl9/OxuHCy9hUEqpxb3\nNuvizZtc6TV3pHa16jUmJbEBrJTAPgcCCL0/lqXcYL4eOJQAjCZthd85Efr3bJA2\nuw8LK5ipeKfi20UeuNEK4k02xaDXDG3RW0I2vRuILGm56Lk8v6H48DUQ\n=tbNF\n-----END PGP SIGNATURE-----",
-          "payload":
-            "tree 4b825dc642cb6eb9a060e54bf8d69288fbee4904\nparent fba01499f78e7fb8640ef8661b1eb84bc0c34ba3\nauthor TSUYUSATO Kitsune <make.just.on@gmail.com> 1509359266 +0900\ncommitter TSUYUSATO Kitsune <make.just.on@gmail.com> 1509359266 +0900\n\n# [Try It Online](https://tio.run)\n\nオンラインインタプリタ。なんか色々あってすごい。\n"
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\niLgEABMKAB0WIQSYvJQBScK7XtBd6/SfTLagy2tr6QUCWfb+uwAKCRCfTLagy2tr\n6cHWAgkBAOcPBblB9iLSu+c2C1xwVgh3e8FO2Dqek+UJZFl9/OxuHCy9hUEqpxb3\nNuvizZtc6TV3pHa16jUmJbEBrJTAPgcCCL0/lqXcYL4eOJQAjCZthd85Efr3bJA2\nuw8LK5ipeKfi20UeuNEK4k02xaDXDG3RW0I2vRuILGm56Lk8v6H48DUQ\n=tbNF\n-----END PGP SIGNATURE-----",
+          "payload": "tree 4b825dc642cb6eb9a060e54bf8d69288fbee4904\nparent fba01499f78e7fb8640ef8661b1eb84bc0c34ba3\nauthor TSUYUSATO Kitsune <make.just.on@gmail.com> 1509359266 +0900\ncommitter TSUYUSATO Kitsune <make.just.on@gmail.com> 1509359266 +0900\n\n# [Try It Online](https://tio.run)\n\nオンラインインタプリタ。なんか色々あってすごい。\n"
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/85bfa15e71cd1b614adf80a3be9c1fdc71d65ddb",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/85bfa15e71cd1b614adf80a3be9c1fdc71d65ddb",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/85bfa15e71cd1b614adf80a3be9c1fdc71d65ddb/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/85bfa15e71cd1b614adf80a3be9c1fdc71d65ddb",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/85bfa15e71cd1b614adf80a3be9c1fdc71d65ddb",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/85bfa15e71cd1b614adf80a3be9c1fdc71d65ddb/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -261,10 +233,8 @@
       "parents": [
         {
           "sha": "fba01499f78e7fb8640ef8661b1eb84bc0c34ba3",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/fba01499f78e7fb8640ef8661b1eb84bc0c34ba3",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/fba01499f78e7fb8640ef8661b1eb84bc0c34ba3"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/fba01499f78e7fb8640ef8661b1eb84bc0c34ba3",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/fba01499f78e7fb8640ef8661b1eb84bc0c34ba3"
         }
       ]
     },
@@ -282,31 +252,23 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-10-21T08:06:09Z"
         },
-        "message":
-          "# [file.io](https://www.file.io)\n\nファイルをアップロードすると、DLするための14日間だけ有効（デフォルト）なURLを発行してくれる。ちょっとしたファイルをPC間で移動するときとかに便利っぽい。",
+        "message": "# [file.io](https://www.file.io)\n\nファイルをアップロードすると、DLするための14日間だけ有効（デフォルト）なURLを発行してくれる。ちょっとしたファイルをPC間で移動するときとかに便利っぽい。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/fba01499f78e7fb8640ef8661b1eb84bc0c34ba3",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/fba01499f78e7fb8640ef8661b1eb84bc0c34ba3",
         "comment_count": 0,
         "verification": {
           "verified": true,
           "reason": "valid",
-          "signature":
-            "-----BEGIN PGP SIGNATURE-----\n\niLkEABMKAB0WIQSYvJQBScK7XtBd6/SfTLagy2tr6QUCWesARwAKCRCfTLagy2tr\n6cUvAgkByXilQ54E4LXjDNUl/c/IcP2NlguyNOy84psYxwyEU0ZIGLRhvbNngOXd\niPMHwVKTlZrDSAS/OrwMSmVqsc/o07ICCQG190kX5Q9h6heLQ5K6B2fAdOVUsxBZ\nJw7u0VqCkEjfFe7PjnuYJijEVg/mbDRvDJLOqFXyCU7AREXea8P/rsvcVQ==\n=WNbz\n-----END PGP SIGNATURE-----",
-          "payload":
-            "tree 4b825dc642cb6eb9a060e54bf8d69288fbee4904\nparent c3462a577f0052e7d493aa2cf08e804f4113ed6c\nauthor TSUYUSATO Kitsune <make.just.on@gmail.com> 1508573169 +0900\ncommitter TSUYUSATO Kitsune <make.just.on@gmail.com> 1508573169 +0900\n\n# [file.io](https://www.file.io)\n\nファイルをアップロードすると、DLするための14日間だけ有効（デフォルト）なURLを発行してくれる。ちょっとしたファイルをPC間で移動するときとかに便利っぽい。\n"
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\niLkEABMKAB0WIQSYvJQBScK7XtBd6/SfTLagy2tr6QUCWesARwAKCRCfTLagy2tr\n6cUvAgkByXilQ54E4LXjDNUl/c/IcP2NlguyNOy84psYxwyEU0ZIGLRhvbNngOXd\niPMHwVKTlZrDSAS/OrwMSmVqsc/o07ICCQG190kX5Q9h6heLQ5K6B2fAdOVUsxBZ\nJw7u0VqCkEjfFe7PjnuYJijEVg/mbDRvDJLOqFXyCU7AREXea8P/rsvcVQ==\n=WNbz\n-----END PGP SIGNATURE-----",
+          "payload": "tree 4b825dc642cb6eb9a060e54bf8d69288fbee4904\nparent c3462a577f0052e7d493aa2cf08e804f4113ed6c\nauthor TSUYUSATO Kitsune <make.just.on@gmail.com> 1508573169 +0900\ncommitter TSUYUSATO Kitsune <make.just.on@gmail.com> 1508573169 +0900\n\n# [file.io](https://www.file.io)\n\nファイルをアップロードすると、DLするための14日間だけ有効（デフォルト）なURLを発行してくれる。ちょっとしたファイルをPC間で移動するときとかに便利っぽい。\n"
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/fba01499f78e7fb8640ef8661b1eb84bc0c34ba3",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/fba01499f78e7fb8640ef8661b1eb84bc0c34ba3",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/fba01499f78e7fb8640ef8661b1eb84bc0c34ba3/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/fba01499f78e7fb8640ef8661b1eb84bc0c34ba3",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/fba01499f78e7fb8640ef8661b1eb84bc0c34ba3",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/fba01499f78e7fb8640ef8661b1eb84bc0c34ba3/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -350,10 +312,8 @@
       "parents": [
         {
           "sha": "c3462a577f0052e7d493aa2cf08e804f4113ed6c",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/c3462a577f0052e7d493aa2cf08e804f4113ed6c",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/c3462a577f0052e7d493aa2cf08e804f4113ed6c"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/c3462a577f0052e7d493aa2cf08e804f4113ed6c",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/c3462a577f0052e7d493aa2cf08e804f4113ed6c"
         }
       ]
     },
@@ -371,31 +331,23 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-10-01T11:25:41Z"
         },
-        "message":
-          "# [eta]\n\n[eta]: http://eta-lang.org\n\nJVMで動くHaskell。Fregeと違って完全にHaskellを目指してるっぽい。なのでcabalのパッケージファイルを読んだりする。すごい。\n\nすごいけど拡張子まで`.hs`で同じなのでQuineには追加できないなぁ、という感じ。",
+        "message": "# [eta]\n\n[eta]: http://eta-lang.org\n\nJVMで動くHaskell。Fregeと違って完全にHaskellを目指してるっぽい。なのでcabalのパッケージファイルを読んだりする。すごい。\n\nすごいけど拡張子まで`.hs`で同じなのでQuineには追加できないなぁ、という感じ。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/c3462a577f0052e7d493aa2cf08e804f4113ed6c",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/c3462a577f0052e7d493aa2cf08e804f4113ed6c",
         "comment_count": 0,
         "verification": {
           "verified": true,
           "reason": "valid",
-          "signature":
-            "-----BEGIN PGP SIGNATURE-----\n\niLkEABMKAB0WIQSYvJQBScK7XtBd6/SfTLagy2tr6QUCWdDRUQAKCRCfTLagy2tr\n6RI+AgkBCryerLrJz0cAyC3VNoBkvt+ZpTEM4OklHNHXa2knTWrnJVxwh4Jf+V5x\ntJsoyuOnCagfJaARJpsE7FNy2dR0h0oCCQH3MsRfsppC1q1RVwfpMV/tw8actLTK\n8kaP8s+CyCeb2e+fMKUqozv4JuyHWwf9RNM+2HRx5OwoEhb/cHJjQubveA==\n=oTT/\n-----END PGP SIGNATURE-----",
-          "payload":
-            "tree 4b825dc642cb6eb9a060e54bf8d69288fbee4904\nparent 3343d1474106ef1cd662991cbe3d955d2990bfdf\nauthor TSUYUSATO Kitsune <make.just.on@gmail.com> 1506857141 +0900\ncommitter TSUYUSATO Kitsune <make.just.on@gmail.com> 1506857141 +0900\n\n# [eta]\n\n[eta]: http://eta-lang.org\n\nJVMで動くHaskell。Fregeと違って完全にHaskellを目指してるっぽい。なのでcabalのパッケージファイルを読んだりする。すごい。\n\nすごいけど拡張子まで`.hs`で同じなのでQuineには追加できないなぁ、という感じ。\n"
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\niLkEABMKAB0WIQSYvJQBScK7XtBd6/SfTLagy2tr6QUCWdDRUQAKCRCfTLagy2tr\n6RI+AgkBCryerLrJz0cAyC3VNoBkvt+ZpTEM4OklHNHXa2knTWrnJVxwh4Jf+V5x\ntJsoyuOnCagfJaARJpsE7FNy2dR0h0oCCQH3MsRfsppC1q1RVwfpMV/tw8actLTK\n8kaP8s+CyCeb2e+fMKUqozv4JuyHWwf9RNM+2HRx5OwoEhb/cHJjQubveA==\n=oTT/\n-----END PGP SIGNATURE-----",
+          "payload": "tree 4b825dc642cb6eb9a060e54bf8d69288fbee4904\nparent 3343d1474106ef1cd662991cbe3d955d2990bfdf\nauthor TSUYUSATO Kitsune <make.just.on@gmail.com> 1506857141 +0900\ncommitter TSUYUSATO Kitsune <make.just.on@gmail.com> 1506857141 +0900\n\n# [eta]\n\n[eta]: http://eta-lang.org\n\nJVMで動くHaskell。Fregeと違って完全にHaskellを目指してるっぽい。なのでcabalのパッケージファイルを読んだりする。すごい。\n\nすごいけど拡張子まで`.hs`で同じなのでQuineには追加できないなぁ、という感じ。\n"
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/c3462a577f0052e7d493aa2cf08e804f4113ed6c",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/c3462a577f0052e7d493aa2cf08e804f4113ed6c",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/c3462a577f0052e7d493aa2cf08e804f4113ed6c/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/c3462a577f0052e7d493aa2cf08e804f4113ed6c",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/c3462a577f0052e7d493aa2cf08e804f4113ed6c",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/c3462a577f0052e7d493aa2cf08e804f4113ed6c/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -439,10 +391,8 @@
       "parents": [
         {
           "sha": "3343d1474106ef1cd662991cbe3d955d2990bfdf",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/3343d1474106ef1cd662991cbe3d955d2990bfdf",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/3343d1474106ef1cd662991cbe3d955d2990bfdf"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/3343d1474106ef1cd662991cbe3d955d2990bfdf",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/3343d1474106ef1cd662991cbe3d955d2990bfdf"
         }
       ]
     },
@@ -460,15 +410,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-07-11T14:15:48Z"
         },
-        "message":
-          "# [crystal-lang/crystal#2324](https://github.com/crystal-lang/crystal/issues/2324)\n\nボクが実装するよりも前に`crystal tool expand`を提案していた人がいたらしい。まったく知らなかった。",
+        "message": "# [crystal-lang/crystal#2324](https://github.com/crystal-lang/crystal/issues/2324)\n\nボクが実装するよりも前に`crystal tool expand`を提案していた人がいたらしい。まったく知らなかった。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/3343d1474106ef1cd662991cbe3d955d2990bfdf",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/3343d1474106ef1cd662991cbe3d955d2990bfdf",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -477,12 +424,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/3343d1474106ef1cd662991cbe3d955d2990bfdf",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/3343d1474106ef1cd662991cbe3d955d2990bfdf",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/3343d1474106ef1cd662991cbe3d955d2990bfdf/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/3343d1474106ef1cd662991cbe3d955d2990bfdf",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/3343d1474106ef1cd662991cbe3d955d2990bfdf",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/3343d1474106ef1cd662991cbe3d955d2990bfdf/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -526,10 +470,8 @@
       "parents": [
         {
           "sha": "cb51efecbc0f8b843ec04efdc708b2731447de5d",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/cb51efecbc0f8b843ec04efdc708b2731447de5d",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/cb51efecbc0f8b843ec04efdc708b2731447de5d"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/cb51efecbc0f8b843ec04efdc708b2731447de5d",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/cb51efecbc0f8b843ec04efdc708b2731447de5d"
         }
       ]
     },
@@ -547,15 +489,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-06-24T14:00:48Z"
         },
-        "message":
-          "# [bundle-size]\n\n[bundle-size]: https://github.com/mkwtys/bundle-size\n\nJavaScriptのパッケージのbundleのサイズを表示するCLI。同時にminify後の大きさとかgzip後の大きさも出る。小さいことを主張したいときには便利かもしれない。",
+        "message": "# [bundle-size]\n\n[bundle-size]: https://github.com/mkwtys/bundle-size\n\nJavaScriptのパッケージのbundleのサイズを表示するCLI。同時にminify後の大きさとかgzip後の大きさも出る。小さいことを主張したいときには便利かもしれない。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/cb51efecbc0f8b843ec04efdc708b2731447de5d",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/cb51efecbc0f8b843ec04efdc708b2731447de5d",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -564,12 +503,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/cb51efecbc0f8b843ec04efdc708b2731447de5d",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/cb51efecbc0f8b843ec04efdc708b2731447de5d",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/cb51efecbc0f8b843ec04efdc708b2731447de5d/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/cb51efecbc0f8b843ec04efdc708b2731447de5d",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/cb51efecbc0f8b843ec04efdc708b2731447de5d",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/cb51efecbc0f8b843ec04efdc708b2731447de5d/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -613,10 +549,8 @@
       "parents": [
         {
           "sha": "56562c8013e823487c7fd0f54ac9ed49e26de438",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/56562c8013e823487c7fd0f54ac9ed49e26de438",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/56562c8013e823487c7fd0f54ac9ed49e26de438"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/56562c8013e823487c7fd0f54ac9ed49e26de438",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/56562c8013e823487c7fd0f54ac9ed49e26de438"
         }
       ]
     },
@@ -637,11 +571,9 @@
         "message": "# `sleep inf`\n\nそれでは無限に練りをしまつ。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/56562c8013e823487c7fd0f54ac9ed49e26de438",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/56562c8013e823487c7fd0f54ac9ed49e26de438",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -650,12 +582,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/56562c8013e823487c7fd0f54ac9ed49e26de438",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/56562c8013e823487c7fd0f54ac9ed49e26de438",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/56562c8013e823487c7fd0f54ac9ed49e26de438/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/56562c8013e823487c7fd0f54ac9ed49e26de438",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/56562c8013e823487c7fd0f54ac9ed49e26de438",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/56562c8013e823487c7fd0f54ac9ed49e26de438/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -699,10 +628,8 @@
       "parents": [
         {
           "sha": "72c68452c1bbd6ce3cc010a5a0f14e45822356f0",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/72c68452c1bbd6ce3cc010a5a0f14e45822356f0",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/72c68452c1bbd6ce3cc010a5a0f14e45822356f0"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/72c68452c1bbd6ce3cc010a5a0f14e45822356f0",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/72c68452c1bbd6ce3cc010a5a0f14e45822356f0"
         }
       ]
     },
@@ -720,15 +647,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-06-17T05:43:27Z"
         },
-        "message":
-          "# [leasot]\n\n[leasot]: https://github.com/pgilad/leasot\n\nTODOとかFIXMEコメントを一覧にするCLI。出力が`xo`に近い感じでかっこいい。使っていきたい。",
+        "message": "# [leasot]\n\n[leasot]: https://github.com/pgilad/leasot\n\nTODOとかFIXMEコメントを一覧にするCLI。出力が`xo`に近い感じでかっこいい。使っていきたい。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/72c68452c1bbd6ce3cc010a5a0f14e45822356f0",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/72c68452c1bbd6ce3cc010a5a0f14e45822356f0",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -737,12 +661,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/72c68452c1bbd6ce3cc010a5a0f14e45822356f0",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/72c68452c1bbd6ce3cc010a5a0f14e45822356f0",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/72c68452c1bbd6ce3cc010a5a0f14e45822356f0/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/72c68452c1bbd6ce3cc010a5a0f14e45822356f0",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/72c68452c1bbd6ce3cc010a5a0f14e45822356f0",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/72c68452c1bbd6ce3cc010a5a0f14e45822356f0/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -786,10 +707,8 @@
       "parents": [
         {
           "sha": "fc511e4bee254416281f71931b34f7a7addbcd55",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/fc511e4bee254416281f71931b34f7a7addbcd55",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/fc511e4bee254416281f71931b34f7a7addbcd55"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/fc511e4bee254416281f71931b34f7a7addbcd55",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/fc511e4bee254416281f71931b34f7a7addbcd55"
         }
       ]
     },
@@ -807,15 +726,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-06-04T00:48:21Z"
         },
-        "message":
-          "# Dockerの改行がおかしい\n\n<https://github.com/docker/for-mac/issues/1681>\n\nこれっぽい。\n\nとりあえず、\n\n```console\n$ styy sane\n```\n\nすれば直る。\n\nmobyの方で修正された（temiosの設定ミス）っぽいので次のリリースまで待つしかない。\n\n<https://github.com/moby/moby/pull/33502>",
+        "message": "# Dockerの改行がおかしい\n\n<https://github.com/docker/for-mac/issues/1681>\n\nこれっぽい。\n\nとりあえず、\n\n```console\n$ styy sane\n```\n\nすれば直る。\n\nmobyの方で修正された（temiosの設定ミス）っぽいので次のリリースまで待つしかない。\n\n<https://github.com/moby/moby/pull/33502>",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/fc511e4bee254416281f71931b34f7a7addbcd55",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/fc511e4bee254416281f71931b34f7a7addbcd55",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -824,12 +740,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/fc511e4bee254416281f71931b34f7a7addbcd55",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/fc511e4bee254416281f71931b34f7a7addbcd55",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/fc511e4bee254416281f71931b34f7a7addbcd55/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/fc511e4bee254416281f71931b34f7a7addbcd55",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/fc511e4bee254416281f71931b34f7a7addbcd55",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/fc511e4bee254416281f71931b34f7a7addbcd55/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -873,10 +786,8 @@
       "parents": [
         {
           "sha": "8bd7292a9865ee933c0b24fe802399954e53f546",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/8bd7292a9865ee933c0b24fe802399954e53f546",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/8bd7292a9865ee933c0b24fe802399954e53f546"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/8bd7292a9865ee933c0b24fe802399954e53f546",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/8bd7292a9865ee933c0b24fe802399954e53f546"
         }
       ]
     },
@@ -894,15 +805,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-06-03T12:02:47Z"
         },
-        "message":
-          "# [feather-icon]\n\n[feather-icon]: https://github.com/colebemis/feather\n\nFontAwesomeではないアイコンフォント。かっこいい。サイトの雰囲気が良い。使ってみたい。",
+        "message": "# [feather-icon]\n\n[feather-icon]: https://github.com/colebemis/feather\n\nFontAwesomeではないアイコンフォント。かっこいい。サイトの雰囲気が良い。使ってみたい。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/8bd7292a9865ee933c0b24fe802399954e53f546",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/8bd7292a9865ee933c0b24fe802399954e53f546",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -911,12 +819,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/8bd7292a9865ee933c0b24fe802399954e53f546",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/8bd7292a9865ee933c0b24fe802399954e53f546",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/8bd7292a9865ee933c0b24fe802399954e53f546/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/8bd7292a9865ee933c0b24fe802399954e53f546",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/8bd7292a9865ee933c0b24fe802399954e53f546",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/8bd7292a9865ee933c0b24fe802399954e53f546/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -960,10 +865,8 @@
       "parents": [
         {
           "sha": "dee2e6d0e6e1723257e3967c784fd68feb755cb9",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/dee2e6d0e6e1723257e3967c784fd68feb755cb9",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/dee2e6d0e6e1723257e3967c784fd68feb755cb9"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/dee2e6d0e6e1723257e3967c784fd68feb755cb9",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/dee2e6d0e6e1723257e3967c784fd68feb755cb9"
         }
       ]
     },
@@ -981,15 +884,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-06-03T00:22:48Z"
         },
-        "message":
-          "# [NotABug]\n\n[NotABug]: https://notabug.org\n\ngogsベースのコードホスティングサービス。誰が運営していて誰が使ってるんやろ‥‥。",
+        "message": "# [NotABug]\n\n[NotABug]: https://notabug.org\n\ngogsベースのコードホスティングサービス。誰が運営していて誰が使ってるんやろ‥‥。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/dee2e6d0e6e1723257e3967c784fd68feb755cb9",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/dee2e6d0e6e1723257e3967c784fd68feb755cb9",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -998,12 +898,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/dee2e6d0e6e1723257e3967c784fd68feb755cb9",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/dee2e6d0e6e1723257e3967c784fd68feb755cb9",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/dee2e6d0e6e1723257e3967c784fd68feb755cb9/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/dee2e6d0e6e1723257e3967c784fd68feb755cb9",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/dee2e6d0e6e1723257e3967c784fd68feb755cb9",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/dee2e6d0e6e1723257e3967c784fd68feb755cb9/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -1047,10 +944,8 @@
       "parents": [
         {
           "sha": "161fce4ebdb42ba3f4c4a76e052faafde8344b4a",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/161fce4ebdb42ba3f4c4a76e052faafde8344b4a",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/161fce4ebdb42ba3f4c4a76e052faafde8344b4a"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/161fce4ebdb42ba3f4c4a76e052faafde8344b4a",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/161fce4ebdb42ba3f4c4a76e052faafde8344b4a"
         }
       ]
     },
@@ -1068,15 +963,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-06-01T11:05:56Z"
         },
-        "message":
-          "# [Programming on SAT]\n\n[Programming on SAT]: https://www.gitbook.com/book/ledyba/programming-on-sat/details\n\n面白そうなのであとで読む。",
+        "message": "# [Programming on SAT]\n\n[Programming on SAT]: https://www.gitbook.com/book/ledyba/programming-on-sat/details\n\n面白そうなのであとで読む。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/161fce4ebdb42ba3f4c4a76e052faafde8344b4a",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/161fce4ebdb42ba3f4c4a76e052faafde8344b4a",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -1085,12 +977,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/161fce4ebdb42ba3f4c4a76e052faafde8344b4a",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/161fce4ebdb42ba3f4c4a76e052faafde8344b4a",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/161fce4ebdb42ba3f4c4a76e052faafde8344b4a/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/161fce4ebdb42ba3f4c4a76e052faafde8344b4a",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/161fce4ebdb42ba3f4c4a76e052faafde8344b4a",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/161fce4ebdb42ba3f4c4a76e052faafde8344b4a/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -1134,10 +1023,8 @@
       "parents": [
         {
           "sha": "97e6dc22372e07de998f5ffadc303476806b230c",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/97e6dc22372e07de998f5ffadc303476806b230c",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/97e6dc22372e07de998f5ffadc303476806b230c"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/97e6dc22372e07de998f5ffadc303476806b230c",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/97e6dc22372e07de998f5ffadc303476806b230c"
         }
       ]
     },
@@ -1155,15 +1042,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-06-01T08:27:49Z"
         },
-        "message":
-          "# scaladocのマークアップの文法\n\n<http://docs.scala-lang.org/overviews/scaladoc/for-library-authors.html>\n\nここにまとまっているようだ。",
+        "message": "# scaladocのマークアップの文法\n\n<http://docs.scala-lang.org/overviews/scaladoc/for-library-authors.html>\n\nここにまとまっているようだ。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/97e6dc22372e07de998f5ffadc303476806b230c",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/97e6dc22372e07de998f5ffadc303476806b230c",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -1172,12 +1056,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/97e6dc22372e07de998f5ffadc303476806b230c",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/97e6dc22372e07de998f5ffadc303476806b230c",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/97e6dc22372e07de998f5ffadc303476806b230c/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/97e6dc22372e07de998f5ffadc303476806b230c",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/97e6dc22372e07de998f5ffadc303476806b230c",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/97e6dc22372e07de998f5ffadc303476806b230c/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -1221,10 +1102,8 @@
       "parents": [
         {
           "sha": "c2174e3092c09b0b2ee4a5bd3a6d3296727d396c",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/c2174e3092c09b0b2ee4a5bd3a6d3296727d396c",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/c2174e3092c09b0b2ee4a5bd3a6d3296727d396c"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/c2174e3092c09b0b2ee4a5bd3a6d3296727d396c",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/c2174e3092c09b0b2ee4a5bd3a6d3296727d396c"
         }
       ]
     },
@@ -1242,15 +1121,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-05-08T05:45:02Z"
         },
-        "message":
-          "# [dyon]\n\n[dyon]: https://github.com/PistonDevelopers/dyon\n\nRustで実装されたスクリプト言語。多分Rustに組み込みやすい感じなんだと思う。Go風のコルーチンとかあるらしいけど。\n\nどうしてUnpack 4D Vectorとか実装されてるんだろうって思ったんだけど、多分Rust向けのゲームライブラリであるPistonのところで開発されてるからですね。実際どういう感じで使われてるんだろう。あと速度とか大丈夫なのかな。",
+        "message": "# [dyon]\n\n[dyon]: https://github.com/PistonDevelopers/dyon\n\nRustで実装されたスクリプト言語。多分Rustに組み込みやすい感じなんだと思う。Go風のコルーチンとかあるらしいけど。\n\nどうしてUnpack 4D Vectorとか実装されてるんだろうって思ったんだけど、多分Rust向けのゲームライブラリであるPistonのところで開発されてるからですね。実際どういう感じで使われてるんだろう。あと速度とか大丈夫なのかな。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/c2174e3092c09b0b2ee4a5bd3a6d3296727d396c",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/c2174e3092c09b0b2ee4a5bd3a6d3296727d396c",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -1259,12 +1135,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/c2174e3092c09b0b2ee4a5bd3a6d3296727d396c",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/c2174e3092c09b0b2ee4a5bd3a6d3296727d396c",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/c2174e3092c09b0b2ee4a5bd3a6d3296727d396c/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/c2174e3092c09b0b2ee4a5bd3a6d3296727d396c",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/c2174e3092c09b0b2ee4a5bd3a6d3296727d396c",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/c2174e3092c09b0b2ee4a5bd3a6d3296727d396c/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -1308,10 +1181,8 @@
       "parents": [
         {
           "sha": "39d57c32aacb713dae102089d2ce3289267b817c",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/39d57c32aacb713dae102089d2ce3289267b817c",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/39d57c32aacb713dae102089d2ce3289267b817c"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/39d57c32aacb713dae102089d2ce3289267b817c",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/39d57c32aacb713dae102089d2ce3289267b817c"
         }
       ]
     },
@@ -1329,15 +1200,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-04-29T06:47:38Z"
         },
-        "message":
-          "# SSIA\n\n「Subject Said It All」の略。タイトルが全てを表してる、という意味。使えそうなので覚えておきたい。\n\n参考： [LGTM\\! チャットやGitHubでよく見る英略語ってこんな意味\\-Six Apart ブログ｜オウンドメディア運営者のための実践的情報とコミュニティ](https://blog.sixapart.jp/2016-10/lgtm-github.html)",
+        "message": "# SSIA\n\n「Subject Said It All」の略。タイトルが全てを表してる、という意味。使えそうなので覚えておきたい。\n\n参考： [LGTM\\! チャットやGitHubでよく見る英略語ってこんな意味\\-Six Apart ブログ｜オウンドメディア運営者のための実践的情報とコミュニティ](https://blog.sixapart.jp/2016-10/lgtm-github.html)",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/39d57c32aacb713dae102089d2ce3289267b817c",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/39d57c32aacb713dae102089d2ce3289267b817c",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -1346,12 +1214,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/39d57c32aacb713dae102089d2ce3289267b817c",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/39d57c32aacb713dae102089d2ce3289267b817c",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/39d57c32aacb713dae102089d2ce3289267b817c/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/39d57c32aacb713dae102089d2ce3289267b817c",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/39d57c32aacb713dae102089d2ce3289267b817c",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/39d57c32aacb713dae102089d2ce3289267b817c/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -1395,10 +1260,8 @@
       "parents": [
         {
           "sha": "5c43931e923a0e4f342b4596349608109df478f6",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/5c43931e923a0e4f342b4596349608109df478f6",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/5c43931e923a0e4f342b4596349608109df478f6"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/5c43931e923a0e4f342b4596349608109df478f6",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/5c43931e923a0e4f342b4596349608109df478f6"
         }
       ]
     },
@@ -1416,15 +1279,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-04-29T04:33:14Z"
         },
-        "message":
-          "# [file-icons]\n\n[file-icons]: https://github.com/file-icons/source\n\n多分deviconsをベースにしてるプログラミング言語のロゴとかのアイコンフォント。\nファイルの種類に応じて表示する用に作られったぽいのでそれ専用に絞られてる感じ。",
+        "message": "# [file-icons]\n\n[file-icons]: https://github.com/file-icons/source\n\n多分deviconsをベースにしてるプログラミング言語のロゴとかのアイコンフォント。\nファイルの種類に応じて表示する用に作られったぽいのでそれ専用に絞られてる感じ。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/5c43931e923a0e4f342b4596349608109df478f6",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/5c43931e923a0e4f342b4596349608109df478f6",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -1433,12 +1293,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/5c43931e923a0e4f342b4596349608109df478f6",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/5c43931e923a0e4f342b4596349608109df478f6",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/5c43931e923a0e4f342b4596349608109df478f6/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/5c43931e923a0e4f342b4596349608109df478f6",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/5c43931e923a0e4f342b4596349608109df478f6",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/5c43931e923a0e4f342b4596349608109df478f6/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -1482,10 +1339,8 @@
       "parents": [
         {
           "sha": "730c7f3f03ac11b23b153e894cee60ddd0ffb5b7",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/730c7f3f03ac11b23b153e894cee60ddd0ffb5b7",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/730c7f3f03ac11b23b153e894cee60ddd0ffb5b7"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/730c7f3f03ac11b23b153e894cee60ddd0ffb5b7",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/730c7f3f03ac11b23b153e894cee60ddd0ffb5b7"
         }
       ]
     },
@@ -1503,15 +1358,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-04-27T16:29:05Z"
         },
-        "message":
-          "# [rooby]\n\n[rooby]: https://github.com/rooby-lang/rooby\n\nGo言語で書かれたRubyっぽい言語‥‥なんだけど全然機能が足りない。なのでQuineを書くのは少し見送ることにする。\n\nいい加減GravityのQuine書くかなぁ‥‥。",
+        "message": "# [rooby]\n\n[rooby]: https://github.com/rooby-lang/rooby\n\nGo言語で書かれたRubyっぽい言語‥‥なんだけど全然機能が足りない。なのでQuineを書くのは少し見送ることにする。\n\nいい加減GravityのQuine書くかなぁ‥‥。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/730c7f3f03ac11b23b153e894cee60ddd0ffb5b7",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/730c7f3f03ac11b23b153e894cee60ddd0ffb5b7",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -1520,12 +1372,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/730c7f3f03ac11b23b153e894cee60ddd0ffb5b7",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/730c7f3f03ac11b23b153e894cee60ddd0ffb5b7",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/730c7f3f03ac11b23b153e894cee60ddd0ffb5b7/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/730c7f3f03ac11b23b153e894cee60ddd0ffb5b7",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/730c7f3f03ac11b23b153e894cee60ddd0ffb5b7",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/730c7f3f03ac11b23b153e894cee60ddd0ffb5b7/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -1569,10 +1418,8 @@
       "parents": [
         {
           "sha": "5b19a8df95a02c3629504042930d6da326025cbe",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/5b19a8df95a02c3629504042930d6da326025cbe",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/5b19a8df95a02c3629504042930d6da326025cbe"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/5b19a8df95a02c3629504042930d6da326025cbe",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/5b19a8df95a02c3629504042930d6da326025cbe"
         }
       ]
     },
@@ -1590,15 +1437,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-03-21T23:02:45Z"
         },
-        "message":
-          "# [nexe][]\n\n[nexe]: https://github.com/nexe/nexe\n\nNode.jsのプログラムをコンパイルして実行ファイルにするやつ。なんか前にも見たことがあるような気がするけど、これは`require`の解決にbrowserifyとか使ってるらしい。",
+        "message": "# [nexe][]\n\n[nexe]: https://github.com/nexe/nexe\n\nNode.jsのプログラムをコンパイルして実行ファイルにするやつ。なんか前にも見たことがあるような気がするけど、これは`require`の解決にbrowserifyとか使ってるらしい。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/5b19a8df95a02c3629504042930d6da326025cbe",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/5b19a8df95a02c3629504042930d6da326025cbe",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -1607,12 +1451,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/5b19a8df95a02c3629504042930d6da326025cbe",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/5b19a8df95a02c3629504042930d6da326025cbe",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/5b19a8df95a02c3629504042930d6da326025cbe/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/5b19a8df95a02c3629504042930d6da326025cbe",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/5b19a8df95a02c3629504042930d6da326025cbe",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/5b19a8df95a02c3629504042930d6da326025cbe/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -1656,10 +1497,8 @@
       "parents": [
         {
           "sha": "fcc9d33fd23b09d03412ae2cf0d084800ef5a301",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/fcc9d33fd23b09d03412ae2cf0d084800ef5a301",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/fcc9d33fd23b09d03412ae2cf0d084800ef5a301"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/fcc9d33fd23b09d03412ae2cf0d084800ef5a301",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/fcc9d33fd23b09d03412ae2cf0d084800ef5a301"
         }
       ]
     },
@@ -1677,15 +1516,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-01-29T01:08:31Z"
         },
-        "message":
-          "# Vimperatorの`t`がはたらかない\n\nなんかFirefoxのバージョンアップで壊れたらしい。\n\n参考: [vimperator/vimperator-lab#568](https://github.com/vimperator/vimperator-labs/issues/568)\n\n一応パッチはでているので次のバージョンで直るかもしれない。直って‥‥。",
+        "message": "# Vimperatorの`t`がはたらかない\n\nなんかFirefoxのバージョンアップで壊れたらしい。\n\n参考: [vimperator/vimperator-lab#568](https://github.com/vimperator/vimperator-labs/issues/568)\n\n一応パッチはでているので次のバージョンで直るかもしれない。直って‥‥。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/fcc9d33fd23b09d03412ae2cf0d084800ef5a301",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/fcc9d33fd23b09d03412ae2cf0d084800ef5a301",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -1694,12 +1530,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/fcc9d33fd23b09d03412ae2cf0d084800ef5a301",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/fcc9d33fd23b09d03412ae2cf0d084800ef5a301",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/fcc9d33fd23b09d03412ae2cf0d084800ef5a301/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/fcc9d33fd23b09d03412ae2cf0d084800ef5a301",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/fcc9d33fd23b09d03412ae2cf0d084800ef5a301",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/fcc9d33fd23b09d03412ae2cf0d084800ef5a301/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -1743,10 +1576,8 @@
       "parents": [
         {
           "sha": "dcd221fe74e9a8f8570b387f5779ea4b1259c009",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/dcd221fe74e9a8f8570b387f5779ea4b1259c009",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/dcd221fe74e9a8f8570b387f5779ea4b1259c009"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/dcd221fe74e9a8f8570b387f5779ea4b1259c009",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/dcd221fe74e9a8f8570b387f5779ea4b1259c009"
         }
       ]
     },
@@ -1764,15 +1595,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-01-14T11:49:08Z"
         },
-        "message":
-          "# [electron-devtools-installer]\n\n[electron-devtools-installer]: https://github.com/MarshallOfSound/electron-devtools-installer\n\nElectronにDevtoolsの拡張をインストールするためのライブラリ。ElectronでReactのデバッグを全力でするときに使うといいんだと思う。React以外にもEmber用の拡張とかVue.js用の拡張とかがインストールできる。\n\nちなみに、[electron-react-devtools](https://github.com/firejune/electron-react-devtools)というのもあるのだけど、これはReact専用だし、こっちを使った方がいいんだと思う。",
+        "message": "# [electron-devtools-installer]\n\n[electron-devtools-installer]: https://github.com/MarshallOfSound/electron-devtools-installer\n\nElectronにDevtoolsの拡張をインストールするためのライブラリ。ElectronでReactのデバッグを全力でするときに使うといいんだと思う。React以外にもEmber用の拡張とかVue.js用の拡張とかがインストールできる。\n\nちなみに、[electron-react-devtools](https://github.com/firejune/electron-react-devtools)というのもあるのだけど、これはReact専用だし、こっちを使った方がいいんだと思う。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/dcd221fe74e9a8f8570b387f5779ea4b1259c009",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/dcd221fe74e9a8f8570b387f5779ea4b1259c009",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -1781,12 +1609,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/dcd221fe74e9a8f8570b387f5779ea4b1259c009",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/dcd221fe74e9a8f8570b387f5779ea4b1259c009",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/dcd221fe74e9a8f8570b387f5779ea4b1259c009/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/dcd221fe74e9a8f8570b387f5779ea4b1259c009",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/dcd221fe74e9a8f8570b387f5779ea4b1259c009",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/dcd221fe74e9a8f8570b387f5779ea4b1259c009/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -1830,10 +1655,8 @@
       "parents": [
         {
           "sha": "f5934dee27ca04a6306e9d84c3828789717e9615",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/f5934dee27ca04a6306e9d84c3828789717e9615",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/f5934dee27ca04a6306e9d84c3828789717e9615"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/f5934dee27ca04a6306e9d84c3828789717e9615",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/f5934dee27ca04a6306e9d84c3828789717e9615"
         }
       ]
     },
@@ -1851,15 +1674,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2017-01-14T11:46:49Z"
         },
-        "message":
-          "# [cerebral]\n\n[cerebral]: http://www.cerebraljs.com/\n\nReact DevtoolsをElectronで使う方法を調べているときに発見したフレームワーク。React上に構築されたMVCっぽい感じがする。\n\nCerebral DebuggerというDevtools拡張を持っていて、なんかかっこいい感じでデバッグできる。かっこいい。\n\nあとマスコットキャラ？　がどう見てもイシツブテ。",
+        "message": "# [cerebral]\n\n[cerebral]: http://www.cerebraljs.com/\n\nReact DevtoolsをElectronで使う方法を調べているときに発見したフレームワーク。React上に構築されたMVCっぽい感じがする。\n\nCerebral DebuggerというDevtools拡張を持っていて、なんかかっこいい感じでデバッグできる。かっこいい。\n\nあとマスコットキャラ？　がどう見てもイシツブテ。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/f5934dee27ca04a6306e9d84c3828789717e9615",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/f5934dee27ca04a6306e9d84c3828789717e9615",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -1868,12 +1688,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/f5934dee27ca04a6306e9d84c3828789717e9615",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/f5934dee27ca04a6306e9d84c3828789717e9615",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/f5934dee27ca04a6306e9d84c3828789717e9615/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/f5934dee27ca04a6306e9d84c3828789717e9615",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/f5934dee27ca04a6306e9d84c3828789717e9615",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/f5934dee27ca04a6306e9d84c3828789717e9615/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -1917,10 +1734,8 @@
       "parents": [
         {
           "sha": "1ab46a0db2d233e5adbfb929d085c77d12d83948",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/1ab46a0db2d233e5adbfb929d085c77d12d83948",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/1ab46a0db2d233e5adbfb929d085c77d12d83948"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/1ab46a0db2d233e5adbfb929d085c77d12d83948",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/1ab46a0db2d233e5adbfb929d085c77d12d83948"
         }
       ]
     },
@@ -1938,15 +1753,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2016-12-31T12:37:18Z"
         },
-        "message":
-          "# [libsocket][]\n\n[libsocket]: https://github.com/dermesser/libsocket\n\nC言語とC++でソケット通信をいい感じに扱えるようにするライブラリ。C言語を書く必要に迫られたときに覚えておきたい。",
+        "message": "# [libsocket][]\n\n[libsocket]: https://github.com/dermesser/libsocket\n\nC言語とC++でソケット通信をいい感じに扱えるようにするライブラリ。C言語を書く必要に迫られたときに覚えておきたい。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/1ab46a0db2d233e5adbfb929d085c77d12d83948",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/1ab46a0db2d233e5adbfb929d085c77d12d83948",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -1955,12 +1767,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/1ab46a0db2d233e5adbfb929d085c77d12d83948",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/1ab46a0db2d233e5adbfb929d085c77d12d83948",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/1ab46a0db2d233e5adbfb929d085c77d12d83948/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/1ab46a0db2d233e5adbfb929d085c77d12d83948",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/1ab46a0db2d233e5adbfb929d085c77d12d83948",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/1ab46a0db2d233e5adbfb929d085c77d12d83948/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -2004,10 +1813,8 @@
       "parents": [
         {
           "sha": "1f79f148cdd6f568e6ce006d3991d9b9246b0a3f",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/1f79f148cdd6f568e6ce006d3991d9b9246b0a3f",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/1f79f148cdd6f568e6ce006d3991d9b9246b0a3f"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/1f79f148cdd6f568e6ce006d3991d9b9246b0a3f",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/1f79f148cdd6f568e6ce006d3991d9b9246b0a3f"
         }
       ]
     },
@@ -2025,15 +1832,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2016-12-15T11:11:21Z"
         },
-        "message":
-          "# [eslint-immutable-plugin]\n\n[eslint-immutable-plugin]: https://github.com/jhusain/eslint-plugin-immutable\n\n破壊的代入絶対許さないマンのためのeslintプラグイン。つらそうだけど部分的に使えれば意味があるのかもしれない。",
+        "message": "# [eslint-immutable-plugin]\n\n[eslint-immutable-plugin]: https://github.com/jhusain/eslint-plugin-immutable\n\n破壊的代入絶対許さないマンのためのeslintプラグイン。つらそうだけど部分的に使えれば意味があるのかもしれない。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/1f79f148cdd6f568e6ce006d3991d9b9246b0a3f",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/1f79f148cdd6f568e6ce006d3991d9b9246b0a3f",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -2042,12 +1846,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/1f79f148cdd6f568e6ce006d3991d9b9246b0a3f",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/1f79f148cdd6f568e6ce006d3991d9b9246b0a3f",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/1f79f148cdd6f568e6ce006d3991d9b9246b0a3f/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/1f79f148cdd6f568e6ce006d3991d9b9246b0a3f",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/1f79f148cdd6f568e6ce006d3991d9b9246b0a3f",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/1f79f148cdd6f568e6ce006d3991d9b9246b0a3f/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -2091,10 +1892,8 @@
       "parents": [
         {
           "sha": "beef47cb61c5919f792a1decf98b78ae501a8437",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/beef47cb61c5919f792a1decf98b78ae501a8437",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/beef47cb61c5919f792a1decf98b78ae501a8437"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/beef47cb61c5919f792a1decf98b78ae501a8437",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/beef47cb61c5919f792a1decf98b78ae501a8437"
         }
       ]
     },
@@ -2112,15 +1911,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2016-12-12T13:56:09Z"
         },
-        "message":
-          "# MLtonの挙動\n\nMLtonはトップレベルの式についてセミコロンが無いと上手くパースしてくれないのだけど、これはどうしてなんだろう？\n\nMoscow MLではパースできるらしい。\n\n\"The Definition of Standard ML\"をさっと眺めてみたけどよく分からなかった。",
+        "message": "# MLtonの挙動\n\nMLtonはトップレベルの式についてセミコロンが無いと上手くパースしてくれないのだけど、これはどうしてなんだろう？\n\nMoscow MLではパースできるらしい。\n\n\"The Definition of Standard ML\"をさっと眺めてみたけどよく分からなかった。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/beef47cb61c5919f792a1decf98b78ae501a8437",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/beef47cb61c5919f792a1decf98b78ae501a8437",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -2129,12 +1925,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/beef47cb61c5919f792a1decf98b78ae501a8437",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/beef47cb61c5919f792a1decf98b78ae501a8437",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/beef47cb61c5919f792a1decf98b78ae501a8437/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/beef47cb61c5919f792a1decf98b78ae501a8437",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/beef47cb61c5919f792a1decf98b78ae501a8437",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/beef47cb61c5919f792a1decf98b78ae501a8437/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -2178,10 +1971,8 @@
       "parents": [
         {
           "sha": "d7d03fdd511bab920f14dc5c272b12ce10d9f626",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/d7d03fdd511bab920f14dc5c272b12ce10d9f626",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/d7d03fdd511bab920f14dc5c272b12ce10d9f626"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/d7d03fdd511bab920f14dc5c272b12ce10d9f626",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/d7d03fdd511bab920f14dc5c272b12ce10d9f626"
         }
       ]
     },
@@ -2199,15 +1990,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2016-12-07T11:19:25Z"
         },
-        "message":
-          "# iTeermのキーボードショートカット\n\n`Cmd-Enter`でフルスクリーンになる。偶然見つけたのでメモ。",
+        "message": "# iTeermのキーボードショートカット\n\n`Cmd-Enter`でフルスクリーンになる。偶然見つけたのでメモ。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/d7d03fdd511bab920f14dc5c272b12ce10d9f626",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/d7d03fdd511bab920f14dc5c272b12ce10d9f626",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -2216,12 +2004,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/d7d03fdd511bab920f14dc5c272b12ce10d9f626",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/d7d03fdd511bab920f14dc5c272b12ce10d9f626",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/d7d03fdd511bab920f14dc5c272b12ce10d9f626/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/d7d03fdd511bab920f14dc5c272b12ce10d9f626",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/d7d03fdd511bab920f14dc5c272b12ce10d9f626",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/d7d03fdd511bab920f14dc5c272b12ce10d9f626/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -2265,10 +2050,8 @@
       "parents": [
         {
           "sha": "3a7cde340f257c0bb8644e359d945794c2d5fce5",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/3a7cde340f257c0bb8644e359d945794c2d5fce5",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/3a7cde340f257c0bb8644e359d945794c2d5fce5"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/3a7cde340f257c0bb8644e359d945794c2d5fce5",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/3a7cde340f257c0bb8644e359d945794c2d5fce5"
         }
       ]
     },
@@ -2286,15 +2069,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2016-12-06T15:11:54Z"
         },
-        "message":
-          "# [noop3][]\n\n[noop3]: https://github.com/sindresorhus/noop3\n\nsindresorhus氏作の`noop`。なんと`factory`機能が実装されている！\n\nJavaScript界隈のヤバさを象徴しているような‥‥、けどボクはそういうところも含めてJavaScriptが好きなので何も言えない。",
+        "message": "# [noop3][]\n\n[noop3]: https://github.com/sindresorhus/noop3\n\nsindresorhus氏作の`noop`。なんと`factory`機能が実装されている！\n\nJavaScript界隈のヤバさを象徴しているような‥‥、けどボクはそういうところも含めてJavaScriptが好きなので何も言えない。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/3a7cde340f257c0bb8644e359d945794c2d5fce5",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/3a7cde340f257c0bb8644e359d945794c2d5fce5",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -2303,12 +2083,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/3a7cde340f257c0bb8644e359d945794c2d5fce5",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/3a7cde340f257c0bb8644e359d945794c2d5fce5",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/3a7cde340f257c0bb8644e359d945794c2d5fce5/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/3a7cde340f257c0bb8644e359d945794c2d5fce5",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/3a7cde340f257c0bb8644e359d945794c2d5fce5",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/3a7cde340f257c0bb8644e359d945794c2d5fce5/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -2352,10 +2129,8 @@
       "parents": [
         {
           "sha": "c46061ff68626d9c115063e5b29068efa829f80e",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/c46061ff68626d9c115063e5b29068efa829f80e",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/c46061ff68626d9c115063e5b29068efa829f80e"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/c46061ff68626d9c115063e5b29068efa829f80e",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/c46061ff68626d9c115063e5b29068efa829f80e"
         }
       ]
     },
@@ -2376,11 +2151,9 @@
         "message": "# npms-cli\n\n普通にCLIツールもあるっぽい。これは便利。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/c46061ff68626d9c115063e5b29068efa829f80e",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/c46061ff68626d9c115063e5b29068efa829f80e",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -2389,12 +2162,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/c46061ff68626d9c115063e5b29068efa829f80e",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/c46061ff68626d9c115063e5b29068efa829f80e",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/c46061ff68626d9c115063e5b29068efa829f80e/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/c46061ff68626d9c115063e5b29068efa829f80e",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/c46061ff68626d9c115063e5b29068efa829f80e",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/c46061ff68626d9c115063e5b29068efa829f80e/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -2438,10 +2208,8 @@
       "parents": [
         {
           "sha": "f6885c0274f9de9dd9eaf09e9da71921937f028c",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/f6885c0274f9de9dd9eaf09e9da71921937f028c",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/f6885c0274f9de9dd9eaf09e9da71921937f028c"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/f6885c0274f9de9dd9eaf09e9da71921937f028c",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/f6885c0274f9de9dd9eaf09e9da71921937f028c"
         }
       ]
     },
@@ -2459,15 +2227,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2016-12-05T01:57:54Z"
         },
-        "message":
-          "# [npms][]\n\n[npms]: https://npms.io/\n\n> A better and open source search for node packages\n\nとのこと。UIがかっこいいしnpmの検索よりもマシな気がする。APIはあるのだろうか？　あるならコマンドラインのフロントエンドが欲しいなって。",
+        "message": "# [npms][]\n\n[npms]: https://npms.io/\n\n> A better and open source search for node packages\n\nとのこと。UIがかっこいいしnpmの検索よりもマシな気がする。APIはあるのだろうか？　あるならコマンドラインのフロントエンドが欲しいなって。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/f6885c0274f9de9dd9eaf09e9da71921937f028c",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/f6885c0274f9de9dd9eaf09e9da71921937f028c",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -2476,12 +2241,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/f6885c0274f9de9dd9eaf09e9da71921937f028c",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/f6885c0274f9de9dd9eaf09e9da71921937f028c",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/f6885c0274f9de9dd9eaf09e9da71921937f028c/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/f6885c0274f9de9dd9eaf09e9da71921937f028c",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/f6885c0274f9de9dd9eaf09e9da71921937f028c",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/f6885c0274f9de9dd9eaf09e9da71921937f028c/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -2525,10 +2287,8 @@
       "parents": [
         {
           "sha": "39e50655f015589ea48f210864aef15d7b214196",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/39e50655f015589ea48f210864aef15d7b214196",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/39e50655f015589ea48f210864aef15d7b214196"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/39e50655f015589ea48f210864aef15d7b214196",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/39e50655f015589ea48f210864aef15d7b214196"
         }
       ]
     },
@@ -2546,15 +2306,12 @@
           "email": "make.just.on@gmail.com",
           "date": "2016-11-29T16:13:55Z"
         },
-        "message":
-          "# [twempref][]\n\n[twempref]: https://github.com/twitter/twemperf\n\nMemcachedのベンチマークを取るやつ。使ってみたかったのだけどmacOSで動かなかった‥‥。",
+        "message": "# [twempref][]\n\n[twempref]: https://github.com/twitter/twemperf\n\nMemcachedのベンチマークを取るやつ。使ってみたかったのだけどmacOSで動かなかった‥‥。",
         "tree": {
           "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904"
         },
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/git/commits/39e50655f015589ea48f210864aef15d7b214196",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/39e50655f015589ea48f210864aef15d7b214196",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -2563,12 +2320,9 @@
           "payload": null
         }
       },
-      "url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/39e50655f015589ea48f210864aef15d7b214196",
-      "html_url":
-        "https://github.com/MakeNowJust/commlog/commit/39e50655f015589ea48f210864aef15d7b214196",
-      "comments_url":
-        "https://api.github.com/repos/MakeNowJust/commlog/commits/39e50655f015589ea48f210864aef15d7b214196/comments",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/39e50655f015589ea48f210864aef15d7b214196",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/39e50655f015589ea48f210864aef15d7b214196",
+      "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/39e50655f015589ea48f210864aef15d7b214196/comments",
       "author": {
         "login": "MakeNowJust",
         "id": 6679325,
@@ -2612,10 +2366,8 @@
       "parents": [
         {
           "sha": "9f70424c8debb713b220eba4db9457d9b0282354",
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/commits/9f70424c8debb713b220eba4db9457d9b0282354",
-          "html_url":
-            "https://github.com/MakeNowJust/commlog/commit/9f70424c8debb713b220eba4db9457d9b0282354"
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/9f70424c8debb713b220eba4db9457d9b0282354",
+          "html_url": "https://github.com/MakeNowJust/commlog/commit/9f70424c8debb713b220eba4db9457d9b0282354"
         }
       ]
     }

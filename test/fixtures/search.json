@@ -5,16 +5,12 @@
     "incomplete_results": false,
     "items": [
       {
-        "url":
-          "https://api.github.com/repos/MakeNowJust/commlog/commits/9f0fb3dd4e8c4b6de14b21366fc76ecb71d4fa3e",
+        "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/9f0fb3dd4e8c4b6de14b21366fc76ecb71d4fa3e",
         "sha": "9f0fb3dd4e8c4b6de14b21366fc76ecb71d4fa3e",
-        "html_url":
-          "https://github.com/MakeNowJust/commlog/commit/9f0fb3dd4e8c4b6de14b21366fc76ecb71d4fa3e",
-        "comments_url":
-          "https://api.github.com/repos/MakeNowJust/commlog/commits/9f0fb3dd4e8c4b6de14b21366fc76ecb71d4fa3e/comments",
+        "html_url": "https://github.com/MakeNowJust/commlog/commit/9f0fb3dd4e8c4b6de14b21366fc76ecb71d4fa3e",
+        "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/9f0fb3dd4e8c4b6de14b21366fc76ecb71d4fa3e/comments",
         "commit": {
-          "url":
-            "https://api.github.com/repos/MakeNowJust/commlog/git/commits/9f0fb3dd4e8c4b6de14b21366fc76ecb71d4fa3e",
+          "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/9f0fb3dd4e8c4b6de14b21366fc76ecb71d4fa3e",
           "author": {
             "date": "2016-03-10T05:09:23+09:00",
             "name": "TSUYUSATO Kitsune",
@@ -25,11 +21,9 @@
             "name": "TSUYUSATO Kitsune",
             "email": "make.just.on@gmail.com"
           },
-          "message":
-            "# [jo](https://github.com/jpmens/jo)\n\nコマンドライン引数とか標準入力から受け取ったものからJSONを組み立てるコマンド。JSONのAPIをリクエストするときとかに使えそう。\n\n```console\n$ jo -p hello=world flag-ok@1 flag-no@0\n{\n  \"hello\": \"world\",\n  \"flag-ok\": true,\n  \"flag-no\": false\n}\n```",
+          "message": "# [jo](https://github.com/jpmens/jo)\n\nコマンドライン引数とか標準入力から受け取ったものからJSONを組み立てるコマンド。JSONのAPIをリクエストするときとかに使えそう。\n\n```console\n$ jo -p hello=world flag-ok@1 flag-no@0\n{\n  \"hello\": \"world\",\n  \"flag-ok\": true,\n  \"flag-no\": false\n}\n```",
           "tree": {
-            "url":
-              "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904",
+            "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/4b825dc642cb6eb9a060e54bf8d69288fbee4904",
             "sha": "4b825dc642cb6eb9a060e54bf8d69288fbee4904"
           },
           "comment_count": 0
@@ -76,10 +70,8 @@
         },
         "parents": [
           {
-            "url":
-              "https://api.github.com/repos/MakeNowJust/commlog/commits/ffde43f580902b14cf846372f54888ebb6094bd3",
-            "html_url":
-              "https://github.com/MakeNowJust/commlog/commit/ffde43f580902b14cf846372f54888ebb6094bd3",
+            "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/ffde43f580902b14cf846372f54888ebb6094bd3",
+            "html_url": "https://github.com/MakeNowJust/commlog/commit/ffde43f580902b14cf846372f54888ebb6094bd3",
             "sha": "ffde43f580902b14cf846372f54888ebb6094bd3"
           }
         ],
@@ -115,12 +107,10 @@
           "url": "https://api.github.com/repos/MakeNowJust/commlog",
           "forks_url": "https://api.github.com/repos/MakeNowJust/commlog/forks",
           "keys_url": "https://api.github.com/repos/MakeNowJust/commlog/keys{/key_id}",
-          "collaborators_url":
-            "https://api.github.com/repos/MakeNowJust/commlog/collaborators{/collaborator}",
+          "collaborators_url": "https://api.github.com/repos/MakeNowJust/commlog/collaborators{/collaborator}",
           "teams_url": "https://api.github.com/repos/MakeNowJust/commlog/teams",
           "hooks_url": "https://api.github.com/repos/MakeNowJust/commlog/hooks",
-          "issue_events_url":
-            "https://api.github.com/repos/MakeNowJust/commlog/issues/events{/number}",
+          "issue_events_url": "https://api.github.com/repos/MakeNowJust/commlog/issues/events{/number}",
           "events_url": "https://api.github.com/repos/MakeNowJust/commlog/events",
           "assignees_url": "https://api.github.com/repos/MakeNowJust/commlog/assignees{/user}",
           "branches_url": "https://api.github.com/repos/MakeNowJust/commlog/branches{/branch}",
@@ -138,8 +128,7 @@
           "commits_url": "https://api.github.com/repos/MakeNowJust/commlog/commits{/sha}",
           "git_commits_url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits{/sha}",
           "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/comments{/number}",
-          "issue_comment_url":
-            "https://api.github.com/repos/MakeNowJust/commlog/issues/comments{/number}",
+          "issue_comment_url": "https://api.github.com/repos/MakeNowJust/commlog/issues/comments{/number}",
           "contents_url": "https://api.github.com/repos/MakeNowJust/commlog/contents/{+path}",
           "compare_url": "https://api.github.com/repos/MakeNowJust/commlog/compare/{base}...{head}",
           "merges_url": "https://api.github.com/repos/MakeNowJust/commlog/merges",
@@ -148,8 +137,7 @@
           "issues_url": "https://api.github.com/repos/MakeNowJust/commlog/issues{/number}",
           "pulls_url": "https://api.github.com/repos/MakeNowJust/commlog/pulls{/number}",
           "milestones_url": "https://api.github.com/repos/MakeNowJust/commlog/milestones{/number}",
-          "notifications_url":
-            "https://api.github.com/repos/MakeNowJust/commlog/notifications{?since,all,participating}",
+          "notifications_url": "https://api.github.com/repos/MakeNowJust/commlog/notifications{?since,all,participating}",
           "labels_url": "https://api.github.com/repos/MakeNowJust/commlog/labels{/name}",
           "releases_url": "https://api.github.com/repos/MakeNowJust/commlog/releases{/id}",
           "deployments_url": "https://api.github.com/repos/MakeNowJust/commlog/deployments"

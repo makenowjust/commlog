@@ -3356,9 +3356,9 @@ eslint-plugin-promise@^3.8.0:
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-3.8.0.tgz#65ebf27a845e3c1e9d6f6a5622ddd3801694b621"
 
-eslint-plugin-unicorn@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-4.0.3.tgz#7e9998711bf237809ed1881a51a77000b2f40586"
+eslint-plugin-unicorn@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-5.0.0.tgz#3cd37e9202892c4f819c3ce76dcbcae415c84b1d"
   dependencies:
     clean-regexp "^1.0.0"
     eslint-ast-utils "^1.0.0"
@@ -8749,15 +8749,15 @@ stylelint-config-xo-scss@^0.5.0:
     stylelint-config-xo "^0.9.0"
     stylelint-scss "^3.1.0"
 
-stylelint-config-xo-space@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-xo-space/-/stylelint-config-xo-space-0.8.0.tgz#1cbee00f4087e14e27f8640660dc414a916122ff"
+stylelint-config-xo-space@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-xo-space/-/stylelint-config-xo-space-0.9.0.tgz#10b2ace69ec0d6137811a3a6114ec6873fa8fd79"
   dependencies:
-    stylelint-config-xo "^0.8.0"
+    stylelint-config-xo "^0.10.0"
 
-stylelint-config-xo@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-xo/-/stylelint-config-xo-0.8.0.tgz#72eab16ce93dbf557f6c80c7fdbe280d6d174de4"
+stylelint-config-xo@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-xo/-/stylelint-config-xo-0.10.0.tgz#e6eac4ce42c413384eda6a0e74696f97a68227ce"
   dependencies:
     stylelint-declaration-block-no-ignored-properties "^1.0.2"
     stylelint-order "^0.8.1"

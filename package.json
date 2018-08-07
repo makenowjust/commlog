@@ -11,6 +11,7 @@
     "format": "maid lint --fix",
     "generate": "maid generate",
     "lint": "maid lint",
+    "snapshot": "maid test --update-snapshots",
     "tasks": "maid help",
     "test": "maid test"
   },

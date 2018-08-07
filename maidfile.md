@@ -7,6 +7,7 @@ This file is to define tasks for [maid](https://github.com/egoist/maid) task run
 Start development server.
 
 ```bash
+set -ex
 nuxt
 ```
 
@@ -14,7 +15,7 @@ nuxt
 
 Run formatter and linters.
 
-You can specify `--fix` flag to fix files as possible.
+You can use `yarn format` to fix files as possible.
 
 ```bash
 if [[ $1 == --fix ]]; then
@@ -36,6 +37,7 @@ stylelint --ignore-path .gitignore '**/*.{scss,vue}' $lint_opt
 Generate commlog as static web application.
 
 ```bash
+set -ex
 NODE_ENV=production nuxt generate
 ```
 
@@ -43,6 +45,9 @@ NODE_ENV=production nuxt generate
 
 Run test with coverage.
 
+To update snapshot, you can use `yarn snapshot`.
+
 ```bash
+set -ex
 nyc ava "$@"
 ```

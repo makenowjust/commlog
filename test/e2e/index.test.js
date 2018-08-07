@@ -139,6 +139,27 @@ test.serial('open single commit page', async t => {
   t.is(articles, 30);
 });
 
+test.serial('open single commit page (footnote)', async t => {
+  let title = await page.evaluate(() => document.title);
+
+  // Open single commit page (footnote):
+  await page.goto('http://localhost:4000/commit/536bd0322ebc5f218208d52830efb5ba7110213e');
+  title = await onChangeTitle(title);
+  t.is(title, '#536bd03 footnoteのテスト | commlog commit');
+
+  const h1 = await page.evaluate(
+    () => document.querySelector('[data-test~="commit"] [data-test="commit-body"] h1').textContent,
+  );
+  t.is(h1, 'footnoteのテスト');
+
+  // Check footnote reference:
+  const footnoteRef = await page.evaluate(
+    () =>
+      document.querySelector('#\\35 36bd0322ebc5f218208d52830efb5ba7110213e-fnref-hope > a').hash,
+  );
+  t.is(footnoteRef, '#536bd0322ebc5f218208d52830efb5ba7110213e-fn-hope');
+});
+
 test.serial('open search page', async t => {
   let title = await page.evaluate(() => document.title);
 

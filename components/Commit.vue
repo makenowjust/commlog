@@ -2,7 +2,7 @@
   <article
     v-test="`commit commit-${hash.slice(0, 7)}`"
     :class="$style.wrap">
-    <commit-body :tree="tree" />
+    <commit-body :tree="tree" :hash="hash" />
     <section :class="$style.foot">
       <a v-if="author.github" :class="$style.author" :href="`https://github.com/${author.name}`">
         {{ author.name }}<img :src="author.icon" :alt="`${author.name} icon`" />

@@ -21,7 +21,7 @@ test('parse as HAST tree', t => {
 test('convert from HAST tree', t => {
   const createElement = (tagName, data, children) => ({tagName, data, children});
   const {tree} = markdown.parse('hello');
-  t.snapshot(markdown.convert(createElement, tree));
+  t.snapshot(markdown.convert(createElement, tree, 'hash'));
 });
 
 test('convert footnote from HAST tree', t => {
@@ -31,5 +31,6 @@ test('convert footnote from HAST tree', t => {
 
 [^foo]: bar
 `);
-  t.snapshot(markdown.convert(createElement, tree));
+  t.log(tree.children[2]);
+  t.snapshot(markdown.convert(createElement, tree, 'hash'));
 });

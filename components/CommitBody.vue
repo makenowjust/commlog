@@ -12,26 +12,15 @@
 </style>
 
 <script>
-import toH from 'hast-to-hyperscript';
+import * as markdown from '../lib/markdown';
 
 export default {
   props: {
     tree: {type: Object, required: true},
   },
   render(createElement) {
-    const h = (tagName, props, children) => {
-      const {className, ...attrs} = props || {};
-      return createElement(
-        tagName,
-        {
-          class: className,
-          attrs,
-        },
-        children,
-      );
-    };
+    const elements = markdown.convert(createElement, this.tree);
 
-    const elements = toH(h, this.tree);
     return createElement(
       'section',
       {

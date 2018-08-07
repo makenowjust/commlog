@@ -29,6 +29,7 @@
     "parse-link-header": "^1.0.1",
     "qs": "^6.5.2",
     "rehype-highlight": "^2.1.0",
+    "remark-breaks": "^1.0.0",
     "remark-parse": "^5.0.0",
     "remark-rehype": "^3.0.0",
     "unified": "^7.0.0",

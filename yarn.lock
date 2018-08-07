@@ -7863,6 +7863,10 @@ release-zalgo@^1.0.0:
   dependencies:
     es6-error "^4.0.1"
 
+remark-breaks@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/remark-breaks/-/remark-breaks-1.0.0.tgz#f7d701d14cf6cf6f225ff93f1c3a10b3c353a9a3"
+
 remark-parse@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-5.0.0.tgz#4c077f9e499044d1d5c13f80d7a98cf7b9285d95"

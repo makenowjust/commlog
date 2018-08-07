@@ -41,7 +41,7 @@ const config = {
 
 const envs = {
   development: {
-    plugins: ['./plugins/test-directive-fake', './plugins/axios-mock'],
+    plugins: ['./plugins/test-directive-fake'/*, './plugins/axios-mock'*/],
   },
   test: {
     plugins: ['./plugins/test-directive', './plugins/axios-mock'],

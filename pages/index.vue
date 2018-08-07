@@ -16,7 +16,7 @@ import CommitList from '../components/CommitList.vue';
 export default {
   components: {CommitList},
   async fetch({store}) {
-    store.dispatch('pages/index/load');
+    store.dispatch('pages/load');
   },
   head() {
     let title = 'commlog top';
@@ -29,11 +29,11 @@ export default {
     return {title};
   },
   computed: {
-    ...mapGetters('pages/index', ['hasNext', 'commits']),
-    ...mapState('pages/index', ['loading', 'error']),
+    ...mapGetters('pages', ['hasNext', 'commits']),
+    ...mapState('pages', ['loading', 'error']),
   },
   methods: {
-    ...mapActions('pages/index', ['loadMore']),
+    ...mapActions('pages', ['loadMore']),
   },
 };
 </script>

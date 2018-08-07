@@ -11,8 +11,8 @@
     "format": "maid lint --fix",
     "generate": "maid generate",
     "lint": "maid lint",
-    "tasks": "maid help",
     "snapshot": "maid test --update-snapshots",
+    "tasks": "maid help",
     "test": "maid test"
   },
   "dependencies": {

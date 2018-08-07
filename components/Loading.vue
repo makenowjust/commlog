@@ -32,7 +32,7 @@ export default {
   components: {LoadingBox},
   props: {
     loading: {type: Boolean, required: true},
-    error: Error,
+    error: {type: Error, default: null},
   },
 };
 </script>

@@ -44,7 +44,7 @@ export default {
     commits: {type: Array, required: true},
     hasNext: {type: Boolean, required: true},
     loading: {type: Boolean, required: true},
-    error: Error,
+    error: {type: Error, default: null},
   },
   methods: {
     loadMore() {

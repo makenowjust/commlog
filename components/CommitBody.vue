@@ -16,10 +16,11 @@ import * as markdown from '../lib/markdown';
 
 export default {
   props: {
+    hash: {type: String, required: true},
     tree: {type: Object, required: true},
   },
   render(createElement) {
-    const elements = markdown.convert(createElement, this.tree);
+    const elements = markdown.convert(createElement, this.tree, this.hash);
 
     return createElement(
       'section',

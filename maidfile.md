@@ -26,7 +26,7 @@ else
 fi
 set -ex
 prettier-package-json $prettier_opt
-prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue}' $prettier_opt
+prettier --ignore-path .gitignore '**/*.{js,json,md,scss,vue,yml}' $prettier_opt
 eslint --ignore-path .gitignore '**/*.{js,vue}' $lint_opt
 stylelint --ignore-path .gitignore '**/*.{scss,vue}' $lint_opt
 ```

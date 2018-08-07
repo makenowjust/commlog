@@ -15,32 +15,11 @@ test('extract title from heading with markup', t => {
 });
 
 test('parse as HAST tree', t => {
-  t.deepEqual(markdown.parse('hello').tree, {
-    type: 'root',
-    children: [
-      {
-        type: 'element',
-        tagName: 'p',
-        properties: {},
-        children: [
-          {
-            type: 'text',
-            value: 'hello',
-            position: {
-              start: {line: 1, column: 1, offset: 0},
-              end: {line: 1, column: 6, offset: 5},
-            },
-          },
-        ],
-        position: {
-          start: {line: 1, column: 1, offset: 0},
-          end: {line: 1, column: 6, offset: 5},
-        },
-      },
-    ],
-    position: {
-      start: {line: 1, column: 1, offset: 0},
-      end: {line: 1, column: 6, offset: 5},
-    },
-  });
+  t.snapshot(markdown.parse('hello').tree);
+});
+
+test('convert from HAST tree', t => {
+  const createElement = (tagName, data, children) => ({tagName, data, children});
+  const {tree} = markdown.parse('hello');
+  t.snapshot(markdown.convert(createElement, tree));
 });

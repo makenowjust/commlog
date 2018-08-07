@@ -5,4 +5,5 @@ coverage:
   notify:
     slack:
       default:
-        url: secret:8SA6BDXd9PNkDaUe96qmOBPWbsf3XUoI6Xppm6f1D4OzG2AYwVbJ5A7mpp4UfAHzPtFKUPJjXpd7PRmbOimHhIB7lN4pWpeIeRz1ORU1w6umgvwu43u62ec1kkJu/iWDSNkStVqXJmogXqfL6ZswMCK22bh0zYRKEdz87Apk9PY=
+        url:
+          secret:8SA6BDXd9PNkDaUe96qmOBPWbsf3XUoI6Xppm6f1D4OzG2AYwVbJ5A7mpp4UfAHzPtFKUPJjXpd7PRmbOimHhIB7lN4pWpeIeRz1ORU1w6umgvwu43u62ec1kkJu/iWDSNkStVqXJmogXqfL6ZswMCK22bh0zYRKEdz87Apk9PY=

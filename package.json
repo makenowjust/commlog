@@ -12,6 +12,7 @@
     "generate": "maid generate",
     "lint": "maid lint",
     "tasks": "maid help",
+    "snapshot": "maid test --update-snapshots",
     "test": "maid test"
   },
   "dependencies": {

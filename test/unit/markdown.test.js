@@ -23,3 +23,13 @@ test('convert from HAST tree', t => {
   const {tree} = markdown.parse('hello');
   t.snapshot(markdown.convert(createElement, tree));
 });
+
+test('convert footnote from HAST tree', t => {
+  const createElement = (tagName, data, children) => ({tagName, data, children});
+  const {tree} = markdown.parse(`
+[^foo]
+
+[^foo]: bar
+`);
+  t.snapshot(markdown.convert(createElement, tree));
+});

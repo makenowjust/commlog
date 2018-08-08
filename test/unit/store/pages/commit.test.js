@@ -60,7 +60,7 @@ test('action load loads no commit if loaded', async t => {
   const hash = '1234567890';
   const getters = {commit: {hash}};
   const commit = td.function();
-  await store.actions.load({commit, getters}, {hash}, {times: 1});
+  await store.actions.load({commit, getters}, {hash});
   td.verify(commit('setHash', {hash}), {times: 1});
   t.pass();
 });

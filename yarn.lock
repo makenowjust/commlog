@@ -508,8 +508,8 @@
     stack-trace "0.0.10"
 
 "@vue/component-compiler-utils@^2.0.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@vue/component-compiler-utils/-/component-compiler-utils-2.1.0.tgz#8331eadc8acdbc35aace5a61d2153e6f6434bfe2"
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@vue/component-compiler-utils/-/component-compiler-utils-2.1.1.tgz#9b084cb67023076860687002a29930d30b36ef56"
   dependencies:
     consolidate "^0.15.1"
     hash-sum "^1.0.2"
@@ -4666,6 +4666,10 @@ invert-kv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
 
+ip@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.5.tgz#bdded70114290828c0a039e72ef25f5aaec4354a"
+
 ipaddr.js@1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.8.0.tgz#eaa33d6ddd7ace8f7f6fe0c9ca0440e706738b1e"
@@ -5488,9 +5492,16 @@ lowercase-keys@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-1.0.1.tgz#6f9e30b47084d971a7c820ff15a6c5167b74c26f"
 
-lowlight@^1.2.0, lowlight@^1.9.2:
+lowlight@^1.2.0:
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/lowlight/-/lowlight-1.9.2.tgz#0b9127e3cec2c3021b7795dd81005c709a42fdd1"
+  dependencies:
+    fault "^1.0.2"
+    highlight.js "~9.12.0"
+
+lowlight@^1.9.2:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/lowlight/-/lowlight-1.10.0.tgz#fbbd9158240d9c6c07c44b055ff0c32f1a2c9b99"
   dependencies:
     fault "^1.0.2"
     highlight.js "~9.12.0"
@@ -5921,8 +5932,8 @@ multimatch@^2.1.0:
     minimatch "^3.0.0"
 
 mustache@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/mustache/-/mustache-2.3.0.tgz#4028f7778b17708a489930a6e52ac3bca0da41d0"
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/mustache/-/mustache-2.3.1.tgz#ef5db3c0d11f1640e9baa47f4e65ba0c3fcd82b9"
 
 mute-stream@0.0.7:
   version "0.0.7"
@@ -6178,8 +6189,8 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
 nuxt-edge@^2.0.0-25555150.dbba872:
-  version "2.0.0-25560616.24daeba"
-  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25560616.24daeba.tgz#da58b00bf0947f71c41ed9deb713972f0c346e37"
+  version "2.0.0-25562473.7349add"
+  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25562473.7349add.tgz#281dded4d5fbc08636df864a081239a96ca858fc"
   dependencies:
     "@nuxtjs/friendly-errors-webpack-plugin" "^2.0.2"
     "@nuxtjs/youch" "^4.2.3"
@@ -6196,6 +6207,7 @@ nuxt-edge@^2.0.0-25555150.dbba872:
     consola "^1.4.1"
     css-loader "^1.0.0"
     cssnano "^4.0.5"
+    debug "^3.1.0"
     es6-promise "^4.2.4"
     esm "^3.0.74"
     etag "^1.8.1"
@@ -6206,6 +6218,7 @@ nuxt-edge@^2.0.0-25555150.dbba872:
     hash-sum "^1.0.2"
     html-minifier "^3.5.19"
     html-webpack-plugin "^3.2.0"
+    ip "^1.1.5"
     launch-editor-middleware "^2.2.1"
     lodash "^4.17.10"
     lru-cache "^4.1.3"
@@ -7421,8 +7434,8 @@ prettier-package-json@^1.6.0:
     sort-order "^1.0.1"
 
 prettier@^1.13.7:
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.14.0.tgz#847c235522035fd988100f1f43cf20a7d24f9372"
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.14.1.tgz#4ead68e66b5ec9e771de311570c90da822f5a17a"
 
 pretty-error@^2.0.2:
   version "2.1.1"
@@ -8731,11 +8744,9 @@ stylehacks@^4.0.0:
     postcss "^6.0.0"
     postcss-selector-parser "^3.0.0"
 
-stylelint-config-prettier@^3.2.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-prettier/-/stylelint-config-prettier-3.3.0.tgz#cc22a4b5310c1919cee77131d6e220c60a62a480"
-  dependencies:
-    stylelint "^9.1.1"
+stylelint-config-prettier@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-prettier/-/stylelint-config-prettier-4.0.0.tgz#8c712977be13bd25191ab8b986b5c07a3342a5dc"
 
 stylelint-config-recommended@^2.1.0:
   version "2.1.0"
@@ -8792,7 +8803,7 @@ stylelint-scss@^3.1.0:
     postcss-selector-parser "^4.0.0"
     postcss-value-parser "^3.3.0"
 
-stylelint@^9.1.1, stylelint@^9.2.1:
+stylelint@^9.2.1:
   version "9.4.0"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-9.4.0.tgz#2f2b82ae9db53a06735ae0724f41b134fdb84a10"
   dependencies:
@@ -9557,8 +9568,8 @@ vue-hot-reload-api@^2.3.0:
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.0.tgz#97976142405d13d8efae154749e88c4e358cf926"
 
 vue-loader@^15.2.6:
-  version "15.2.7"
-  resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-15.2.7.tgz#c1d40dae7407c2fc2215522d3b7cef736f568051"
+  version "15.3.0"
+  resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-15.3.0.tgz#b474d10a4e93d934a78c147fc3e314b370e9fc54"
   dependencies:
     "@vue/component-compiler-utils" "^2.0.0"
     hash-sum "^1.0.2"

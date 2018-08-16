@@ -31,6 +31,5 @@ test('convert footnote from HAST tree', t => {
 
 [^foo]: bar
 `);
-  t.log(tree.children[2]);
   t.snapshot(markdown.convert(createElement, tree, 'hash'));
 });

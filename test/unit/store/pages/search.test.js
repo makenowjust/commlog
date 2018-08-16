@@ -114,7 +114,7 @@ test('action loadMore loads more commits from next URL', async t => {
 test('action loadMore sets an error', async t => {
   const state = {...store.state(), next: 'http://example.com/not_found'};
   const commit = td.function();
-  const error = await t.throws(store.actions.loadMore.call(scope, {state, commit}));
+  const error = await t.throwsAsync(store.actions.loadMore.call(scope, {state, commit}));
   td.verify(commit('setError', {error: null}), {times: 1});
   td.verify(commit('setLoading', {loading: true}), {times: 1});
   td.verify(commit('setError', {error}), {times: 1});

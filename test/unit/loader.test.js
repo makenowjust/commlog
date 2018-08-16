@@ -32,7 +32,7 @@ test('load wraps loading action', async t => {
 
 test('load wraps loading action with an error', async t => {
   const commit = td.function();
-  const error = await t.throws(
+  const error = await t.throwsAsync(
     loader.load(commit, async () => {
       commit('test');
       throw new Error('error');

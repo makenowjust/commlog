@@ -769,9 +769,9 @@
     consola "^1.1.4"
     http-proxy-middleware "^0.18.0"
 
-"@nuxtjs/sentry@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/sentry/-/sentry-1.1.1.tgz#8050b8e9f90b7907080024ce34ed9927ab269c27"
+"@nuxtjs/sentry@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/sentry/-/sentry-1.1.2.tgz#2204633439916312cc454956d7a2c4e4d43e6df6"
   dependencies:
     consola "^1.4.1"
     raven "^2.3.0"
@@ -3436,9 +3436,9 @@ eslint-plugin-import@^2.12.0:
     read-pkg-up "^2.0.0"
     resolve "^1.6.0"
 
-eslint-plugin-promise@^3.8.0:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-3.8.0.tgz#65ebf27a845e3c1e9d6f6a5622ddd3801694b621"
+eslint-plugin-promise@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-4.0.0.tgz#bc15a4aa04fa6116113b6c47488c421821b758fc"
 
 eslint-plugin-unicorn@^5.0.0:
   version "5.0.0"
@@ -6232,9 +6232,9 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nuxt-edge@^2.0.0-25555150.dbba872:
-  version "2.0.0-25573733.5b98c1c"
-  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25573733.5b98c1c.tgz#7fc3d1e294cc0eaa400c18981c7daf8b7790df5a"
+nuxt-edge@^2.0.0-25575631.432720b:
+  version "2.0.0-25575631.432720b"
+  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25575631.432720b.tgz#185c4eb4e1c55471173bc16635c2bca4b204eac8"
   dependencies:
     "@babel/core" "7.0.0-rc.1"
     "@nuxtjs/babel-preset-app" "^0.3.0"

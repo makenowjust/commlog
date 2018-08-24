@@ -42,6 +42,7 @@
     "@ava/babel-preset-stage-4": "^1.1.0",
     "@babel/core": "^7.0.0-rc.2",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0-rc.2",
+    "@babel/plugin-syntax-jsx": "^7.0.0-rc.2",
     "@babel/register": "^7.0.0-rc.2",
     "ava": "^1.0.0-beta.6",
     "axios-mock-adapter": "^1.15.0",

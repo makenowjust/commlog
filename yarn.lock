@@ -455,6 +455,12 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-rc.1"
 
+"@babel/plugin-syntax-jsx@^7.0.0-rc.2":
+  version "7.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.0.0-rc.2.tgz#c070fd6057ad85c43ba4e7819723e28e760824ff"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-rc.2"
+
 "@babel/plugin-syntax-object-rest-spread@7.0.0-rc.1":
   version "7.0.0-rc.1"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-object-rest-spread/-/plugin-syntax-object-rest-spread-7.0.0-rc.1.tgz#42032fd87fb3b18f5686a0ab957d7f6f0db26618"

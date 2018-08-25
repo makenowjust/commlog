@@ -149,3 +149,9 @@ blockquote {
     margin-bottom: 0;
   }
 }
+
+// footnote:
+:global(.footnote-backref) {
+  display: block;
+  text-align: right;
+}

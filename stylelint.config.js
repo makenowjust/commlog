@@ -11,5 +11,7 @@ module.exports = {
     // 'order/properties-order' is disabled in 'stylelint-config-xo' for now.
     // See https://github.com/sindresorhus/stylelint-config-xo/pull/2#issuecomment-363438756.
     'order/properties-order': propertiesOrder,
+    // 'global' is known psedo class on CSS module.
+    'selector-pseudo-class-no-unknown': [true, {ignorePseudoClasses: ['global']}],
   },
 };

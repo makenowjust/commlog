@@ -3,16 +3,17 @@
     <header :class="$style.header">
       <h1>
         <nuxt-link v-test="'top-link'" to="/">
-          <img :class="$style.logo" src="~/assets/img/logo.png" alt="commlog logo"/>
+          <img :class="$style.logo" src="~/assets/img/logo.png" alt="commlog logo" />
         </nuxt-link>
       </h1>
       <section :class="$style.search">
         <div :class="$style.icon"><icon name="search" /></div>
         <input
-          v-test="'search'"
           v-model="query"
+          v-test="'search'"
           placeholder="Search commits"
-          @keyup.enter="search" />
+          @keyup.enter="search"
+        />
       </section>
     </header>
     <main>

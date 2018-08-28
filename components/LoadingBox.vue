@@ -1,8 +1,8 @@
 <template>
   <div :class="$style.wrap">
-    <div :class="$style.box"/>
-    <div :class="$style.box"/>
-    <div :class="$style.box"/>
+    <div :class="$style.box" />
+    <div :class="$style.box" />
+    <div :class="$style.box" />
   </div>
 </template>
 

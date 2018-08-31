@@ -9715,8 +9715,8 @@ vue-analytics@^5.4.0:
   resolved "https://registry.yarnpkg.com/vue-analytics/-/vue-analytics-5.12.3.tgz#599bd05f9e69efd51645e9e74add81d8a26a88ea"
 
 vue-awesome@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/vue-awesome/-/vue-awesome-3.1.0.tgz#b1b457f36940423e22ffa8c490e156d7dd89d87a"
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/vue-awesome/-/vue-awesome-3.1.2.tgz#50bba8c83e51fd813b1a703d02dc77d96d18c706"
 
 vue-eslint-parser@^3.2.1:
   version "3.2.2"

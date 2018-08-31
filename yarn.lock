@@ -849,7 +849,7 @@
 
 "@nuxtjs/friendly-errors-webpack-plugin@^2.0.2":
   version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/friendly-errors-webpack-plugin/-/friendly-errors-webpack-plugin-2.0.2.tgz#80fd4c4276e87c09a9157a6f433724235eaaaf6e"
+  resolved "http://registry.npmjs.org/@nuxtjs/friendly-errors-webpack-plugin/-/friendly-errors-webpack-plugin-2.0.2.tgz#80fd4c4276e87c09a9157a6f433724235eaaaf6e"
   dependencies:
     chalk "^2.3.2"
     error-stack-parser "^2.0.0"
@@ -1765,7 +1765,7 @@ buffer-xor@^1.0.3:
 
 buffer@^4.3.0:
   version "4.9.1"
-  resolved "https://registry.yarnpkg.com/buffer/-/buffer-4.9.1.tgz#6d1bb601b07a4efced97094132093027c95bc298"
+  resolved "http://registry.npmjs.org/buffer/-/buffer-4.9.1.tgz#6d1bb601b07a4efced97094132093027c95bc298"
   dependencies:
     base64-js "^1.0.2"
     ieee754 "^1.1.4"
@@ -2663,8 +2663,8 @@ css@2.2.3:
     urix "^0.1.0"
 
 cssdb@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/cssdb/-/cssdb-3.1.0.tgz#e1efa0d8831e9e655cadd499a89266d3565d9697"
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/cssdb/-/cssdb-3.2.0.tgz#f6a041351372a44f4ae3457cfd2e983d654a1f2a"
 
 cssesc@^0.1.0:
   version "0.1.0"
@@ -6133,8 +6133,8 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
 nuxt-edge@^2.0.0-25591531.67528f1:
-  version "2.0.0-25592089.aeb33e0"
-  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25592089.aeb33e0.tgz#1013829eed3cfa0cd5c71f39189c382d97b22d91"
+  version "2.0.0-25594102.4311aca"
+  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25594102.4311aca.tgz#ca6817563559df153aa79942a44bdce5381afcbd"
   dependencies:
     "@babel/core" "^7.0.0"
     "@nuxtjs/babel-preset-app" "^0.5.0"

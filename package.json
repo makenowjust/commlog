@@ -48,7 +48,7 @@
     "axios-mock-adapter": "^1.15.0",
     "codecov": "^3.0.4",
     "deepmerge": "^2.1.1",
-    "delay": "^3.1.0",
+    "delay": "^4.0.0",
     "eslint": "^5.4.0",
     "eslint-config-prettier": "^3.0.1",
     "eslint-config-xo-space": "^0.20.0",

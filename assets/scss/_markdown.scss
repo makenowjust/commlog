@@ -136,6 +136,12 @@ hr {
   border-bottom: 0.063rem solid $light-gray;
 }
 
+// footnote:
+:global(.footnote-backref) {
+  display: block;
+  text-align: right;
+}
+
 // blockquote:
 blockquote {
   padding: 0.5rem 0 0.5rem 1rem;
@@ -148,10 +154,4 @@ blockquote {
   > :last-child {
     margin-bottom: 0;
   }
-}
-
-// footnote:
-:global(.footnote-backref) {
-  display: block;
-  text-align: right;
 }

@@ -1779,12 +1779,12 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000884"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000884.tgz#d02b25dc885ffdf80434cf68b0941ea3161a4c8b"
+  version "1.0.30000885"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000885.tgz#cdc98dd168ed59678650071f7f6a70910e275bc8"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30000864, caniuse-lite@^1.0.30000865, caniuse-lite@^1.0.30000878, caniuse-lite@^1.0.30000884:
-  version "1.0.30000884"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000884.tgz#eb82a959698745033b26a4dcd34d89dba7cc6eb3"
+  version "1.0.30000885"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000885.tgz#e889e9f8e7e50e769f2a49634c932b8aee622984"
 
 capture-stack-trace@^1.0.0:
   version "1.0.1"
@@ -2919,8 +2919,8 @@ ejs@^2.5.7:
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.6.1.tgz#498ec0d495655abc6f23cd61868d926464071aa0"
 
 electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.47, electron-to-chromium@^1.3.62:
-  version "1.3.62"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.62.tgz#2e8e2dc070c800ec8ce23ff9dfcceb585d6f9ed8"
+  version "1.3.63"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.63.tgz#6485f5f4f3375358aa8fa23c2029ada208483b8d"
 
 elliptic@^6.0.0:
   version "6.4.1"
@@ -3355,7 +3355,7 @@ expand-range@^1.8.1:
 
 express@^4.16.2:
   version "4.16.3"
-  resolved "https://registry.yarnpkg.com/express/-/express-4.16.3.tgz#6af8a502350db3246ecc4becf6b5a34d22f7ed53"
+  resolved "http://registry.npmjs.org/express/-/express-4.16.3.tgz#6af8a502350db3246ecc4becf6b5a34d22f7ed53"
   dependencies:
     accepts "~1.3.5"
     array-flatten "1.1.1"
@@ -5871,8 +5871,8 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
 nuxt-edge@^2.0.0-25591531.67528f1:
-  version "2.0.0-25602679.14e608b"
-  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25602679.14e608b.tgz#9269dd3b3b09114b9a9d96d04683761c7db0d3fa"
+  version "2.0.0-25603961.baaf67d"
+  resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.0.0-25603961.baaf67d.tgz#e30edd38782148f7113e192df75ad2c86afd204c"
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/polyfill" "^7.0.0"
@@ -7398,8 +7398,8 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
 
 puppeteer@^1.4.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-1.7.0.tgz#edcba2300a50847202c0f19fd15e7a96171ff3bd"
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-1.8.0.tgz#9e8bbd2f5448cc19cac220efc0512837104877ad"
   dependencies:
     debug "^3.1.0"
     extract-zip "^1.6.6"

@@ -1,6 +1,6 @@
 import * as path from 'path';
 
-import {Nuxt, Builder} from 'nuxt-edge';
+import {Nuxt, Builder} from 'nuxt';
 import delay from 'delay';
 import puppeteer from 'puppeteer';
 import test from 'ava';

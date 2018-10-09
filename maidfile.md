@@ -43,11 +43,30 @@ NODE_ENV=production nuxt generate
 
 ## test
 
-Run test with coverage.
+Run unit test and end-to-end test.
 
-To update snapshot, you can use `yarn snapshot`.
+To update snapshot, use `yarn snapshot'.
 
 ```bash
 set -ex
-nyc ava "$@"
+yarn unit-test
+yarn e2e-test
+```
+
+## unit-test
+
+Run unit test with coverage.
+
+```bash
+set -ex
+nyc ava './test/unit/**/*.test.js' "$@"
+```
+
+## e2e-test
+
+Run end-to-end test (without coverage).
+
+```bash
+set -ex
+ava './test/e2e/**/*.test.js' "$@"
 ```

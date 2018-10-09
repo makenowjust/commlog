@@ -7,13 +7,15 @@
   "repository": "git@github.com:MakeNowJust/commlog.git",
   "version": "2.0.0",
   "scripts": {
+    "e2e-test": "maid e2e-test",
     "dev": "maid dev",
     "format": "maid lint --fix",
     "generate": "maid generate",
     "lint": "maid lint",
-    "snapshot": "maid test --update-snapshots",
+    "snapshot": "maid unit-test --update-snapshots",
     "tasks": "maid help",
-    "test": "maid test"
+    "test": "maid test",
+    "unit-test": "maid unit-test"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.3",
@@ -62,7 +64,7 @@
     "nyc": "^13.0.1",
     "prettier": "^1.13.7",
     "prettier-package-json": "^2.0.0",
-    "puppeteer": "^1.4.0",
+    "puppeteer": "^1.9.0",
     "sass-loader": "^7.0.1",
     "stylelint": "^9.6.0",
     "stylelint-config-css-modules": "^1.3.0",

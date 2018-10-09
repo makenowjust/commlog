@@ -7,8 +7,8 @@
   "repository": "git@github.com:MakeNowJust/commlog.git",
   "version": "2.0.0",
   "scripts": {
-    "e2e-test": "maid e2e-test",
     "dev": "maid dev",
+    "e2e-test": "maid e2e-test",
     "format": "maid lint --fix",
     "generate": "maid generate",
     "lint": "maid lint",

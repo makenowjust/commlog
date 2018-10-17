@@ -15,7 +15,7 @@ before_deploy:
 deploy:
   provider: pages
   skip-cleanup: true
-  keep_history: true
+  keep-history: true
   target-branch: release
   github-token: '$GITHUB_TOKEN'
   local-dir: dist

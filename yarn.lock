@@ -9094,6 +9094,27 @@ remark-parse@^5.0.0:
     vfile-location "^2.0.0"
     xtend "^4.0.1"
 
+remark-parse@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-6.0.0.tgz#e199d435b47a4a4723ee1b851268d6adf069e8ce"
+  integrity sha512-AtZDKnwqOv1LM/0/V4KXmI6i3TzuXmayQNJzBRf9UBAmmKld3jWSFsMuyrniQ3KIsa3H+L+g1742/cTjMK/nCg==
+  dependencies:
+    collapse-white-space "^1.0.2"
+    is-alphabetical "^1.0.0"
+    is-decimal "^1.0.0"
+    is-whitespace-character "^1.0.0"
+    is-word-character "^1.0.0"
+    markdown-escapes "^1.0.0"
+    parse-entities "^1.1.0"
+    repeat-string "^1.5.4"
+    state-toggle "^1.0.0"
+    trim "0.0.1"
+    trim-trailing-lines "^1.0.0"
+    unherit "^1.0.4"
+    unist-util-remove-position "^1.0.0"
+    vfile-location "^2.0.0"
+    xtend "^4.0.1"
+
 remark-rehype@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/remark-rehype/-/remark-rehype-3.0.1.tgz#7c35c08e022ca55bd33719548dd555b1a721a181"

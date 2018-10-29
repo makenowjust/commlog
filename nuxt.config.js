@@ -33,6 +33,12 @@ const config = {
     color: '#4a4a4a',
   },
   build: {
+    loaders: {
+      scss: {
+        implementation: require("sass"),
+        fiber: require('fibers'),
+      },
+    },
     extend(config) {
       config.resolve.alias.lowlight$ = path.join(__dirname, './lib/lowlight');
     },

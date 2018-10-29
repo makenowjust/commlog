@@ -35,7 +35,7 @@ const config = {
   build: {
     loaders: {
       scss: {
-        implementation: require("sass"),
+        implementation: require('sass'),
         fiber: require('fibers'),
       },
     },

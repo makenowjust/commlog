@@ -12,7 +12,7 @@
       <time :datetime="date.toISOString()">{{ date.toLocaleString() }}</time>
       <nuxt-link v-test="'commit-link'" :class="$style.hash" :to="`/commit/${hash}`">#{{ hash.slice(0, 7) }}</nuxt-link>
       <a v-test="'commit-external-link'" :href="`https://github.com/MakeNowJust/commlog/commit/${hash}`">
-        <icon name="external-link-alt" />
+        <font-awesome-icon icon="external-link-alt" />
       </a>
     </section>
   </article>
@@ -73,13 +73,16 @@
 </style>
 
 <script>
-import 'vue-awesome/icons/external-link-alt';
-import Icon from 'vue-awesome/components/Icon.vue';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
 
 import CommitBody from './CommitBody.vue';
 
+library.add(faExternalLinkAlt);
+
 export default {
-  components: {CommitBody, Icon},
+  components: {CommitBody, FontAwesomeIcon},
   props: {
     hash: {type: String, required: true},
     tree: {type: Object, required: true},

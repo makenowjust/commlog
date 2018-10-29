@@ -7,7 +7,7 @@
         </nuxt-link>
       </h1>
       <section :class="$style.search">
-        <div :class="$style.icon"><icon name="search" /></div>
+        <div :class="$style.icon"><font-awesome-icon icon="search" /></div>
         <input
           v-model="query"
           v-test="'search'"
@@ -89,11 +89,14 @@
 </style>
 
 <script>
-import 'vue-awesome/icons/search';
-import Icon from 'vue-awesome/components/Icon.vue';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {faSearch} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
+
+library.add(faSearch);
 
 export default {
-  components: {Icon},
+  components: {FontAwesomeIcon},
   data() {
     return {
       query: this.$route.query.q || '',

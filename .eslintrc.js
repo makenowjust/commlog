@@ -1,4 +1,5 @@
 module.exports = {
+  root: true,
   plugins: ['import', 'promise', 'unicorn', 'vue'],
   extends: [
     'plugin:import/recommended',
@@ -16,8 +17,6 @@ module.exports = {
         allow: ['vue-awesome/icons/*'],
       },
     ],
-    // `prettier` can format it better.
-    'vue/max-attributes-per-line': ['off'],
     'vue/html-self-closing': [
       'error',
       {
@@ -30,6 +29,10 @@ module.exports = {
         math: 'always',
       },
     ],
+    // `prettier` can format `*.vue` files better.
+    // So, some rules are disabled.
+    'vue/max-attributes-per-line': ['off'],
+    'vue/html-closing-bracket-newline': ['off'],
   },
   overrides: [
     {

@@ -16,16 +16,8 @@ module.exports = {
         allow: ['vue-awesome/icons/*'],
       },
     ],
-    'vue/max-attributes-per-line': [
-      'error',
-      {
-        singleline: 3,
-        multiline: {
-          max: 1,
-          allowFirstLine: false,
-        },
-      },
-    ],
+    // `prettier` can format it better.
+    'vue/max-attributes-per-line': ['off'],
     'vue/html-self-closing': [
       'error',
       {

@@ -7,11 +7,7 @@
       </a>
       <span v-else :class="$style.author">{{ author.name }}</span>
       <time :datetime="date.toISOString()">{{ date.toLocaleString() }}</time>
-      <nuxt-link 
-        v-test="'commit-link'" 
-        :class="$style.hash" 
-        :to="`/commit/${hash}`"
-      >#{{ hash.slice(0, 7) }}</nuxt-link>
+      <nuxt-link v-test="'commit-link'" :class="$style.hash" :to="`/commit/${hash}`">#{{ hash.slice(0, 7) }}</nuxt-link>
       <a
         v-test="'commit-external-link'"
         :href="`https://github.com/MakeNowJust/commlog/commit/${hash}`"

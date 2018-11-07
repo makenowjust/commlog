@@ -16,9 +16,7 @@
         />
       </section>
     </header>
-    <main>
-      <nuxt />
-    </main>
+    <main><nuxt /></main>
   </div>
 </template>
 

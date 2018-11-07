@@ -1,10 +1,6 @@
 <template>
   <div v-test="'commit-list'">
-    <commit
-      v-for="commit in commits"
-      :key="commit.hash"
-      v-bind="commit"
-    />
+    <commit v-for="commit in commits" :key="commit.hash" v-bind="commit" />
 
     <template v-if="hasNext || loading">
       <loading :loading="loading" :error="error">

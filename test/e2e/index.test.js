@@ -1,6 +1,6 @@
 import * as path from 'path';
 
-import {Nuxt, Builder} from 'nuxt';
+import {Nuxt} from 'nuxt';
 import delay from 'delay';
 import puppeteer from 'puppeteer';
 import test from 'ava';
@@ -21,7 +21,7 @@ test.before(async () => {
     dev: false,
     rootDir,
   });
-  await new Builder(nuxt).build();
+  // NOTE: run `nuxt build` is needed before this.
   await nuxt.listen(4000, 'localhost');
 
   browser = await puppeteer.launch({args: ['--no-sandbox']});

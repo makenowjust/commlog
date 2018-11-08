@@ -68,5 +68,6 @@ Run end-to-end test (without coverage).
 
 ```bash
 set -ex
+NODE_ENV=test nuxt build
 ava './test/e2e/**/*.test.js' "$@"
 ```

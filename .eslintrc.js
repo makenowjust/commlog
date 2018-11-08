@@ -5,7 +5,10 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:promise/recommended',
     'plugin:unicorn/recommended',
-    'plugin:vue/recommended',
+    // Many `*.vue` format error fixes by `prettier`,
+    // however these fixes are conflicted with `eslint-plugin-vue`...
+    // So, they are disabled for now.
+    'plugin:vue/essential',
     'xo-space/esnext',
     'prettier',
   ],
@@ -17,22 +20,6 @@ module.exports = {
         allow: ['vue-awesome/icons/*'],
       },
     ],
-    'vue/html-self-closing': [
-      'error',
-      {
-        html: {
-          void: 'always',
-          normal: 'always',
-          component: 'always',
-        },
-        svg: 'always',
-        math: 'always',
-      },
-    ],
-    // `prettier` can format `*.vue` files better.
-    // So, some rules are disabled.
-    'vue/max-attributes-per-line': ['off'],
-    'vue/html-closing-bracket-newline': ['off'],
   },
   overrides: [
     {

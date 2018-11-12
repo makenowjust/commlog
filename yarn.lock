@@ -8262,9 +8262,9 @@ remark-parse@^5.0.0:
     xtend "^4.0.1"
 
 remark-parse@^6.0.0:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-6.0.1.tgz#62bc4fc91045dbb0a9fc6900150b0404e2598e99"
-  integrity sha512-H9h8c/uafJAoVoHvIBMzWuUDxDckW7+tc60/OkstZQw6fv7qDX6ALl3A8a1G6aRrx1s4WeaF0spm4WbXHAHcOw==
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-6.0.2.tgz#e1e1f987c5a406875757fcb4ebbca86b7c1e110d"
+  integrity sha512-cBbst7OG/pH+VHYggWRabpVn9EP6CUb2hAtSg9cPysRvf+NE1v2cRdXC+TfXumJCar/wpPDK833zPu1fwVanZw==
   dependencies:
     collapse-white-space "^1.0.2"
     is-alphabetical "^1.0.0"

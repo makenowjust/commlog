@@ -6,8 +6,16 @@ This file is to define tasks for [maid](https://github.com/egoist/maid) task run
 
 Start development server.
 
+When `--no-mock` is specified, it dosen't use API mock.
+
 ```bash
+if [[ $1 == --no-mock ]]; then
+  NODE_ENV=developmentNoMock
+else
+  NODE_ENV=development
+fi
 set -ex
+export NODE_ENV=$NODE_ENV
 nuxt
 ```
 
@@ -38,7 +46,8 @@ Generate commlog as static web application.
 
 ```bash
 set -ex
-NODE_ENV=production nuxt generate
+export NODE_ENV=production
+nuxt generate
 ```
 
 ## test
@@ -68,6 +77,7 @@ Run end-to-end test (without coverage).
 
 ```bash
 set -ex
-NODE_ENV=test nuxt build
+export NODE_ENV=test
+nuxt build
 ava './test/e2e/**/*.test.js' "$@"
 ```

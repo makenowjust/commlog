@@ -75,7 +75,7 @@
     "stylelint-config-xo": "^0.11.0",
     "stylelint-config-xo-scss": "^0.6.0",
     "stylelint-config-xo-space": "^0.10.0",
-    "testdouble": "^3.8.2"
+    "testdouble": "^3.9.1"
   },
   "ava": {
     "require": [

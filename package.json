@@ -63,7 +63,7 @@
     "fibers": "^3.1.1",
     "maid": "^0.3.0",
     "nyc": "^13.1.0",
-    "prettier": "^1.13.7",
+    "prettier": "^1.15.3",
     "prettier-package-json": "^2.0.0",
     "puppeteer": "^1.9.0",
     "sass": "^1.14.3",

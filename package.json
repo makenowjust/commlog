@@ -51,7 +51,7 @@
     "ava": "^1.0.0-beta.6",
     "axios-mock-adapter": "^1.15.0",
     "codecov": "^3.0.4",
-    "deepmerge": "^2.2.1",
+    "deepmerge": "^3.0.0",
     "delay": "^4.1.0",
     "eslint": "^5.7.0",
     "eslint-config-prettier": "^3.0.1",

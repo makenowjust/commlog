@@ -37,7 +37,7 @@
     "remark-breaks": "^1.0.2",
     "remark-parse": "^6.0.0",
     "remark-rehype": "^4.0.0",
-    "unified": "^7.0.0",
+    "unified": "^7.1.0",
     "unist-util-is": "^2.1.2",
     "vue": "^2.5.21",
     "vuex": "^3.0.1"

@@ -45,6 +45,7 @@ test('getter commits getrs commits from hashes', t => {
   for (const commit of commits) {
     rootState.commitCache[commit.hash] = commit;
   }
+
   const rootGetters = {commit: rootStore.getters.commit(rootState)};
   t.deepEqual(store.getters.commits(state, getters, rootState, rootGetters), commits);
 });

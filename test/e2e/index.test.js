@@ -52,6 +52,7 @@ const wait = async (expr, cond) => {
     if (cond(value)) {
       break;
     }
+
     await delay(DELAY);
   }
   /* eslint-enable */

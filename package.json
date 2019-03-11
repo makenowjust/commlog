@@ -38,9 +38,7 @@
     "remark-parse": "^6.0.0",
     "remark-rehype": "^4.0.0",
     "unified": "^7.1.0",
-    "unist-util-is": "^2.1.2",
-    "vue": "^2.6.8",
-    "vuex": "^3.1.0"
+    "unist-util-is": "^2.1.2"
   },
   "devDependencies": {
     "@ava/babel-preset-stage-4": "^2.0.0",

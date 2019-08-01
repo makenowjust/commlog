@@ -77,11 +77,6 @@
     "stylelint-config-xo-space": "^0.13.0",
     "testdouble": "^3.12.2"
   },
-  "ava": {
-    "require": [
-      "@babel/register"
-    ]
-  },
   "babel": {
     "presets": [
       "@ava/stage-4"

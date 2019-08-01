@@ -68,7 +68,7 @@ Run unit test with coverage.
 
 ```bash
 set -ex
-nyc ava './test/unit/**/*.test.js' "$@"
+nyc ava --config ./ava.unit.config.js "$@"
 ```
 
 ## e2e-test
@@ -79,5 +79,5 @@ Run end-to-end test (without coverage).
 set -ex
 export NODE_ENV=test
 nuxt build
-ava './test/e2e/**/*.test.js' "$@"
+ava --config ./ava.e2e.config.js"$@"
 ```

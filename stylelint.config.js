@@ -12,5 +12,7 @@ module.exports = {
     // 'order/properties-order' is disabled in 'stylelint-config-xo' for now.
     // See https://github.com/sindresorhus/stylelint-config-xo/pull/2#issuecomment-363438756.
     'order/properties-order': propertiesOrder,
+    // Because it is buggy, it turns off for now.
+    'block-no-empty': null,
   },
 };

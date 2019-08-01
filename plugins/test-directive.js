@@ -1,5 +1,5 @@
 import Vue from 'vue';
 
-Vue.directive('test', (el, binding) => {
-  el.setAttribute('data-test', binding.value);
+Vue.directive('test', (element, binding) => {
+  element.setAttribute('data-test', binding.value);
 });

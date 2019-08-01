@@ -20,6 +20,8 @@ module.exports = {
         allow: ['vue-awesome/icons/*'],
       },
     ],
+    // This is tooo strict rule. Be quiet!
+    'unicorn/prevent-abbreviations': 'off',
   },
   overrides: [
     {

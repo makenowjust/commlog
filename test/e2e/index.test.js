@@ -15,11 +15,11 @@ let browser = null;
 let page = null;
 
 test.before(async () => {
-  const rootDir = path.resolve(__dirname, '../..');
+  const rootDirectory = path.resolve(__dirname, '../..');
   nuxt = new Nuxt({
     ...config,
     dev: false,
-    rootDir,
+    rootDir: rootDirectory,
   });
   // NOTE: run `nuxt build` is needed before this.
   await nuxt.listen(4000, 'localhost');
@@ -52,6 +52,7 @@ const wait = async (expr, cond) => {
     if (cond(value)) {
       break;
     }
+
     await delay(DELAY);
   }
   /* eslint-enable */
@@ -153,11 +154,11 @@ test.serial('open single commit page (footnote)', async t => {
   t.is(h1, 'footnoteのテスト');
 
   // Check footnote reference:
-  const footnoteRef = await page.evaluate(
+  const footnoteReference = await page.evaluate(
     () =>
       document.querySelector('#\\35 36bd0322ebc5f218208d52830efb5ba7110213e-fnref-hope > a').hash,
   );
-  t.is(footnoteRef, '#536bd0322ebc5f218208d52830efb5ba7110213e-fn-hope');
+  t.is(footnoteReference, '#536bd0322ebc5f218208d52830efb5ba7110213e-fn-hope');
 });
 
 test.serial('open search page', async t => {

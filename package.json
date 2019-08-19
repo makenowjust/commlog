@@ -18,8 +18,8 @@
     "unit-test": "maid unit-test"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.20",
-    "@fortawesome/free-solid-svg-icons": "^5.10.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.21",
+    "@fortawesome/free-solid-svg-icons": "^5.10.1",
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "@nuxtjs/axios": "^5.5.4",
     "@nuxtjs/google-analytics": "^2.2.0",
@@ -32,10 +32,10 @@
     "modern-normalize": "^0.5.0",
     "nuxt": "^2.8.1",
     "parse-link-header": "^1.0.1",
-    "qs": "^6.7.0",
+    "qs": "^6.8.0",
     "rehype-highlight": "^3.0.0",
     "remark-breaks": "^1.0.3",
-    "remark-parse": "^7.0.0",
+    "remark-parse": "^7.0.1",
     "remark-rehype": "^5.0.0",
     "unified": "^8.3.2",
     "unist-util-is": "^4.0.0",
@@ -43,18 +43,18 @@
     "vuex": "^3.1.1"
   },
   "devDependencies": {
-    "@ava/babel-preset-stage-4": "^3.0.0",
+    "@ava/babel-preset-stage-4": "^4.0.0",
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
     "@babel/plugin-syntax-jsx": "^7.2.0",
     "@babel/register": "^7.5.5",
-    "ava": "^2.2.0",
+    "ava": "^2.3.0",
     "axios-mock-adapter": "^1.17.0",
     "codecov": "^3.5.0",
     "deepmerge": "^4.0.0",
     "delay": "^4.3.0",
-    "eslint": "^6.1.0",
-    "eslint-config-prettier": "^6.0.0",
+    "eslint": "^6.2.0",
+    "eslint-config-prettier": "^6.1.0",
     "eslint-config-xo-space": "^0.21.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-promise": "^4.2.1",
@@ -66,8 +66,8 @@
     "prettier": "^1.18.2",
     "prettier-package-json": "^2.1.0",
     "puppeteer": "^1.19.0",
-    "sass": "^1.22.9",
-    "sass-loader": "^7.0.1",
+    "sass": "^1.22.10",
+    "sass-loader": "^7.2.0",
     "stylelint": "^10.1.0",
     "stylelint-config-css-modules": "^1.4.0",
     "stylelint-config-prettier": "^5.2.0",
@@ -75,7 +75,7 @@
     "stylelint-config-xo": "^0.15.0",
     "stylelint-config-xo-scss": "^0.9.0",
     "stylelint-config-xo-space": "^0.13.0",
-    "testdouble": "^3.12.2"
+    "testdouble": "^3.12.3"
   },
   "babel": {
     "presets": [

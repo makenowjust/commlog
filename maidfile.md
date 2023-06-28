@@ -54,7 +54,7 @@ nuxt generate
 
 Run unit test and end-to-end test.
 
-To update snapshot, use `yarn snapshot'.
+To update snapshot, use `yarn snapshot`.
 
 ```bash
 set -ex

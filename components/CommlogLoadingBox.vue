@@ -27,11 +27,11 @@
   animation: load 3s ease 0s infinite normal;
 
   &:nth-child(2) {
-    animation-delay: 1s * 1 / 3;
+    animation-delay: calc(1s * 1 / 3);
   }
 
   &:nth-child(3) {
-    animation-delay: 1s * 2 / 3;
+    animation-delay: calc(1s * 2 / 3);
   }
 }
 

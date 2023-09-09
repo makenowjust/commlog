@@ -1,5 +1,5 @@
 import test from 'ava';
-import Axios from 'axios';
+import axios from 'axios';
 import td from 'testdouble';
 
 import {convertCommit} from '../../../../lib/github';
@@ -8,7 +8,7 @@ import * as store from '../../../../store/pages/commit';
 import axiosMock from '../../../../plugins/axios-mock';
 import COMMIT from '../../../fixtures/commit';
 
-const $axios = Axios.create();
+const $axios = axios.create();
 const scope = {$axios};
 axiosMock(scope);
 

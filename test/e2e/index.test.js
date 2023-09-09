@@ -1,4 +1,4 @@
-import * as path from 'path';
+import * as path from 'node:path';
 
 import {Nuxt} from 'nuxt';
 import delay from 'delay';
@@ -24,7 +24,7 @@ test.before(async () => {
   // NOTE: run `nuxt build` is needed before this.
   await nuxt.listen(4000, 'localhost');
 
-  browser = await puppeteer.launch({args: ['--no-sandbox']});
+  browser = await puppeteer.launch({args: ['--no-sandbox'], headless: 'new'});
   page = await browser.newPage();
 });
 
@@ -65,7 +65,10 @@ const wait = async (expr, cond) => {
 };
 
 const onChangeTitle = title =>
-  wait(() => document.title, s => s !== 'commlog' && s !== title && !s.startsWith('loading... |'));
+  wait(
+    () => document.title,
+    s => s !== 'commlog' && s !== title && !s.startsWith('loading... |'),
+  );
 
 const getCommitCount = () =>
   page.evaluate(() => document.querySelectorAll('[data-test~="commit"]').length);
@@ -85,7 +88,10 @@ test.serial('open top page', async t => {
 
   // Click "load more":
   await page.click('[data-test="load-more"]');
-  await wait(() => Boolean(document.querySelector('[data-test="loading"]')), loading => !loading);
+  await wait(
+    () => Boolean(document.querySelector('[data-test="loading"]')),
+    loading => !loading,
+  );
 
   articles = await getCommitCount();
   t.is(articles, 60);

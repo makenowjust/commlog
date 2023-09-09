@@ -1,17 +1,19 @@
 <template>
   <div>
-    <loading :loading="loading" :error="error"> <commit v-bind="commit" /> </loading>
+    <commlog-loading :loading="loading" :error="error">
+      <commlog-commit v-bind="commit" />
+    </commlog-loading>
   </div>
 </template>
 
 <script>
 import {mapGetters, mapState} from 'vuex';
 
-import Commit from '../../components/Commit.vue';
-import Loading from '../../components/Loading.vue';
+import CommlogCommit from '../../components/CommlogCommit.vue';
+import CommlogLoading from '../../components/CommlogLoading.vue';
 
 export default {
-  components: {Commit, Loading},
+  components: {CommlogCommit, CommlogLoading},
   async fetch({params: {hash}, store}) {
     store.dispatch('pages/commit/load', {hash});
   },

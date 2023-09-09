@@ -39,6 +39,7 @@
       width: 330px;
       height: auto;
 
+      // stylelint-disable-next-line media-query-no-invalid
       @media screen and (max-width: $max-width) {
         width: 165px;
       }

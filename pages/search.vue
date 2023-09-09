@@ -1,5 +1,5 @@
 <template>
-  <commit-list
+  <commlog-commit-list
     :commits="commits"
     :has-next="hasNext"
     :loading="loading"
@@ -11,10 +11,10 @@
 <script>
 import {mapActions, mapGetters, mapState} from 'vuex';
 
-import CommitList from '../components/CommitList.vue';
+import CommlogCommitList from '../components/CommlogCommitList.vue';
 
 export default {
-  components: {CommitList},
+  components: {CommlogCommitList},
   async fetch({store, query: {q}}) {
     store.dispatch('pages/search/load', {query: q});
   },

@@ -9,7 +9,7 @@ module.exports = {
     // however these fixes are conflicted with `eslint-plugin-vue`...
     // So, they are disabled for now.
     'plugin:vue/essential',
-    'xo-space/esnext',
+    'xo-space',
     'prettier',
   ],
   rules: {
@@ -20,15 +20,21 @@ module.exports = {
         allow: ['vue-awesome/icons/*'],
       },
     ],
-    // This is tooo strict rule. Be quiet!
+    // These rules are too strict for me.
     'unicorn/prevent-abbreviations': 'off',
+    'unicorn/prefer-module': 'off',
+    'unicorn/no-null': 'off',
   },
   overrides: [
     {
-      files: 'components/*.vue',
+      files: ['components/*.vue'],
       rules: {
         'unicorn/filename-case': ['error', {case: 'pascalCase'}],
       },
+    },
+    {
+      files: ['layouts/*.vue', 'pages/**/*.vue'],
+      rules: {'vue/multi-word-component-names': 'off'},
     },
   ],
 };

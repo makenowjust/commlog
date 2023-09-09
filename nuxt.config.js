@@ -1,18 +1,18 @@
-import path from 'path';
+import path from 'node:path';
 
 import merge from 'deepmerge';
 
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
 const config = {
-  mode: 'spa',
+  ssr: false,
   css: ['modern-normalize', './assets/scss/main.scss'],
   head: {
     htmlAttrs: {
       lang: 'ja',
     },
     title: 'commlog',
-    meta: [{charset: 'utf-8'}, {name: 'viewport', content: 'width=device-width, initial-scale=1'}],
+    meta: [{charset: 'utf8'}, {name: 'viewport', content: 'width=device-width, initial-scale=1'}],
     link: [
       {
         rel: 'stylesheet',
@@ -36,7 +36,6 @@ const config = {
     loaders: {
       scss: {
         implementation: require('sass'),
-        fiber: require('fibers'),
       },
     },
     extend(config) {

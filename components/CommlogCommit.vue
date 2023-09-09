@@ -1,6 +1,6 @@
 <template>
   <article v-test="`commit commit-${hash.slice(0, 7)}`" :class="$style.wrap">
-    <commit-body :tree="tree" :hash="hash" />
+    <commlog-commit-body :tree="tree" :hash="hash" />
     <section :class="$style.foot">
       <a v-if="author.github" :class="$style.author" :href="`https://github.com/${author.name}`">
         {{ author.name }}<img :src="author.icon" :alt="`${author.name} icon`" />
@@ -79,12 +79,12 @@ import {library} from '@fortawesome/fontawesome-svg-core';
 import {faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
 
-import CommitBody from './CommitBody.vue';
+import CommlogCommitBody from './CommlogCommitBody.vue';
 
 library.add(faExternalLinkAlt);
 
 export default {
-  components: {CommitBody, FontAwesomeIcon},
+  components: {CommlogCommitBody, FontAwesomeIcon},
   props: {
     hash: {type: String, required: true},
     tree: {type: Object, required: true},

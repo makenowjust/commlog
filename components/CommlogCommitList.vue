@@ -1,13 +1,13 @@
 <template>
   <div v-test="'commit-list'">
-    <commit v-for="commit in commits" :key="commit.hash" v-bind="commit" />
+    <commlog-commit v-for="commit in commits" :key="commit.hash" v-bind="commit" />
 
     <template v-if="hasNext || loading">
-      <loading :loading="loading" :error="error">
+      <commlog-loading :loading="loading" :error="error">
         <section v-test="'load-more'" :class="$style['load-more']" @click="loadMore">
           <p>Load more...</p>
         </section>
-      </loading>
+      </commlog-loading>
     </template>
   </div>
 </template>
@@ -31,11 +31,11 @@
 </style>
 
 <script>
-import Commit from './Commit.vue';
-import Loading from './Loading.vue';
+import CommlogCommit from './CommlogCommit.vue';
+import CommlogLoading from './CommlogLoading.vue';
 
 export default {
-  components: {Commit, Loading},
+  components: {CommlogCommit, CommlogLoading},
   props: {
     commits: {type: Array, required: true},
     hasNext: {type: Boolean, required: true},

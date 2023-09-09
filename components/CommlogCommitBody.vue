@@ -6,7 +6,7 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
 
-  // stylelint-disable-next-line at-rule-empty-line-before
+  // stylelint-disable-next-line no-invalid-position-at-import-rule
   @import '~../assets/scss/markdown';
 }
 </style>

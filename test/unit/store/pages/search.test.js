@@ -1,5 +1,5 @@
 import test from 'ava';
-import Axios from 'axios';
+import axios from 'axios';
 import td from 'testdouble';
 
 import {convertPage} from '../../../../lib/github';
@@ -8,7 +8,7 @@ import * as store from '../../../../store/pages/search';
 import axiosMock from '../../../../plugins/axios-mock';
 import SEARCH from '../../../fixtures/search';
 
-const $axios = Axios.create();
+const $axios = axios.create();
 const scope = {$axios};
 axiosMock(scope);
 

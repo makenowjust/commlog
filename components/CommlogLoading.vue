@@ -3,7 +3,7 @@
     <pre v-if="error">{{ error.stack }}</pre>
     <template v-else>
       <p>Loading...</p>
-      <loading-box />
+      <commlog-loading-box />
     </template>
   </section>
   <div v-else><slot /></div>
@@ -26,10 +26,10 @@
 </style>
 
 <script>
-import LoadingBox from './LoadingBox.vue';
+import CommlogLoadingBox from './CommlogLoadingBox.vue';
 
 export default {
-  components: {LoadingBox},
+  components: {CommlogLoadingBox},
   props: {
     loading: {type: Boolean, required: true},
     error: {type: Error, default: null},

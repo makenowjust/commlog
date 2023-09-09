@@ -9,7 +9,7 @@ export const state = () => ({
 
 export const mutations = {
   appendPage(state, {hashes, next}) {
-    state.hashes = state.hashes.concat(hashes);
+    state.hashes = [...state.hashes, ...hashes];
     state.next = next;
   },
   ...loader.mutations,

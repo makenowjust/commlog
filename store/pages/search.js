@@ -27,7 +27,7 @@ export const mutations = {
     state.next = `https://api.github.com/search/commits?${qs.stringify(params)}`;
   },
   appendPage(state, {hashes, next}) {
-    state.hashes = state.hashes.concat(hashes);
+    state.hashes = [...state.hashes, ...hashes];
     state.next = next;
   },
   ...loader.mutations,

@@ -15,7 +15,6 @@ Clone the repository and change the directory:
 
 ```console
 $ git clone https://github.com/MakeNowJust/commlog
-Cloning into 'commlog'...
 $ cd commlog
 ```
 
@@ -23,8 +22,7 @@ Check out the `main` branch:
 
 ```console
 $ echo '*' > .gitignore
-$ git worktree add dev master
-Preparing dev (identifier dev)
+$ git worktree add dev main
 $ cd dev
 ```
 

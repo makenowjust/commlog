@@ -1,6 +1,8 @@
 {
-  "name": "nuxt-app",
   "private": true,
+  "name": "commlog",
+  "description": "Commit Log as a Blog",
+  "version": "3.0.0-dev",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -10,6 +12,12 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.8.0",
     "nuxt": "^3.7.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/vue-fontawesome": "latest-3"
   }
 }

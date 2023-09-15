@@ -1,9 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ['Raleway', 'ui-sans-serif', 'sans-serif'],
+      'sand-bold': ['Oswald', 'ui-sans-serif', 'sans-serif'],
+    }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }
 

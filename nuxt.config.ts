@@ -2,5 +2,17 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
   devtools: { enabled: true },
-  css: ['@fortawesome/fontawesome-svg-core/styles.css']
+  css: ['@fortawesome/fontawesome-svg-core/styles.css'],
+  app:{
+    head: {
+      title: "commlog",
+      meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+      ],
+      link: [
+        { rel: "icon", type: "image/png", href: "/favicon.png" },
+      ],
+    },
+  } 
 })

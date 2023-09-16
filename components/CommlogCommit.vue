@@ -18,7 +18,7 @@ const html = computed(() => renderMarkdown(commit.value.markdown, commit.value.h
         <img class="w-3.5 h-3.5 inline-block align-base" :src="commit.icon" alt="makenowjust's icon"/>
       </a>
       <time class="inline-block mr-3">{{ commit.time }}</time>
-      <NuxtLink class="inline-block mr-3" :to="`/commit/${commit.hash}`">#{{ commit.hash.slice(0, 7) }}</NuxtLink>
+      <NuxtLink class="inline-block mr-3 bg-gray-600 text-gray-50 px-1" :to="`/commit/${commit.hash}`" :title="commit.hash">#{{ commit.hash.slice(0, 7) }}</NuxtLink>
       <NuxtLink class="inline-block" :to="`https://github.com/makenowjust/commlog/commit/${commit.hash}`">
         <ClientOnly>
           <FontAwesomeIcon :icon="['fas', 'up-right-from-square']" />

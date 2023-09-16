@@ -5,7 +5,7 @@ import footnote from "markdown-it-footnote";
 import highlight from "markdown-it-highlightjs/core";
 
 export const renderMarkdown = (markdown: string, hash: string): string => {
-  const md = new MarkdownIt({ breaks: true, html: false })
+  const md = new MarkdownIt({ breaks: true, html: false, linkify: true })
     .use(highlight, { hljs })
     .use(footnote, {});
   return md.render(markdown, {docId: hash});

@@ -6,8 +6,11 @@ module.exports = {
       'sand-bold': ['Oswald', 'ui-sans-serif', 'sans-serif'],
     }
   },
+  daisyui: {
+    themes: ['light'],
+  },
   plugins: [
-    require('@tailwindcss/typography')
+    require('@tailwindcss/typography'),
+    require('daisyui')
   ],
 }
-

@@ -1,3 +1,21 @@
+<script setup lang="ts">
+const router = useRouter();
+const route = useRoute();
+
+const q = ref(route.query.q ?? '');
+
+router.afterEach((to, from) => {
+  q.value = to.query.q ?? '';
+});
+
+const search = () => {
+  router.push({
+    name: 'search',
+    query: { q: q.value },
+  })
+};
+</script>
+
 <template>
   <header class="pt-24 pb-8 w-full">
     <h1 class="mb-20 w-full">
@@ -11,7 +29,7 @@
           <FontAwesomeIcon :icon="['fas', 'magnifying-glass']" />
         </ClientOnly>
       </div>
-      <input type="text" class="text-xl/5 pl-7 pr-2 py-2 -ml-7 bg-transparent w-60" placeholder="Search commits" />
+      <input type="text" v-model="q" @keyup.enter="search" class="text-xl/5 pl-7 pr-2 py-2 -ml-7 bg-transparent w-60" placeholder="Search commits" />
     </section>
   </header>
   <main>

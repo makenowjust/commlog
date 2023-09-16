@@ -1,4 +1,4 @@
-import MarkdownIt from 'markdown-it';
+import MarkdownIt from "markdown-it";
 import footnote from "markdown-it-footnote";
 
 // @ts-expect-error
@@ -8,5 +8,5 @@ export const renderMarkdown = (markdown: string, hash: string): string => {
   const md = new MarkdownIt({ breaks: true, html: false, linkify: true })
     .use(highlight, { hljs })
     .use(footnote, {});
-  return md.render(markdown, {docId: hash});
+  return md.render(markdown, { docId: hash });
 };

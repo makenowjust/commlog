@@ -11,7 +11,7 @@ const { loading, error } = useFetchCommit(hash);
     <span class="loading loading-bars w-24"></span>
   </div>
   <div v-else-if="error" class="mx-auto container max-w-3xl py-10">
-    <pre>{{error}}</pre>
+    <pre>{{ error }}</pre>
   </div>
   <CommlogCommit v-else :hash="hash" />
 </template>

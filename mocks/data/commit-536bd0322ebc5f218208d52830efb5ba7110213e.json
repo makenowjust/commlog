@@ -1,85 +1,85 @@
 {
-    "sha": "536bd0322ebc5f218208d52830efb5ba7110213e",
-    "node_id": "MDY6Q29tbWl0NDI3NzI5MzQ6NTM2YmQwMzIyZWJjNWYyMTgyMDhkNTI4MzBlZmI1YmE3MTEwMjEzZQ==",
-    "commit": {
-      "author": {
-        "name": "TSUYUSATO Kitsune",
-        "email": "make.just.on@gmail.com",
-        "date": "2018-08-07T16:12:00Z"
-      },
-      "committer": {
-        "name": "TSUYUSATO Kitsune",
-        "email": "make.just.on@gmail.com",
-        "date": "2018-08-07T16:12:00Z"
-      },
-      "message": "# footnoteのテスト\n\nfootnoteのテスト用のコミットです。[^いい感じの脚注]\n\n[^hope]\n\n[^hope]: マージには消えてるといいな。",
-      "tree": {
-        "sha": "76002a35f1de135891329537491795866535047a",
-        "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/76002a35f1de135891329537491795866535047a"
-      },
-      "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/536bd0322ebc5f218208d52830efb5ba7110213e",
-      "comment_count": 0,
-      "verification": {
-        "verified": false,
-        "reason": "unsigned",
-        "signature": null,
-        "payload": null
-      }
-    },
-    "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/536bd0322ebc5f218208d52830efb5ba7110213e",
-    "html_url": "https://github.com/MakeNowJust/commlog/commit/536bd0322ebc5f218208d52830efb5ba7110213e",
-    "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/536bd0322ebc5f218208d52830efb5ba7110213e/comments",
+  "sha": "536bd0322ebc5f218208d52830efb5ba7110213e",
+  "node_id": "MDY6Q29tbWl0NDI3NzI5MzQ6NTM2YmQwMzIyZWJjNWYyMTgyMDhkNTI4MzBlZmI1YmE3MTEwMjEzZQ==",
+  "commit": {
     "author": {
-      "login": "MakeNowJust",
-      "id": 6679325,
-      "node_id": "MDQ6VXNlcjY2NzkzMjU=",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/6679325?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/MakeNowJust",
-      "html_url": "https://github.com/MakeNowJust",
-      "followers_url": "https://api.github.com/users/MakeNowJust/followers",
-      "following_url": "https://api.github.com/users/MakeNowJust/following{/other_user}",
-      "gists_url": "https://api.github.com/users/MakeNowJust/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/MakeNowJust/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/MakeNowJust/subscriptions",
-      "organizations_url": "https://api.github.com/users/MakeNowJust/orgs",
-      "repos_url": "https://api.github.com/users/MakeNowJust/repos",
-      "events_url": "https://api.github.com/users/MakeNowJust/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/MakeNowJust/received_events",
-      "type": "User",
-      "site_admin": false
+      "name": "TSUYUSATO Kitsune",
+      "email": "make.just.on@gmail.com",
+      "date": "2018-08-07T16:12:00Z"
     },
     "committer": {
-      "login": "MakeNowJust",
-      "id": 6679325,
-      "node_id": "MDQ6VXNlcjY2NzkzMjU=",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/6679325?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/MakeNowJust",
-      "html_url": "https://github.com/MakeNowJust",
-      "followers_url": "https://api.github.com/users/MakeNowJust/followers",
-      "following_url": "https://api.github.com/users/MakeNowJust/following{/other_user}",
-      "gists_url": "https://api.github.com/users/MakeNowJust/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/MakeNowJust/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/MakeNowJust/subscriptions",
-      "organizations_url": "https://api.github.com/users/MakeNowJust/orgs",
-      "repos_url": "https://api.github.com/users/MakeNowJust/repos",
-      "events_url": "https://api.github.com/users/MakeNowJust/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/MakeNowJust/received_events",
-      "type": "User",
-      "site_admin": false
+      "name": "TSUYUSATO Kitsune",
+      "email": "make.just.on@gmail.com",
+      "date": "2018-08-07T16:12:00Z"
     },
-    "parents": [
-      {
-        "sha": "0b3cf9b9cedb80217d0a0b9a7a8ad09ed8b6eb15",
-        "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/0b3cf9b9cedb80217d0a0b9a7a8ad09ed8b6eb15",
-        "html_url": "https://github.com/MakeNowJust/commlog/commit/0b3cf9b9cedb80217d0a0b9a7a8ad09ed8b6eb15"
-      }
-    ],
-    "stats": {
-      "total": 0,
-      "additions": 0,
-      "deletions": 0
+    "message": "# footnoteのテスト\n\nfootnoteのテスト用のコミットです。[^いい感じの脚注]\n\n[^hope]\n\n[^hope]: マージには消えてるといいな。",
+    "tree": {
+      "sha": "76002a35f1de135891329537491795866535047a",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/git/trees/76002a35f1de135891329537491795866535047a"
     },
-    "files": []
-  }
+    "url": "https://api.github.com/repos/MakeNowJust/commlog/git/commits/536bd0322ebc5f218208d52830efb5ba7110213e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/536bd0322ebc5f218208d52830efb5ba7110213e",
+  "html_url": "https://github.com/MakeNowJust/commlog/commit/536bd0322ebc5f218208d52830efb5ba7110213e",
+  "comments_url": "https://api.github.com/repos/MakeNowJust/commlog/commits/536bd0322ebc5f218208d52830efb5ba7110213e/comments",
+  "author": {
+    "login": "MakeNowJust",
+    "id": 6679325,
+    "node_id": "MDQ6VXNlcjY2NzkzMjU=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/6679325?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MakeNowJust",
+    "html_url": "https://github.com/MakeNowJust",
+    "followers_url": "https://api.github.com/users/MakeNowJust/followers",
+    "following_url": "https://api.github.com/users/MakeNowJust/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MakeNowJust/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MakeNowJust/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MakeNowJust/subscriptions",
+    "organizations_url": "https://api.github.com/users/MakeNowJust/orgs",
+    "repos_url": "https://api.github.com/users/MakeNowJust/repos",
+    "events_url": "https://api.github.com/users/MakeNowJust/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MakeNowJust/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "MakeNowJust",
+    "id": 6679325,
+    "node_id": "MDQ6VXNlcjY2NzkzMjU=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/6679325?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MakeNowJust",
+    "html_url": "https://github.com/MakeNowJust",
+    "followers_url": "https://api.github.com/users/MakeNowJust/followers",
+    "following_url": "https://api.github.com/users/MakeNowJust/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MakeNowJust/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MakeNowJust/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MakeNowJust/subscriptions",
+    "organizations_url": "https://api.github.com/users/MakeNowJust/orgs",
+    "repos_url": "https://api.github.com/users/MakeNowJust/repos",
+    "events_url": "https://api.github.com/users/MakeNowJust/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MakeNowJust/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "0b3cf9b9cedb80217d0a0b9a7a8ad09ed8b6eb15",
+      "url": "https://api.github.com/repos/MakeNowJust/commlog/commits/0b3cf9b9cedb80217d0a0b9a7a8ad09ed8b6eb15",
+      "html_url": "https://github.com/MakeNowJust/commlog/commit/0b3cf9b9cedb80217d0a0b9a7a8ad09ed8b6eb15"
+    }
+  ],
+  "stats": {
+    "total": 0,
+    "additions": 0,
+    "deletions": 0
+  },
+  "files": []
+}

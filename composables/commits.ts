@@ -7,7 +7,8 @@ export type Commit = {
 };
 
 export type Commits = Record<string, Commit>;
-export const useCommits = () => useState<Commits>('commits', () => Object.create(null));
+export const useCommits = () =>
+  useState<Commits>("commits", () => Object.create(null));
 
 export const usePutCommit = () => {
   const commits = useCommits();
@@ -51,9 +52,13 @@ export const useFetchCommit = (hash: string) => {
     error.value = null;
 
     try {
-      const req = await fetch(`https://api.github.com/repos/makenowjust/commlog/commits/${hash}`);
+      const req = await fetch(
+        `https://api.github.com/repos/makenowjust/commlog/commits/${hash}`,
+      );
       if (req.status !== 200) {
-        throw new Error(`Unexpected HTTP status: ${req.status} (${req.statusText})`)
+        throw new Error(
+          `Unexpected HTTP status: ${req.status} (${req.statusText})`,
+        );
       }
       const json = await req.json();
       loading.value = false;
@@ -74,7 +79,7 @@ export const useFetchCommit = (hash: string) => {
     loading,
     commit,
     error,
-  }
+  };
 };
 
 export const useFetchCommits = (startUrl: string) => {
@@ -84,7 +89,7 @@ export const useFetchCommits = (startUrl: string) => {
   const nextUrl = ref<string | null>(startUrl);
   const hashes = ref<string[]>([]);
   const error = ref<string | null>(null);
-  
+
   const hasNext = computed(() => nextUrl.value !== null);
 
   const loadNext = async () => {
@@ -100,14 +105,21 @@ export const useFetchCommits = (startUrl: string) => {
     try {
       const req = await fetch(url);
       if (req.status !== 200) {
-        throw new Error(`Unexpected HTTP status: ${req.status} (${req.statusText})`)
+        throw new Error(
+          `Unexpected HTTP status: ${req.status} (${req.statusText})`,
+        );
       }
-      const json = await req.json() as ({items: any[]} | any[]);
-      const commitArray = ('items' in json ? json.items : json).map(dataToCommit);
-      const link = parseLink(req.headers.get('Link') ?? '');
+      const json = (await req.json()) as { items: any[] } | any[];
+      const commitArray = ("items" in json ? json.items : json).map(
+        dataToCommit,
+      );
+      const link = parseLink(req.headers.get("Link") ?? "");
       loading.value = false;
       nextUrl.value = link.next ?? null;
-      hashes.value = [...hashes.value, ...commitArray.map(commit => commit.hash)];
+      hashes.value = [
+        ...hashes.value,
+        ...commitArray.map((commit) => commit.hash),
+      ];
       putCommits(commitArray);
     } catch (err) {
       loading.value = false;

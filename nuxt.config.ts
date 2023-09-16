@@ -1,8 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: false,
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
   devtools: { enabled: true },
-  css: ['@fortawesome/fontawesome-svg-core/styles.css'],
+  css: ['@fortawesome/fontawesome-svg-core/styles.css', 'highlight.js/styles/atom-one-dark.css'],
   app:{
     head: {
       title: "commlog",

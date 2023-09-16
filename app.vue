@@ -15,7 +15,6 @@
     </section>
   </header>
   <main>
-    <CommlogCommit />
-    <CommlogCommit />
+    <NuxtPage />
   </main>
 </template>

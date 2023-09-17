@@ -9,7 +9,7 @@
     "format": "prettier --write . && eslint --fix .",
     "generate": "nuxt generate",
     "lint": "prettier --check . && eslint .",
-    "postinstall": "nuxt prepare || exit 0",
+    "postinstall": "nuxt prepare",
     "preview": "nuxt preview",
     "typecheck": "nuxt typecheck"
   },

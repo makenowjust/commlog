@@ -3,7 +3,7 @@
 
 [build]
   publish = "dist"
-  command = "npm run generate"
+  command = "npx nuxi prepare && npx nuxi generate"
 
 [build.environment]
   NPM_FLAGS = "--dry-run"

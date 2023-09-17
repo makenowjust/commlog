@@ -14,4 +14,4 @@ bun --version
 bun install --frozen-lockfile
 
 echo "Build"
-bun run generate
+bunx nuxi generate

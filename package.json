@@ -10,6 +10,7 @@
     "generate": "nuxt generate",
     "lint": "prettier --check . && eslint .",
     "postinstall": "nuxt prepare",
+    "preview": "nuxt preview",
     "typecheck": "nuxt typecheck"
   },
   "devDependencies": {

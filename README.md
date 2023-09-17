@@ -1,63 +1,28 @@
-# Nuxt 3 Minimal Starter
+<h1 align="center">
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[![Commlog logo](./assets/img/logo-with-icon.png)](https://commlog.quine.codes/)
 
-## Setup
+[![Made with Nuxt][nuxt-badge]](https://nuxtjs.org/)
+[![Netlify status][netlify-badge]](https://app.netlify.com/sites/commlog/deploys)
 
-Make sure to install the dependencies:
+</h1>
 
-```bash
-# npm
-npm install
+## Development
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
+```console
+$ git clone https://github.com/makenowjust/commlog
+$ cd commlog
+$ echo '*' > .gitignore
+$ git worktree add main main
+$ cd main
+$ bun install
+$ bun run dev
 ```
 
-## Development Server
+## Copyright
 
-Start the development server on `http://localhost:3000`:
+(C) 2018-2023 Hiroya Fujinami (a.k.a. TSUYUSATO "[MakeNowJust][makenowjust]" Kitsune)
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+[makenowjust]: https://github.com/makenowjust
+[nuxt-badge]: https://img.shields.io/badge/made_with-nuxt-3B8070.svg?style=for-the-badge&colorB=41B883&logo=nuxtdotjs
+[netlify-badge]: https://img.shields.io/netlify/871a1a64-e6fc-4de5-9cf8-85dfdd6aae3b.svg?style=for-the-badge&logo=netlify

@@ -1,3 +1,5 @@
+import { DateTime } from "luxon";
+
 export type Commit = {
   markdown: string;
   github: string;
@@ -30,7 +32,7 @@ const dataToCommit = (data: any) => ({
   markdown: data.commit.message,
   github: data.author.login,
   icon: data.author.avatar_url,
-  time: data.commit.author.date,
+  time: DateTime.fromISO(data.commit.author.date).toFormat("yyyy/L/d H:m:s"),
   hash: data.sha,
 });
 

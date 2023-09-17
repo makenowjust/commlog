@@ -33,8 +33,10 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/vue-fontawesome": "latest-3",
     "@tailwindcss/typography": "^0.5.10",
+    "@types/luxon": "^3.3.2",
     "daisyui": "^3.7.4",
     "highlight.js": "^11.8.0",
+    "luxon": "^3.4.3",
     "markdown-it": "^13.0.1",
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-highlightjs": "^4.0.1"

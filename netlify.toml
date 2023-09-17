@@ -1,3 +1,9 @@
+[env]
+
+
 [build]
   publish = "dist"
   command = "./build.sh"
+
+[build.environment]
+  NPM_FLAGS = "--dry-run"

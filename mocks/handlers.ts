@@ -4,6 +4,7 @@ import COMMITS_1 from "./data/commits-1.json";
 import COMMITS_2 from "./data/commits-2.json";
 import COMMIT_048ebce from "./data/commit-048ebceb14ff5367ad8ff9a8a64f920b5a3f9c6d.json";
 import COMMIT_536bd03 from "./data/commit-536bd0322ebc5f218208d52830efb5ba7110213e.json";
+import COMMENTS_048ebce from "./data/comments-048ebceb14ff5367ad8ff9a8a64f920b5a3f9c6d.json";
 import SEARCH_HELLO from "./data/search-hello.json";
 
 const handleCommits = (
@@ -48,6 +49,25 @@ const handleCommit = (
   }
 };
 
+const handleCommitComments = (
+  req: RestRequest,
+  res: ResponseFunction,
+  ctx: RestContext,
+) => {
+  const hash = String(req.params.hash);
+  switch (hash) {
+    case "048ebceb14ff5367ad8ff9a8a64f920b5a3f9c6d":
+      return res(
+        ctx.delay(1000),
+        ctx.status(200),
+        ctx.set(COMMENTS_048ebce.headers as any),
+        ctx.json(COMMENTS_048ebce.data),
+      );
+    default:
+      return res(ctx.status(200), ctx.json([]));
+  }
+};
+
 const handleSearch = (
   req: RestRequest,
   res: ResponseFunction,
@@ -79,6 +99,10 @@ export const handlers = [
   rest.get(
     "https://api.github.com/repos/makenowjust/commlog/commits/:hash",
     handleCommit,
+  ),
+  rest.get(
+    "https://api.github.com/repos/makenowjust/commlog/commits/:hash/comments",
+    handleCommitComments,
   ),
   rest.get("https://api.github.com/search/commits", handleSearch),
 ];

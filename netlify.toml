@@ -3,7 +3,7 @@
 
 [build]
   publish = "dist"
-  command = "npm run prepare && npm run generate"
+  command = "npm run postinstall && npm run generate"
 
 [build.environment]
   NPM_FLAGS = "--dry-run"

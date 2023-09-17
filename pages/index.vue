@@ -19,7 +19,7 @@ const { hashes, loading, error, hasNext, loadNext } = useFetchCommits(
       <div class="text-xl">Load more.</div>
     </div>
     <div v-else-if="error" class="mx-auto container max-w-3xl py-10">
-      <pre>{{ error }}</pre>
+      <pre class="text-red-500">{{ error }}</pre>
     </div>
   </div>
 </template>

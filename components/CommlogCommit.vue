@@ -12,7 +12,7 @@ const html = computed(() =>
 </script>
 
 <template>
-  <article class="border-b border-gray-300 pt-8">
+  <article class="pt-8">
     <!-- eslint-disable vue/no-v-html -->
     <section
       class="palt mx-auto container max-w-3xl prose-sm prose prose-stone prose-headings:text-gray-600 prose-headings:font-sand-bold prose-headings:font-normal font-thin"
@@ -38,6 +38,7 @@ const html = computed(() =>
       </NuxtLink>
       <NuxtLink
         class="inline-block"
+        target="_blank"
         :to="`https://github.com/makenowjust/commlog/commit/${commit.hash}`"
       >
         <ClientOnly>

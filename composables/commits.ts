@@ -28,7 +28,7 @@ export const usePutCommits = () => {
   };
 };
 
-const dataToCommit = (data: any) => ({
+const dataToCommit = (data: any): Commit => ({
   markdown: data.commit.message,
   github: data.author.login,
   icon: data.author.avatar_url,

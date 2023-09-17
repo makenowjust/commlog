@@ -20,7 +20,12 @@ export default [
   {
     files: ["**/*.vue"],
     rules: {
+      // This rule does not check variables used in Vue template.
+      // Therefore, it causes many false positives.
       "@typescript-eslint/no-unused-vars": "off",
+      // This rule causes many false positives.
+      // It is disabled for now.
+      "vue/valid-v-for": "off",
     },
   },
 ];

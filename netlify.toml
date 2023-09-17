@@ -3,4 +3,4 @@
 
 [build]
   publish = "dist"
-  command = "npm run postinstall && npm run generate"
+  command = "npm run generate"

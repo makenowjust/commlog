@@ -3,7 +3,7 @@
 
 [build]
   publish = "dist"
-  command = "./build.sh"
+  command = "npm run generate"
 
 [build.environment]
   NPM_FLAGS = "--dry-run"

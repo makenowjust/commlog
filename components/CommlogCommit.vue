@@ -13,10 +13,12 @@ const html = computed(() =>
 
 <template>
   <article class="border-b border-gray-300 pt-8">
+    <!-- eslint-disable vue/no-v-html -->
     <section
       class="palt mx-auto container max-w-3xl prose-sm prose prose-stone prose-headings:text-gray-600 prose-headings:font-sand-bold prose-headings:font-normal font-thin"
       v-html="html"
     />
+    <!-- eslint-enable vue/no-v-html -->
     <section class="mx-auto container max-w-3xl text-sm text-right py-2">
       <a class="inline-block mr-3" href="https://github.com/makenowjust">
         {{ commit.github }}
@@ -31,8 +33,9 @@ const html = computed(() =>
         class="inline-block mr-3 bg-gray-600 text-gray-50 px-1"
         :to="`/commit/${commit.hash}`"
         :title="commit.hash"
-        >#{{ commit.hash.slice(0, 7) }}</NuxtLink
       >
+        #{{ commit.hash.slice(0, 7) }}
+      </NuxtLink>
       <NuxtLink
         class="inline-block"
         :to="`https://github.com/makenowjust/commlog/commit/${commit.hash}`"

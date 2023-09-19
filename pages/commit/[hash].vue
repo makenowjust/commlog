@@ -36,7 +36,10 @@ const {
       >
         <div class="text-xl">No comments</div>
       </div>
-      <div v-if="commentsLoading" class="mx-auto container max-w-3xl text-center">
+      <div
+        v-if="commentsLoading"
+        class="mx-auto container max-w-3xl text-center"
+      >
         <div class="text-xl">Loading...</div>
         <span class="loading loading-bars w-24" />
       </div>

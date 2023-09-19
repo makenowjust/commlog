@@ -12,7 +12,7 @@ const html = computed(() =>
 </script>
 
 <template>
-  <article class="pt-8">
+  <article class="pt-8 mx-4">
     <!-- eslint-disable vue/no-v-html -->
     <section
       class="palt mx-auto container max-w-3xl prose-sm prose prose-stone prose-headings:text-gray-600 prose-headings:font-sand-bold prose-headings:font-normal font-thin"
@@ -28,7 +28,7 @@ const html = computed(() =>
           alt="makenowjust's icon"
         />
       </a>
-      <time class="inline-block mr-3">{{ commit.time }}</time>
+      <time class="inline-block text-gray-500 mr-3">{{ commit.time }}</time>
       <NuxtLink
         class="inline-block mr-3 bg-gray-600 text-gray-50 px-1"
         :to="`/commit/${commit.hash}`"

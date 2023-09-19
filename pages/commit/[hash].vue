@@ -21,8 +21,8 @@ const {
   </div>
   <div v-else>
     <CommlogCommit :hash="hash" />
-    <section class="mx-auto container max-w-3xl pt-10">
-      <h2 class="text-xl">Comments</h2>
+    <section class="mx-4 pt-10">
+      <h2 class="mx-auto container max-w-3xl text-xl">Comments</h2>
       <template v-if="comments.length > 0">
         <CommlogCommitComment
           v-for="comment in comments"

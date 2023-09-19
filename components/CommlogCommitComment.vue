@@ -29,7 +29,7 @@ const html = computed(() =>
       </h3>
       <!-- eslint-disable vue/no-v-html -->
       <section
-        class="palt mx-auto container max-w-3xl prose-sm prose prose-stone prose-headings:text-gray-600 prose-headings:font-sand-bold prose-headings:font-normal font-thin"
+        class="palt mx-auto container max-w-3xl prose-sm prose prose-stone prose-headings:text-gray-600 prose-headings:font-sand-bold prose-headings:font-normal font-thin break-words"
         v-html="html"
       />
       <!-- eslint-enable vue/no-v-html -->

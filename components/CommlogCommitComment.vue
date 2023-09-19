@@ -11,7 +11,7 @@ const html = computed(() =>
 </script>
 
 <template>
-  <div class="card w-3xl bg-base-100">
+  <div class="mx-auto card max-w-3xl bg-base-100">
     <div class="card-body">
       <h3 class="card-title">
         <NuxtLink class="inline-block mr-2" :to="`https://github.com/${comment.github}`">

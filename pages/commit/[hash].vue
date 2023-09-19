@@ -32,15 +32,15 @@ const {
       </template>
       <div
         v-else-if="!commentsLoading && !commentsError"
-        class="container text-center"
+        class="mx-auto container max-w-3xl text-center"
       >
         <div class="text-xl">No comments</div>
       </div>
-      <div v-if="commentsLoading" class="container text-center">
+      <div v-if="commentsLoading" class="mx-auto container max-w-3xl text-center">
         <div class="text-xl">Loading...</div>
         <span class="loading loading-bars w-24" />
       </div>
-      <div v-else-if="commentsError" class="container">
+      <div v-else-if="commentsError" class="mx-auto container max-w-3xl">
         <pre class="text-red-500">{{ commentsError }}</pre>
       </div>
     </section>

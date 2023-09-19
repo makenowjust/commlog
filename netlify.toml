@@ -3,4 +3,4 @@
 
 [build]
   publish = "dist"
-  command = "npm run generate"
+  command = "yarn run generate"

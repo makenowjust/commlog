@@ -20,14 +20,17 @@ const html = computed(() =>
     />
     <!-- eslint-enable vue/no-v-html -->
     <section class="mx-auto container max-w-3xl text-sm text-right py-2">
-      <a class="inline-block mr-3" href="https://github.com/makenowjust">
+      <NuxtLink
+        class="inline-block mr-3"
+        :to="`https://github.com/${commit.github}`"
+      >
         {{ commit.github }}
         <img
           class="w-3.5 h-3.5 inline-block align-base"
           :src="commit.icon"
-          alt="makenowjust's icon"
+          :alt="`${commit.github} icon`"
         />
-      </a>
+      </NuxtLink>
       <time class="inline-block text-gray-500 mr-3">{{ commit.time }}</time>
       <NuxtLink
         class="inline-block mr-3 bg-gray-600 text-gray-50 px-1"

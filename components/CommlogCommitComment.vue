@@ -11,7 +11,7 @@ const html = computed(() =>
 </script>
 
 <template>
-  <div class="mx-auto card max-w-3xl bg-base-100">
+  <div class="mx-auto bucard max-w-3xl bg-base-100">
     <div class="card-body">
       <h3 class="card-title">
         <NuxtLink
@@ -19,7 +19,11 @@ const html = computed(() =>
           :to="`https://github.com/${comment.github}`"
         >
           {{ comment.github }}
-          <img class="w-4 h-4 inline-block align-base" :src="comment.icon" />
+          <img
+            class="w-4 h-4 inline-block align-base"
+            :src="comment.icon"
+            :alt="`${comment.github} icon`"
+          />
         </NuxtLink>
         <time class="inline-block text-gray-500">{{ comment.time }}</time>
       </h3>

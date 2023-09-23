@@ -13,7 +13,7 @@ const html = computed(() =>
 <template>
   <div class="mx-auto bucard max-w-3xl bg-base-100">
     <div class="card-body">
-      <h3 class="card-title">
+      <h3 class="card-title text-base">
         <NuxtLink
           class="inline-block mr-2"
           :to="`https://github.com/${comment.github}`"

@@ -9,22 +9,24 @@ export type Commit = {
 };
 
 export type Commits = Record<string, Commit>;
-export const useCommits = () =>
-  useState<Commits>("commits", () => Object.create(null));
 
-export const usePutCommit = () => {
-  const commits = useCommits();
-  return (commit: Commit): void => {
+export const useCommits = () => {
+  const commits = useState<Commits>("commits", () => Object.create(null));
+
+  const putCommit = (commit: Commit): void => {
     commits.value[commit.hash] = commit;
   };
-};
 
-export const usePutCommits = () => {
-  const commits = useCommits();
-  return (commitArray: Commit[]): void => {
+  const putCommits = (commitArray: Commit[]): void => {
     for (const commit of commitArray) {
       commits.value[commit.hash] = commit;
     }
+  };
+
+  return {
+    commits,
+    putCommit,
+    putCommits,
   };
 };
 
@@ -37,8 +39,7 @@ const dataToCommit = (data: any): Commit => ({
 });
 
 export const useFetchCommit = (hash: string) => {
-  const commits = useCommits();
-  const putCommit = usePutCommit();
+  const { commits, putCommit } = useCommits();
 
   const loading = ref(false);
   const error = ref<string | null>(null);
@@ -85,7 +86,7 @@ export const useFetchCommit = (hash: string) => {
 };
 
 export const useFetchCommits = (startUrl: string) => {
-  const putCommits = usePutCommits();
+  const { putCommits } = useCommits();
 
   const loading = ref(false);
   const nextUrl = ref<string | null>(startUrl);

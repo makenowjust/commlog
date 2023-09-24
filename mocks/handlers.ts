@@ -58,7 +58,7 @@ const handleCommitComments = (
   switch (hash) {
     case "048ebceb14ff5367ad8ff9a8a64f920b5a3f9c6d":
       return res(
-        ctx.delay(1000),
+        ctx.delay(1500),
         ctx.status(200),
         ctx.set(COMMENTS_048ebce.headers as any),
         ctx.json(COMMENTS_048ebce.data),

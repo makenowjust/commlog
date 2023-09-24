@@ -12,40 +12,18 @@ const {
 </script>
 
 <template>
-  <div v-if="loading" class="mx-auto container max-w-3xl py-20 text-center">
-    <div class="text-xl">Loading...</div>
-    <span class="loading loading-bars w-24" />
-  </div>
-  <div v-else-if="error" class="mx-auto container max-w-3xl py-10">
-    <pre class="text-red-500">{{ error }}</pre>
-  </div>
+  <CommlogLoading v-if="loading" />
+  <CommlogError v-else-if="error">{{ error }}</CommlogError>
   <div v-else>
     <CommlogCommit :hash="hash" />
     <section class="mx-4 pt-10">
       <h2 class="mx-auto container max-w-3xl text-xl">Comments</h2>
-      <template v-if="comments.length > 0">
-        <CommlogCommitComment
-          v-for="comment in comments"
-          :key="comment.id"
-          :comment="comment"
-        />
-      </template>
-      <div
-        v-else-if="!commentsLoading && !commentsError"
-        class="mx-auto container max-w-3xl text-center"
-      >
-        <div class="text-xl">No comments</div>
-      </div>
-      <div
-        v-if="commentsLoading"
-        class="mx-auto container max-w-3xl text-center"
-      >
-        <div class="text-xl">Loading...</div>
-        <span class="loading loading-bars w-24" />
-      </div>
-      <div v-else-if="commentsError" class="mx-auto container max-w-3xl">
-        <pre class="text-red-500">{{ commentsError }}</pre>
-      </div>
+      <CommlogCommitCommentList
+        :comments="comments"
+        :has-next="Boolean(commentsLoading || commentsError)"
+      />
+      <CommlogLoading v-if="commentsLoading" />
+      <CommlogError v-else-if="commentsError">{{ commentsError }}</CommlogError>
     </section>
   </div>
 </template>

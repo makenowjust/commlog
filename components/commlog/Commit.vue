@@ -3,7 +3,7 @@ const props = defineProps<{
   hash: string;
 }>();
 
-const commits = useCommits();
+const { commits } = useCommits();
 
 const commit = computed(() => commits.value[props.hash]);
 const html = computed(() =>

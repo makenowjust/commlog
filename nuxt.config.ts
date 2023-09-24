@@ -7,6 +7,13 @@ export default defineNuxtConfig({
     "@fortawesome/fontawesome-svg-core/styles.css",
     "highlight.js/styles/atom-one-dark.css",
   ],
+  typescript: {
+    tsConfig: {
+      compilerOptions: {
+        types: ["bun-types"],
+      },
+    },
+  },
   app: {
     head: {
       title: "commlog",

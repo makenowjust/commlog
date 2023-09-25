@@ -46,6 +46,52 @@
         "rocket": 0,
         "eyes": 0
       }
+    },
+    {
+      "url": "https://api.github.com/repos/makenowjust/commlog/comments/128265384",
+      "html_url": "https://github.com/makenowjust/commlog/commit/048ebceb14ff5367ad8ff9a8a64f920b5a3f9c6d#commitcomment-128265384",
+      "id": 128265384,
+      "node_id": "CC_kwDOAoypxs4HpSyo",
+      "user": {
+        "login": "makenowjust",
+        "id": 6679325,
+        "node_id": "MDQ6VXNlcjY2NzkzMjU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6679325?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/makenowjust",
+        "html_url": "https://github.com/makenowjust",
+        "followers_url": "https://api.github.com/users/makenowjust/followers",
+        "following_url": "https://api.github.com/users/makenowjust/following{/other_user}",
+        "gists_url": "https://api.github.com/users/makenowjust/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/makenowjust/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/makenowjust/subscriptions",
+        "organizations_url": "https://api.github.com/users/makenowjust/orgs",
+        "repos_url": "https://api.github.com/users/makenowjust/repos",
+        "events_url": "https://api.github.com/users/makenowjust/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/makenowjust/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "position": null,
+      "line": null,
+      "path": null,
+      "commit_id": "048ebceb14ff5367ad8ff9a8a64f920b5a3f9c6d",
+      "created_at": "2023-09-25T06:45:41Z",
+      "updated_at": "2023-09-25T06:45:41Z",
+      "author_association": "OWNER",
+      "body": "コメントのテスト2",
+      "reactions": {
+        "url": "https://api.github.com/repos/makenowjust/commlog/comments/128265384/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0,
+        "rocket": 0,
+        "eyes": 0
+      }
     }
   ]
 }

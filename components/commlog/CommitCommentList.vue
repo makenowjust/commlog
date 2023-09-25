@@ -9,7 +9,7 @@ defineProps<{
 
 <template>
   <template v-if="comments.length > 0">
-    <div v-for="comment in comments" :key="comment.id" class="-mb-6">
+    <div v-for="comment in comments" :key="comment.id" class="-mb-6 last:mb-0">
       <CommlogCommitComment :comment="comment" />
     </div>
   </template>

@@ -9,11 +9,9 @@ defineProps<{
 
 <template>
   <template v-if="comments.length > 0">
-    <CommlogCommitComment
-      v-for="comment in comments"
-      :key="comment.id"
-      :comment="comment"
-    />
+    <div v-for="comment in comments" :key="comment.id" class="-mb-6">
+      <CommlogCommitComment :comment="comment" />
+    </div>
   </template>
   <div v-else-if="!hasNext" class="mx-auto container max-w-3xl text-center">
     <div class="text-xl">No comments</div>

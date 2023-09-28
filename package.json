@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "nuxt dev",
     "format": "prettier --write . && eslint --fix .",
-    "generate": "nuxt generate",
+    "generate": "cp LICENSE public/LICENSE.txt && nuxt generate",
     "lint": "prettier --check . && eslint .",
     "postinstall": "nuxt prepare",
     "preview": "nuxt preview",

@@ -40,13 +40,11 @@ const html = computed(() =>
         #{{ commit.hash.slice(0, 7) }}
       </NuxtLink>
       <NuxtLink
-        class="inline-block"
+        class="w-6 h-6 align-middle inline-block"
         target="_blank"
         :to="`https://github.com/makenowjust/commlog/commit/${commit.hash}`"
       >
-        <ClientOnly>
-          <FontAwesomeIcon :icon="['fas', 'up-right-from-square']" />
-        </ClientOnly>
+        <PotlabLink />
       </NuxtLink>
     </section>
   </article>

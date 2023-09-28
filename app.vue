@@ -28,11 +28,7 @@ const search = () => {
       </NuxtLink>
     </h1>
     <section class="container mx-auto text-center">
-      <div class="w-6 h-6 text-xl/5 align-middle text-center inline-block">
-        <ClientOnly>
-          <FontAwesomeIcon :icon="['fas', 'magnifying-glass']" />
-        </ClientOnly>
-      </div>
+      <PotlabSearch class="w-6 h-6 align-middle mb-1 inline-block" />
       <input
         v-model="q"
         type="text"

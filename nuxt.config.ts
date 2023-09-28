@@ -29,5 +29,6 @@ export default defineNuxtConfig({
       Raleway: true,
       Oswald: true,
     },
+    download: false,
   },
 });

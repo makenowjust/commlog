@@ -7,7 +7,7 @@ const { hashes, loading, error, hasNext, loadNext } = useFetchCommits(
 <template>
   <div>
     <CommlogCommitList :hashes="hashes" />
-    <div v-if="loading || hasNext" class="py-20">
+    <div v-if="loading || hasNext">
       <CommlogLoading v-if="loading" />
       <CommlogLoadMore v-else @load="loadNext" />
     </div>

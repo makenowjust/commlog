@@ -21,6 +21,7 @@
     "@nuxt/eslint-config": "0.2.0",
     "@nuxtjs/google-fonts": "3.0.2",
     "@nuxtjs/tailwindcss": "6.8.0",
+    "@octokit/types": "12.0.0",
     "@types/markdown-it": "13.0.2",
     "@types/markdown-it-footnote": "3.0.1",
     "bun-types": "1.0.6",
@@ -40,7 +41,8 @@
     "luxon": "3.4.3",
     "markdown-it": "13.0.2",
     "markdown-it-footnote": "3.0.3",
-    "markdown-it-highlightjs": "4.0.1"
+    "markdown-it-highlightjs": "4.0.1",
+    "octokit": "3.1.1"
   },
   "msw": {
     "workerDirectory": "public"

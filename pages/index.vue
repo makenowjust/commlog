@@ -1,7 +1,5 @@
 <script setup lang="ts">
-const { hashes, loading, error, hasNext, loadNext } = useFetchCommits(
-  "https://api.github.com/repos/makenowjust/commlog/commits",
-);
+const { hashes, loading, error, hasNext, loadNext } = useFetchCommits();
 </script>
 
 <template>

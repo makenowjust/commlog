@@ -33,14 +33,15 @@ const html = computed(() =>
       </NuxtLink>
       <time class="inline-block text-gray-500 mr-3">{{ commit.time }}</time>
       <NuxtLink
-        class="inline-block mr-3 bg-gray-600 text-gray-50 px-1"
+        class="mr-3 btn btn-xs btn-neutral"
         :to="`/commit/${commit.hash}`"
         :title="commit.hash"
       >
         #{{ commit.hash.slice(0, 7) }}
+        <div class="badge">{{ commit.comments }}</div>
       </NuxtLink>
       <NuxtLink
-        class="w-6 h-6 align-middle inline-block"
+        class="align-middle btn btn-xs"
         target="_blank"
         :to="`https://github.com/makenowjust/commlog/commit/${commit.hash}`"
       >

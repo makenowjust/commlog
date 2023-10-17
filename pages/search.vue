@@ -1,25 +1,8 @@
 <script setup lang="ts">
 const route = useRoute();
-const q = String(route.query.q);
+const q = computed(() => String(route.query.q));
 
-const searchUrl = (q: string) =>
-  `https://api.github.com/search/commits?q=repo%3Amakenowjust%2Fcommlog%20${encodeURIComponent(
-    q,
-  )}&sort=author-date&order=desc`;
-
-const { hashes, loading, error, hasNext, loadNext, nextUrl } = useFetchCommits(
-  searchUrl(q),
-);
-
-watch(
-  () => route.query.q,
-  () => {
-    // Reset search results.
-    hashes.value = [];
-    nextUrl.value = searchUrl(String(route.query.q));
-    loadNext();
-  },
-);
+const { hashes, loading, error, hasNext, loadNext } = useSearchCommits(q);
 </script>
 
 <template>

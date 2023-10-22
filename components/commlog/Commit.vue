@@ -19,9 +19,11 @@ const html = computed(() =>
       v-html="html"
     />
     <!-- eslint-enable vue/no-v-html -->
-    <section class="mx-auto container max-w-3xl text-sm text-right py-2">
+    <section
+      class="mx-auto container max-w-3xl text-xs text-right py-2 overflow-auto"
+    >
       <NuxtLink
-        class="inline-block mr-3"
+        class="inline-block mr-1"
         :to="`https://github.com/${commit.github}`"
       >
         {{ commit.github }}
@@ -31,9 +33,9 @@ const html = computed(() =>
           :alt="`${commit.github} icon`"
         />
       </NuxtLink>
-      <time class="inline-block text-gray-500 mr-3">{{ commit.time }}</time>
+      <time class="inline-block text-gray-500 mr-1">{{ commit.time }}</time>
       <NuxtLink
-        class="mr-3 btn btn-xs btn-neutral"
+        class="btn btn-xs btn-neutral"
         :to="`/commit/${commit.hash}`"
         :title="commit.hash"
       >

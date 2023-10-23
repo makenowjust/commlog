@@ -22,33 +22,37 @@ const html = computed(() =>
     <section
       class="mx-auto container max-w-3xl text-xs text-right py-2 overflow-auto"
     >
-      <NuxtLink
-        class="inline-block mr-1"
-        :to="`https://github.com/${commit.github}`"
-      >
-        {{ commit.github }}
-        <img
-          class="w-3.5 h-3.5 inline-block align-base"
-          :src="commit.icon"
-          :alt="`${commit.github} icon`"
-        />
-      </NuxtLink>
-      <time class="inline-block text-gray-500 mr-1">{{ commit.time }}</time>
-      <NuxtLink
-        class="btn btn-xs btn-neutral"
-        :to="`/commit/${commit.hash}`"
-        :title="commit.hash"
-      >
-        #{{ commit.hash.slice(0, 7) }}
-        <div class="badge">{{ commit.comments }}</div>
-      </NuxtLink>
-      <NuxtLink
-        class="align-middle btn btn-xs"
-        target="_blank"
-        :to="`https://github.com/makenowjust/commlog/commit/${commit.hash}`"
-      >
-        <PotlabLink />
-      </NuxtLink>
+      <div class="block pb-2 md:inline-block md:pb-0 md:mr-1">
+        <NuxtLink
+          class="inline-block mr-1"
+          :to="`https://github.com/${commit.github}`"
+        >
+          {{ commit.github }}
+          <img
+            class="w-3.5 h-3.5 inline-block align-base"
+            :src="commit.icon"
+            :alt="`${commit.github} icon`"
+          />
+        </NuxtLink>
+        <time class="inline-block text-gray-500">{{ commit.time }}</time>
+      </div>
+      <div class="block md:inline-block">
+        <NuxtLink
+          class="btn btn-xs btn-neutral mr-1"
+          :to="`/commit/${commit.hash}`"
+          :title="commit.hash"
+        >
+          #{{ commit.hash.slice(0, 7) }}
+          <div class="badge">{{ commit.comments }}</div>
+        </NuxtLink>
+        <NuxtLink
+          class="align-middle btn btn-xs"
+          target="_blank"
+          :to="`https://github.com/makenowjust/commlog/commit/${commit.hash}`"
+        >
+          <PotlabLink />
+        </NuxtLink>
+      </div>
     </section>
   </article>
 </template>

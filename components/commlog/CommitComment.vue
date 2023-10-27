@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Comment } from "~/composables/comments";
+import type { Comment } from "~/composables/comments";
 
 const props = defineProps<{
   comment: Comment;

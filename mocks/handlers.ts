@@ -1,4 +1,6 @@
-import { ResponseFunction, RestContext, RestRequest, rest } from "msw";
+import type { ResponseFunction, RestContext } from "msw";
+
+import { RestRequest, rest } from "msw";
 
 import COMMITS_1 from "./data/commits-1.json";
 import COMMITS_2 from "./data/commits-2.json";

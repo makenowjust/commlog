@@ -1,5 +1,6 @@
+import type { OctokitResponse } from "@octokit/types";
+
 import { DateTime } from "luxon";
-import { OctokitResponse } from "@octokit/types";
 
 export type Commit = {
   markdown: string;

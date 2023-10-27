@@ -1,3 +1,5 @@
+import type * as vite from "vite";
+
 import license from "rollup-plugin-license";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -44,7 +46,7 @@ export default defineNuxtConfig({
             file: "public/LICENSES.txt",
           },
         },
-      }),
+      }) as vite.Plugin,
     ],
   },
   app: {

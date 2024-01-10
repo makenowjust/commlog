@@ -21,7 +21,7 @@ $ bun run dev
 
 ## Copyright
 
-(C) 2018-2023 Hiroya Fujinami (a.k.a. TSUYUSATO "[MakeNowJust][makenowjust]" Kitsune)
+(C) 2018-2024 Hiroya Fujinami (a.k.a. TSUYUSATO "[MakeNowJust][makenowjust]" Kitsune)
 
 [makenowjust]: https://github.com/makenowjust
 [nuxt-badge]: https://img.shields.io/badge/made_with-nuxt-3B8070.svg?style=for-the-badge&colorB=41B883&logo=nuxtdotjs

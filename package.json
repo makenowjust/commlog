@@ -16,32 +16,32 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "3.0.2",
-    "@eslint/js": "9.1.1",
-    "@nuxt/eslint-config": "0.3.10",
+    "@eslint/js": "9.2.0",
+    "@nuxt/eslint-config": "0.3.12",
     "@nuxtjs/google-fonts": "3.2.0",
     "@nuxtjs/tailwindcss": "6.12.0",
     "@octokit/types": "13.5.0",
     "@types/luxon": "3.4.2",
-    "@types/markdown-it": "14.0.1",
+    "@types/markdown-it": "14.1.1",
     "@types/markdown-it-footnote": "3.0.4",
     "bun-types": "1.1.8",
-    "eslint": "9.1.1",
+    "eslint": "9.2.0",
     "eslint-config-prettier": "9.1.0",
     "msw": "2.2.14",
     "nuxt": "3.11.2",
     "prettier": "3.2.5",
-    "rollup-plugin-license": "3.3.1",
+    "rollup-plugin-license": "3.4.0",
     "vue-tsc": "2.0.19"
   },
   "dependencies": {
     "@tailwindcss/typography": "0.5.13",
-    "daisyui": "4.10.2",
+    "daisyui": "4.11.1",
     "highlight.js": "11.9.0",
     "luxon": "3.4.4",
     "markdown-it": "14.1.0",
     "markdown-it-footnote": "4.0.0",
-    "markdown-it-highlightjs": "4.0.1",
-    "octokit": "3.2.0"
+    "markdown-it-highlightjs": "4.1.0",
+    "octokit": "4.0.2"
   },
   "overrides": {
     "@polka/url": "1.0.0-next.23"
